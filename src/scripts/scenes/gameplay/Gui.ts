@@ -12,6 +12,11 @@ export class Gui extends Phaser.GameObjects.Group {
   private playButton: Phaser.GameObjects.Sprite | undefined = undefined;
   private playButtonText: Phaser.GameObjects.Text | undefined = undefined;
   private scoreGroup: Phaser.GameObjects.Group;
+  private menuGroup: Phaser.GameObjects.Group;
+  private musicOn: Phaser.GameObjects.Sprite;
+  private musicOff: Phaser.GameObjects.Sprite;
+  private musicBtnBg!: Phaser.GameObjects.Sprite;
+
 
   /**
    * @constructor
@@ -33,7 +38,16 @@ export class Gui extends Phaser.GameObjects.Group {
     this.play.add(this.playButton);
     this.play.add(this.playButtonText);
     this.add(this.play);
-
+    
+    this.menuGroup = this.scene.add.group();
+    this.addMultiple(this.menuGroup.children.entries)
+    this.createShop()
+    this.createLoginButton();
+    this.createShareButton();
+    this.createFriendsButton();
+    // create soud controll assets
+    this.musicOn = this.createMusicOn();
+    this.musicOff = this.createMusicOff();
     // Create get ready sprite.
     this.getReady = this.scene.add.sprite(
       420,
@@ -60,42 +74,6 @@ export class Gui extends Phaser.GameObjects.Group {
 
   /**
    * @access private
-   * @description Create score text.
-   * @function createScoreText
-   * @returns {void}
-   */
-  private createScoreText(): void {
-    let x: number = 30;
-
-    // Create the max digits possible for score, add them to the scene and make it invisible (will make it visible if score length matches it).
-    for (let i = 0; i < 6; i++) {
-      const score_text: Phaser.GameObjects.Image = this.scene.add.image(
-        x,
-        40,
-        "sheet",
-        "number0.png"
-      );
-
-      score_text.setName(`score_index${i}`);
-      score_text.setScale(0.6);
-      score_text.setVisible(false);
-      score_text.setDepth(5); // Depth of this game object within this scene (rendering position), also known as 'z-index' in CSS.
-      this.scoreGroup.add(score_text);
-      x += 35; // Once score length expands then make some space for next numbers.
-    }
-
-    // Add all the individual score texts to one group.
-    this.scoreGroup.children.entries.forEach((child: any) => {
-      if (child.name === "score_index0") {
-        child.setVisible(true);
-      } else {
-        child.setVisible(false);
-      }
-    });
-  }
-
-  /**
-   * @access private
    * @description Create play button.
    * @function createPlayButton
    * @returns {Phaser.GameObjects.Sprite} play_button
@@ -112,6 +90,11 @@ export class Gui extends Phaser.GameObjects.Group {
       "pointerdown",
       () => {
         if (this.play) this.play.setVisible(false); // Set the play button to be invisible once game has started.
+        this.menuGroup.children.entries.forEach((child: any) => {
+          child.setVisible(false); // Set each child to be invisible.
+        });
+        this.musicOn.setVisible(true)
+        this.musicBtnBg.setVisible(true)
         this.scene.events.emit("getReady"); // Emit "getReady" event on this scene.
       },
       this // Context which is a reference to GameOver object in this case.
@@ -234,7 +217,218 @@ export class Gui extends Phaser.GameObjects.Group {
     // Reset the score group children.
     this.scoreGroup.children.entries.forEach((child: any) => {
       child.setVisible(false); // Set each child to be invisible.
+      if (child.name == "musicbg" ) child.setVisible(true);
+      if (child.name == "" && child.data && child.data.get("clicked")){
+        console.log('child :>> ', child);
+        child.setVisible(true)
+      };
+    });
+    // Reset the menu group children.
+    this.menuGroup.children.entries.forEach((child: any) => {
+      child.setVisible(false); // Set each child to be visible.
     });
     this.scene.data.set(SCORE, 0); // Set initial score to be '0'.
+  }
+
+  /**
+   * @access private
+   * @description Create score text.
+   * @function createScoreText
+   * @returns {void}
+   */
+  private createScoreText(): void {
+    let x: number = 30;
+
+    // Create the max digits possible for score, add them to the scene and make it invisible (will make it visible if score length matches it).
+    for (let i = 0; i < 6; i++) {
+      const score_text: Phaser.GameObjects.Image = this.scene.add.image(
+        x,
+        40,
+        "sheet",
+        "number0.png"
+      );
+
+      score_text.setName(`score_index${i}`);
+      score_text.setScale(0.6);
+      score_text.setVisible(false);
+      score_text.setDepth(5); // Depth of this game object within this scene (rendering position), also known as 'z-index' in CSS.
+      this.scoreGroup.add(score_text);
+      x += 35; // Once score length expands then make some space for next numbers.
+    }
+
+    // Add all the individual score texts to one group.
+    this.scoreGroup.children.entries.forEach((child: any) => {
+      if (child.name === "score_index0") {
+        child.setVisible(true);
+      } else {
+        child.setVisible(false);
+      }
+    });
+  }
+
+  /**
+   * @access private
+   * @description Create shop button.
+   * @function createMenu
+   */
+  private createShop(): void {
+    const shop_button = this.scene.add.sprite(+this.scene.game.config.width * 0.37, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
+    const shop_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.37, +this.scene.game.config.height * 0.7, "ui_icons", "cart.png");
+
+    // Use the hand cursor for shop button.
+    shop_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    shop_button.on(
+      "pointerdown",
+      () => {
+        alert("shop clicked")
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.menuGroup.add(shop_icon);
+    this.menuGroup.add(shop_button);
+  }
+
+  /**
+   * @access private
+   * @description Create login button.
+   * @function createMenu
+   */
+  private createLoginButton(): void {
+    const login_button = this.scene.add.sprite(+this.scene.game.config.width * 0.47, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
+    const login_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.47, +this.scene.game.config.height * 0.7, "ui_icons", "singleplayer.png");
+
+    // Use the hand cursor for play button.
+    login_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    login_button.on(
+      "pointerdown",
+      () => {
+        alert("login button clicked")
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.menuGroup.add(login_icon);
+    this.menuGroup.add(login_button);
+  }
+
+  /**
+   * @access private
+   * @description Create share button.
+   * @function createMenu
+   */
+  private createShareButton(): void {
+    const share_button = this.scene.add.sprite(+this.scene.game.config.width * 0.57, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
+    const share_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.57, +this.scene.game.config.height * 0.7, "ui_icons", "share2.png");
+
+    // Use the hand cursor for play button.
+    share_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    share_button.on(
+      "pointerdown",
+      () => {
+        alert("share button clicked")
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.menuGroup.add(share_button);
+    this.menuGroup.add(share_icon);
+  }
+
+  /**
+   * @access private
+   * @description Create friends button.
+   * @function createMenu
+   */
+  private createFriendsButton(): void {
+    const friends_button = this.scene.add.sprite(+this.scene.game.config.width * 0.67, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
+    const friends_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.67, +this.scene.game.config.height * 0.7, "ui_icons", "multiplayer.png");
+
+    // Use the hand cursor for play button.
+    friends_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    friends_button.on(
+      "pointerdown",
+      () => {
+        alert("friends button clicked")
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.menuGroup.add(friends_icon);
+    this.menuGroup.add(friends_button);
+  }
+  
+  /**
+   * @access private
+   * @description Create musicon button.
+   * @function createMenu
+   */
+   private createMusicOn(): Phaser.GameObjects.Sprite {
+    this.musicBtnBg = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_buttons", "yellow_button12.png");
+    const music_on = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "musicOn");
+    music_on.setVisible(false);
+    music_on.setDepth(5);
+    music_on.setDataEnabled();
+    music_on.data.set("clicked", false)
+    this.musicBtnBg.setName("musicbg")
+    this.musicBtnBg.setVisible(false);
+    this.musicBtnBg.setDepth(5);
+    // Use the hand cursor for shop button.
+    music_on.setInteractive({
+      useHandCursor: true,
+    });
+
+    music_on.on(
+      "pointerdown",
+      () => {
+        music_on.data.set("clicked", false)
+        this.scene.sound.mute = true;
+        this.musicOff.setVisible(true);
+        this.musicOff.data.set("clicked", true);
+        music_on.setVisible(false);
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.scoreGroup.add(this.musicBtnBg)
+    this.scoreGroup.add(music_on)
+    return music_on
+  }
+  
+  /**
+   * @access private
+   * @description Create musicoff button.
+   * @function createMenu
+   */
+   private createMusicOff(): Phaser.GameObjects.Sprite {
+    const music_off = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "musicOff");
+    music_off.setVisible(false)
+    music_off.setDepth(5)
+    music_off.setDataEnabled();
+    // Use the hand cursor for shop button.
+    music_off.setInteractive({
+      useHandCursor: true,
+    });
+
+    music_off.on(
+      "pointerdown",
+      () => {
+        music_off.data.set("clicked", false)
+        this.scene.sound.mute = false;
+        this.musicOn.setVisible(true);
+        this.musicOn.data.set("clicked", true);
+        music_off.setVisible(false);      
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.scoreGroup.add(music_off)
+    return music_off
   }
 }

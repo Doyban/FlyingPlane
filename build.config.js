@@ -1,5 +1,5 @@
 module.exports = {
-    mode: 'production', // Set to 'development' when developing or to 'production' when deploying.
+    mode: 'development', // Set to 'development' when developing or to 'production' when deploying.
     gameDir: `./src`,
     entryFilePath: 'scripts/Index.ts', // Dont start with "/" as it's given in webpack config.
     // Output settings.
