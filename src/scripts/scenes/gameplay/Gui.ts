@@ -1,4 +1,4 @@
-import { SCORE } from "../../utils/GameConstants";
+import { SCORE, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
 
 /**
  * @class Gui
@@ -41,10 +41,11 @@ export class Gui extends Phaser.GameObjects.Group {
     
     this.menuGroup = this.scene.add.group();
     this.addMultiple(this.menuGroup.children.entries)
-    this.createShop()
+    this.createShop();
     this.createLoginButton();
     this.createShareButton();
     this.createFriendsButton();
+    this.createCloseButton();
     // create soud controll assets
     this.musicOn = this.createMusicOn();
     this.musicOff = this.createMusicOff();
@@ -272,9 +273,10 @@ export class Gui extends Phaser.GameObjects.Group {
    * @function createMenu
    */
   private createShop(): void {
-    const shop_button = this.scene.add.sprite(+this.scene.game.config.width * 0.37, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
-    const shop_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.37, +this.scene.game.config.height * 0.7, "ui_icons", "cart.png");
+    const shop_button = this.scene.add.sprite(+this.scene.game.config.width * 0.25, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const shop_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.25, +this.scene.game.config.height * 0.76, "ui_icons", "cart.png");
 
+    shop_button.scale = shop_icon.scale = UI_ICONS_SCALE_FACTOR;
     // Use the hand cursor for shop button.
     shop_button.setInteractive({
       useHandCursor: true,
@@ -297,8 +299,10 @@ export class Gui extends Phaser.GameObjects.Group {
    * @function createMenu
    */
   private createLoginButton(): void {
-    const login_button = this.scene.add.sprite(+this.scene.game.config.width * 0.47, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
-    const login_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.47, +this.scene.game.config.height * 0.7, "ui_icons", "singleplayer.png");
+    const login_button = this.scene.add.sprite(+this.scene.game.config.width * 0.42, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const login_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.42, +this.scene.game.config.height * 0.76, "ui_icons", "singleplayer.png");
+
+    login_button.scale = login_icon.scale = UI_ICONS_SCALE_FACTOR;
 
     // Use the hand cursor for play button.
     login_button.setInteractive({
@@ -322,8 +326,10 @@ export class Gui extends Phaser.GameObjects.Group {
    * @function createMenu
    */
   private createShareButton(): void {
-    const share_button = this.scene.add.sprite(+this.scene.game.config.width * 0.57, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
-    const share_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.57, +this.scene.game.config.height * 0.7, "ui_icons", "share2.png");
+    const share_button = this.scene.add.sprite(+this.scene.game.config.width * 0.62, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const share_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.62, +this.scene.game.config.height * 0.76, "ui_icons", "share2.png");
+
+    share_button.scale = share_icon.scale = UI_ICONS_SCALE_FACTOR;
 
     // Use the hand cursor for play button.
     share_button.setInteractive({
@@ -347,8 +353,10 @@ export class Gui extends Phaser.GameObjects.Group {
    * @function createMenu
    */
   private createFriendsButton(): void {
-    const friends_button = this.scene.add.sprite(+this.scene.game.config.width * 0.67, +this.scene.game.config.height * 0.7, "ui_buttons", "yellow_button12.png");
-    const friends_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.67, +this.scene.game.config.height * 0.7, "ui_icons", "multiplayer.png");
+    const friends_button = this.scene.add.sprite(+this.scene.game.config.width * 0.79, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const friends_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.79, +this.scene.game.config.height * 0.76, "ui_icons", "multiplayer.png");
+
+    friends_button.scale = friends_icon.scale = UI_ICONS_SCALE_FACTOR;
 
     // Use the hand cursor for play button.
     friends_button.setInteractive({
@@ -381,6 +389,9 @@ export class Gui extends Phaser.GameObjects.Group {
     this.musicBtnBg.setName("musicbg")
     this.musicBtnBg.setVisible(false);
     this.musicBtnBg.setDepth(5);
+
+    this.musicBtnBg.scale = music_on.scale = UI_ICONS_SCALE_FACTOR;
+
     // Use the hand cursor for shop button.
     music_on.setInteractive({
       useHandCursor: true,
@@ -412,6 +423,9 @@ export class Gui extends Phaser.GameObjects.Group {
     music_off.setVisible(false)
     music_off.setDepth(5)
     music_off.setDataEnabled();
+
+    music_off.scale = UI_ICONS_SCALE_FACTOR;
+
     // Use the hand cursor for shop button.
     music_off.setInteractive({
       useHandCursor: true,
@@ -430,5 +444,33 @@ export class Gui extends Phaser.GameObjects.Group {
     );
     this.scoreGroup.add(music_off)
     return music_off
+  }
+
+  
+  /**
+   * @access private
+   * @description Create game close button.
+   * @function createCloseButton
+   */
+   private createCloseButton(): void {
+    const close_button = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_buttons", "yellow_button12.png");
+    const close_icon = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_icons", "cross.png");
+
+    close_button.scale = close_icon.scale = UI_ICONS_SCALE_FACTOR;
+
+    // Use the hand cursor for play button.
+    close_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    close_button.on(
+      "pointerdown",
+      () => {
+        alert("close button clicked")
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.menuGroup.add(close_icon);
+    this.menuGroup.add(close_button);
   }
 }
