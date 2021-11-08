@@ -125,7 +125,7 @@ export default class SplashScreen extends Phaser.Scene {
   /**
    * @access private
    * @callback onGameAnimationComplete
-   * @description Listens to the on complete event of tween animation on for game name .
+   * @description Listens to the on complete event of tween animation on for game name.
    * @returns {void}
    */
   private onGameAnimationComplete(): void {
