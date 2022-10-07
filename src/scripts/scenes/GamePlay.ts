@@ -527,5 +527,6 @@ export class GamePlay extends Phaser.Scene {
     this.events.off("changedata");
     this.events.off("getReady");
     this.events.off("reset");
+    this.events.off("gameOver")
   }
 }
