@@ -1,5 +1,6 @@
 import "phaser";
 import { GamePlay } from "./scenes/GamePlay";
+import { Shop } from "./scenes/Shop";
 import SplashScreen from "./scenes/SplashScreen";
 
 /**
@@ -13,7 +14,7 @@ class Game extends Phaser.Game {
       width: 800,
       height: 480,
       parent: "content", // Use custom div element as parent.
-      scene: [SplashScreen, GamePlay], // the scenes.
+      scene: [SplashScreen, GamePlay, Shop], // the scenes.
       // Add ScaleManager for responsiveness.
       scale: {
         mode: Phaser.Scale.ScaleModes.FIT,

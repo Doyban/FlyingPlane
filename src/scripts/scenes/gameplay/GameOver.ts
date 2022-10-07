@@ -1,4 +1,4 @@
-import { GAME_OVER } from "../../utils/GameConstants";
+import { GAME_OVER, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
 
 /**
  * @description Contains the properties that are needed by @class GameOver.
@@ -68,6 +68,12 @@ export class GameOver extends Phaser.GameObjects.Container {
     // Create badge3.
     const badge_3 = this.createBadge(80, -40, "badge_3");
     this.add(badge_3);
+
+    // create home button
+    this.createHomeButton();
+
+    // create share button
+    this.createShareButton();
 
     this.scene.events.on("gameOver", this.onGameOver, this); // Event listener.
     this.setVisible(false); // By default set the scene to be invisible.
@@ -385,4 +391,74 @@ export class GameOver extends Phaser.GameObjects.Container {
   ): void {
     targets[0].setVisible(true); // Set the first element of targeted badges to be visible.
   }
+
+  /**
+   * @access private
+   * @description Create home button.
+   * @function createHomeButton
+   */
+   private createHomeButton(): void {
+    const background_image: any = this.getByName("backgroundImage"); // Get the desired object by name.
+    const x: number = background_image.width * -0.5;
+    const y: number = background_image.height * 0.5;
+
+    const home_button = this.scene.add.sprite(x, y, "ui_buttons", "yellow_button12.png");
+    const home_icon = this.scene.add.sprite(x, y, "ui_icons", "home.png");
+
+    home_button.scale = home_icon.scale = UI_ICONS_SCALE_FACTOR;
+
+    // Use the hand cursor for play button.
+    home_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    home_button.on(
+      "pointerdown",
+      () => {
+        // off the Event listeners.
+        this.scene.events.off("gameOver", this.onGameOver, this); // Event listener.
+        this.scene.events.off("changedata");
+        this.scene.events.off("getReady");
+        this.scene.events.off("reset");
+        // alert("home button clicked")
+        this.scene.scene.restart();
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.add(home_button);
+    this.add(home_icon);
+  }
+
+  /**
+   * @access private
+   * @description Create share button.
+   * @function createShareButton
+   */
+   private createShareButton(): void {
+    const background_image: any = this.getByName("backgroundImage"); // Get the desired object by name.
+    const x: number = background_image.width * 0.5;
+    const y: number = background_image.height * 0.5;
+    
+    const share_button = this.scene.add.sprite(x, y, "ui_buttons", "yellow_button12.png");
+    const share_icon = this.scene.add.sprite(x, y, "ui_icons", "share2.png");
+
+    share_button.scale = share_icon.scale = UI_ICONS_SCALE_FACTOR;
+
+    // Use the hand cursor for play button.
+    share_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    share_button.on(
+      "pointerdown",
+      () => {
+        alert("share button clicked")
+      },
+      this // Context which is a reference to GameOver object in this case.
+    );
+    this.add(share_button);
+    this.add(share_icon);
+  }
+
+
 }

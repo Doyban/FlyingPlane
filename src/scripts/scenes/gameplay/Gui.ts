@@ -66,11 +66,11 @@ export class Gui extends Phaser.GameObjects.Group {
       "textGameOver.png"
     );
     this.add(this.gameOver);
-
     // Event listeners.
     this.scene.events.on("changedata", this.onDataChange, this);
     this.scene.events.on("getReady", this.onGetReady, this);
     this.scene.events.on("reset", this.onReset, this);
+
   }
 
   /**
@@ -285,7 +285,8 @@ export class Gui extends Phaser.GameObjects.Group {
     shop_button.on(
       "pointerdown",
       () => {
-        alert("shop clicked")
+        alert("shop clicked");
+        this.scene.scene.start("Shop");
       },
       this // Context which is a reference to GameOver object in this case.
     );
@@ -316,8 +317,8 @@ export class Gui extends Phaser.GameObjects.Group {
       },
       this // Context which is a reference to GameOver object in this case.
     );
-    this.menuGroup.add(login_icon);
     this.menuGroup.add(login_button);
+    this.menuGroup.add(login_icon);
   }
 
   /**
@@ -370,8 +371,8 @@ export class Gui extends Phaser.GameObjects.Group {
       },
       this // Context which is a reference to GameOver object in this case.
     );
-    this.menuGroup.add(friends_icon);
     this.menuGroup.add(friends_button);
+    this.menuGroup.add(friends_icon);
   }
   
   /**
