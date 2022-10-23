@@ -69,10 +69,10 @@ export class GameOver extends Phaser.GameObjects.Container {
     const badge_3 = this.createBadge(80, -40, "badge_3");
     this.add(badge_3);
 
-    // create home button
+    // Create home button.
     this.createHomeButton();
 
-    // create share button
+    // Create share button.
     this.createShareButton();
 
     this.scene.events.on("gameOver", this.onGameOver, this); // Event listener.
@@ -151,7 +151,7 @@ export class GameOver extends Phaser.GameObjects.Container {
       useHandCursor: true,
     });
 
-    retry_button.on("pointerdown", this.onRetry, this);
+    retry_button.on("pointerdown", this.onRetry, this); // Event listener.
 
     return retry_button;
   }
@@ -235,9 +235,9 @@ export class GameOver extends Phaser.GameObjects.Container {
       "retry"
     );
 
-    retry_text.setOrigin(0.5);
     retry_text.setFont("Calistoga");
     retry_text.setFontSize(40);
+    retry_text.setOrigin(0.5);
 
     return retry_text;
   }
@@ -396,35 +396,38 @@ export class GameOver extends Phaser.GameObjects.Container {
    * @access private
    * @description Create home button.
    * @function createHomeButton
+   * @returns {void}
    */
-   private createHomeButton(): void {
+  private createHomeButton(): void {
     const background_image: any = this.getByName("backgroundImage"); // Get the desired object by name.
     const x: number = background_image.width * -0.5;
     const y: number = background_image.height * 0.5;
 
-    const home_button = this.scene.add.sprite(x, y, "ui_buttons", "yellow_button12.png");
-    const home_icon = this.scene.add.sprite(x, y, "ui_icons", "home.png");
+    const home_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(x, y, "ui_buttons", "yellow_button12.png");
+    const home_icon: Phaser.GameObjects.Sprite = this.scene.add.sprite(x, y, "ui_icons", "home.png");
 
-    home_button.scale = home_icon.scale = UI_ICONS_SCALE_FACTOR;
+    home_button.scale = home_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
 
-    // Use the hand cursor for play button.
+    // Use the hand cursor for home button.
     home_button.setInteractive({
       useHandCursor: true,
     });
 
+    // Event listener.
     home_button.on(
       "pointerdown",
       () => {
-        // off the Event listeners.
-        this.scene.events.off("gameOver", this.onGameOver, this); // Event listener.
+        // Remove the listeners for these events.
+        this.scene.events.off("gameOver", this.onGameOver, this);
         this.scene.events.off("changedata");
         this.scene.events.off("getReady");
         this.scene.events.off("reset");
-        // alert("home button clicked")
-        this.scene.scene.restart();
+
+        this.scene.scene.restart(); // Restart the scene.
       },
       this // Context which is a reference to GameOver object in this case.
     );
+    // Add home button to the scene.
     this.add(home_button);
     this.add(home_icon);
   }
@@ -433,22 +436,24 @@ export class GameOver extends Phaser.GameObjects.Container {
    * @access private
    * @description Create share button.
    * @function createShareButton
+   * @returns {void}
    */
-   private createShareButton(): void {
+  private createShareButton(): void {
     const background_image: any = this.getByName("backgroundImage"); // Get the desired object by name.
     const x: number = background_image.width * 0.5;
     const y: number = background_image.height * 0.5;
-    
+
     const share_button = this.scene.add.sprite(x, y, "ui_buttons", "yellow_button12.png");
     const share_icon = this.scene.add.sprite(x, y, "ui_icons", "share2.png");
 
-    share_button.scale = share_icon.scale = UI_ICONS_SCALE_FACTOR;
+    share_button.scale = share_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
 
-    // Use the hand cursor for play button.
+    // Use the hand cursor for share button.
     share_button.setInteractive({
       useHandCursor: true,
     });
 
+    // Event listener.
     share_button.on(
       "pointerdown",
       () => {
@@ -456,9 +461,8 @@ export class GameOver extends Phaser.GameObjects.Container {
       },
       this // Context which is a reference to GameOver object in this case.
     );
+    // Add share button to the scene.
     this.add(share_button);
     this.add(share_icon);
   }
-
-
 }

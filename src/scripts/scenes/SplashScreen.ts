@@ -41,8 +41,8 @@ export default class SplashScreen extends Phaser.Scene {
    */
   public create(): void {
     // Set game dimensions as positive integers of game config's dimensions.
-    const game_width = Number(+this.game.config.width);
-    const game_height = Number(+this.game.config.height);
+    const game_width: number = Number(+this.game.config.width);
+    const game_height: number = Number(+this.game.config.height);
 
     this.createBackground(); // Create background image.
 
@@ -90,7 +90,7 @@ export default class SplashScreen extends Phaser.Scene {
     let _x: number = 0 - (game_name_length / 2) * 45;
 
     // Iterate through each letter and add it to the SplashScreen.
-    for (let i = 0; i < game_name_length; i++) {
+    for (let i: number = 0; i < game_name_length; i++) {
       const letter: string = game_name_array[i].toUpperCase(); // Set the letter to upper case.
       const letter_text: Phaser.GameObjects.Image = this.add.image(
         _x,

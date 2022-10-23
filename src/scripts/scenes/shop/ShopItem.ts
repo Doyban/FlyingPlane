@@ -6,53 +6,82 @@ import { UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
  * @extends Phaser.GameObjects.Container
  */
 export class ShopItem extends Phaser.GameObjects.Container {
+  private multiplier: number = 0;
 
-  private multiplier : number
+  /**
+    * @constructor
+    * @description Create a new instance of this class.
+    * @param {Phaser.Scene} scene Scene object.
+    * @param {number} multiplier Score multiplier.
+    * @param {number} x The x coordinate value.
+    * @param {number} y The y coordinate value.
+    */
+  constructor(scene: Phaser.Scene, multiplier: number, x: number, y: number) {
+    super(scene, x, y);
 
-  constructor(scene : Phaser.Scene, x : number, y : number, multiplier : number) {
-    super(scene, x , y);
-    this.scene.add.existing(this);
-    this.multiplier = multiplier;
+    this.scene.add.existing(this); // Add this game object to the scene.
+    this.multiplier = multiplier; // Set score multiplier.
 
-    // create shop item bg
-    const bg = this.createShopItemBg();
-    this.setSize(bg.width, bg.height);
+    // Create graphic elements for the ShopItem.
+    const background: Phaser.GameObjects.Image = this.createBackground();
+    const multiplier_text: Phaser.GameObjects.Text = this.createMultiplierText();
+    const score_text: Phaser.GameObjects.Text = this.createScoreText();
+    const x_text: Phaser.GameObjects.Text = this.createXText();
+
+    // Set size of ShopItem.
+    this.setSize(background.width, background.height);
+
+    // Use the hand cursor for ShopItem.
     this.setInteractive({
-        useHandCursor: true,
+      useHandCursor: true,
     });
-    this.add(bg);
 
-    // create score text
-    const score_text = this.createScoreText();
+    // Add the graphic elements to the scene.
+    this.add(background);
+    this.add(multiplier_text);
     this.add(score_text);
-
-    // create x text
-    const x_text = this.createXText();
     this.add(x_text);
 
-    // create multiplier text
-    const multiplier_text = this.createMultiplierText();
-    this.add(multiplier_text);
-    
-    this.on("pointerup", this.onMouseDown, this);
+    // Event listener.
+    this.on("pointerup", this.onItemClicked, this);
   }
 
   /**
   * @access private
-  * @description Create shop item bg.
-  * @function createShopItemBg
-  * @returns {Phaser.GameObjects.Text} score_text
+  * @description Create background of the ShopItem.
+  * @function createBackground
+  * @returns {Phaser.GameObjects.Image} background
   */
-  private createShopItemBg () : Phaser.GameObjects.Image {
-      const bg = this.scene.add.image(0, 0, "ui_buttons", "yellow_button12.png")
-      bg.setName("backgroundImage");
-      bg.scale = UI_ICONS_SCALE_FACTOR
-      return bg
+  private createBackground(): Phaser.GameObjects.Image {
+    const background: Phaser.GameObjects.Image = this.scene.add.image(0, 0, "ui_buttons", "yellow_button12.png");
+    background.scale = UI_ICONS_SCALE_FACTOR;
+    background.setName("backgroundImage");
+
+    return background;
   }
 
   /**
   * @access private
-  * @description Create score title text.
+  * @description Create "[VALUE_IN_THE_ARRAY]" text after "Score x".
+  * @function createMultiplierText
+  * @returns {Phaser.GameObjects.Text} multiplier_text
+  */
+  private createMultiplierText(): Phaser.GameObjects.Text {
+    const multiplier_text: Phaser.GameObjects.Text = this.scene.add.text(
+      10,
+      10,
+      `${this.multiplier}`
+    );
+    multiplier_text.setFont("Calistoga");
+    multiplier_text.setFontSize(25);
+    multiplier_text.setOrigin(0.5);
+
+    return multiplier_text;
+  }
+
+  /**
+  * @access private
+  * @description Create Score text of the ShopItem.
   * @function createScoreText
   * @returns {Phaser.GameObjects.Text} score_text
   */
@@ -65,14 +94,15 @@ export class ShopItem extends Phaser.GameObjects.Container {
     score_text.setOrigin(0.5);
     score_text.setFont("Calistoga");
     score_text.setFontSize(15);
+
     return score_text;
   }
 
   /**
   * @access private
-  * @description Create X text.
+  * @description Create "x" text between "Score" and "[VALUE_IN_THE_ARRAY]".
   * @function createScoreText
-  * @returns {Phaser.GameObjects.Text} score_text
+  * @returns {Phaser.GameObjects.Text} x_text
   */
   private createXText(): Phaser.GameObjects.Text {
     const x_text: Phaser.GameObjects.Text = this.scene.add.text(
@@ -80,36 +110,20 @@ export class ShopItem extends Phaser.GameObjects.Container {
       10,
       "X"
     );
-    x_text.setOrigin(0.5);
     x_text.setFont("Calistoga");
     x_text.setFontSize(20);
+    x_text.setOrigin(0.5);
+
     return x_text;
   }
 
   /**
-  * @access private
-  * @description Create multiplier text.
-  * @function createScoreText
-  * @returns {Phaser.GameObjects.Text} multiplier_text
-  */
-  private createMultiplierText(): Phaser.GameObjects.Text {
-    const multiplier_text: Phaser.GameObjects.Text = this.scene.add.text(
-      10,
-      10,
-      `${this.multiplier}`
-    );
-    multiplier_text.setOrigin(0.5);
-    multiplier_text.setFont("Calistoga");
-    multiplier_text.setFontSize(25);
-    return multiplier_text;
-  }
-
-  /**
    * @access private
-   * @callback onMouseDown
+   * @callback  onItemClicked
+   * @description Listen on input down of ShopItem and perform necessary actions if it occurs.
+   * @returns {void}
    */
-  private onMouseDown () : void {
-      alert(`clicked x  ${this.multiplier}`);
+  private onItemClicked(): void {
+    alert(`clicked x  ${this.multiplier}`);
   }
-
 }

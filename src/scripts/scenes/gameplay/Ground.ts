@@ -79,7 +79,7 @@ export class Ground extends Phaser.Physics.Matter.Image {
         to: this.x - this.width,
       },
       onComplete: this.onTweenComplete, // Callback method.
-      onCompleteScope: this, // Context which is a reference to GameOver object in this case.
+      onCompleteScope: this, // Context which is a reference to Ground object in this case.
     });
   }
 

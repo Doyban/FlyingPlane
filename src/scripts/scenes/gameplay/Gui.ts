@@ -15,13 +15,13 @@ export class Gui extends Phaser.GameObjects.Group {
   private menuGroup: Phaser.GameObjects.Group;
   private musicOn: Phaser.GameObjects.Sprite;
   private musicOff: Phaser.GameObjects.Sprite;
-  private musicBtnBg!: Phaser.GameObjects.Sprite;
+  private musicButtonBackground!: Phaser.GameObjects.Sprite;
 
 
   /**
    * @constructor
    * @description Create a new instance of this class.
-   * @param {Phaser.Scene} scene - scene object.
+   * @param {Phaser.Scene} scene Scene object.
    */
   constructor(scene: Phaser.Scene) {
     super(scene);
@@ -38,17 +38,20 @@ export class Gui extends Phaser.GameObjects.Group {
     this.play.add(this.playButton);
     this.play.add(this.playButtonText);
     this.add(this.play);
-    
+
+    // Add and create necessary assets.
     this.menuGroup = this.scene.add.group();
     this.addMultiple(this.menuGroup.children.entries)
-    this.createShop();
+    this.createCloseButton();
+    this.createFriendsButton();
     this.createLoginButton();
     this.createShareButton();
-    this.createFriendsButton();
-    this.createCloseButton();
-    // create soud controll assets
+    this.createShopButton();
+
+    // Create sound control assets.
     this.musicOn = this.createMusicOn();
     this.musicOff = this.createMusicOff();
+
     // Create get ready sprite.
     this.getReady = this.scene.add.sprite(
       420,
@@ -66,11 +69,11 @@ export class Gui extends Phaser.GameObjects.Group {
       "textGameOver.png"
     );
     this.add(this.gameOver);
+
     // Event listeners.
     this.scene.events.on("changedata", this.onDataChange, this);
     this.scene.events.on("getReady", this.onGetReady, this);
     this.scene.events.on("reset", this.onReset, this);
-
   }
 
   /**
@@ -87,6 +90,7 @@ export class Gui extends Phaser.GameObjects.Group {
       useHandCursor: true,
     });
 
+    // Event listener.
     play_button.on(
       "pointerdown",
       () => {
@@ -95,10 +99,10 @@ export class Gui extends Phaser.GameObjects.Group {
           child.setVisible(false); // Set each child to be invisible.
         });
         this.musicOn.setVisible(true)
-        this.musicBtnBg.setVisible(true)
+        this.musicButtonBackground.setVisible(true)
         this.scene.events.emit("getReady"); // Emit "getReady" event on this scene.
       },
-      this // Context which is a reference to GameOver object in this case.
+      this // Context which is a reference to Gui object in this case.
     );
 
     return play_button;
@@ -117,9 +121,9 @@ export class Gui extends Phaser.GameObjects.Group {
       "play"
     );
 
-    play_button_text.setOrigin(0.5);
     play_button_text.setFont("Calistoga");
     play_button_text.setFontSize(50);
+    play_button_text.setOrigin(0.5);
     play_button_text.setShadow(2, 2, "#000000", 0.5, true, false);
 
     return play_button_text;
@@ -168,7 +172,7 @@ export class Gui extends Phaser.GameObjects.Group {
     const score_length: number = score.length;
 
     // Show the digits depending on score length.
-    for (let i = 1; i <= score_length; i++) {
+    for (let i: number = 1; i <= score_length; i++) {
       const score_group_child: any = this.scoreGroup.children.entries[i - 1];
       if (score_group_child) {
         score_group_child.setFrame(`number${score_digits[i - 1]}.png`);
@@ -194,7 +198,7 @@ export class Gui extends Phaser.GameObjects.Group {
       duration: 2000,
       hold: 500,
       onComplete: this.onGetReadyComplete, // Callback method.
-      onCompleteScope: this, // Context which is a reference to GameOver object in this case.
+      onCompleteScope: this, // Context which is a reference to Gui object in this case.
     });
   }
 
@@ -218,8 +222,8 @@ export class Gui extends Phaser.GameObjects.Group {
     // Reset the score group children.
     this.scoreGroup.children.entries.forEach((child: any) => {
       child.setVisible(false); // Set each child to be invisible.
-      if (child.name == "musicbg" ) child.setVisible(true);
-      if (child.name == "" && child.data && child.data.get("clicked")){
+      if (child.name == "musicbg") child.setVisible(true);
+      if (child.name == "" && child.data && child.data.get("clicked")) {
         console.log('child :>> ', child);
         child.setVisible(true)
       };
@@ -241,7 +245,7 @@ export class Gui extends Phaser.GameObjects.Group {
     let x: number = 30;
 
     // Create the max digits possible for score, add them to the scene and make it invisible (will make it visible if score length matches it).
-    for (let i = 0; i < 6; i++) {
+    for (let i: number = 0; i < 6; i++) {
       const score_text: Phaser.GameObjects.Image = this.scene.add.image(
         x,
         40,
@@ -269,54 +273,90 @@ export class Gui extends Phaser.GameObjects.Group {
 
   /**
    * @access private
-   * @description Create shop button.
-   * @function createMenu
+   * @description Create game close button.
+   * @function createCloseButton
+   * @returns {void}
    */
-  private createShop(): void {
-    const shop_button = this.scene.add.sprite(+this.scene.game.config.width * 0.25, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
-    const shop_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.25, +this.scene.game.config.height * 0.76, "ui_icons", "cart.png");
+  private createCloseButton(): void {
+    const close_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_buttons", "yellow_button12.png");
+    const close_icon: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_icons", "cross.png");
 
-    shop_button.scale = shop_icon.scale = UI_ICONS_SCALE_FACTOR;
-    // Use the hand cursor for shop button.
-    shop_button.setInteractive({
+    close_button.scale = close_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
+
+    // Use the hand cursor for close button.
+    close_button.setInteractive({
       useHandCursor: true,
     });
 
-    shop_button.on(
+    // Event listener.
+    close_button.on(
       "pointerdown",
       () => {
-        alert("shop clicked");
-        this.scene.scene.start("Shop");
+        alert("close button clicked")
       },
-      this // Context which is a reference to GameOver object in this case.
+      this // Context which is a reference to Gui object in this case.
     );
-    this.menuGroup.add(shop_icon);
-    this.menuGroup.add(shop_button);
+    // Add close button to the scene.
+    this.menuGroup.add(close_icon);
+    this.menuGroup.add(close_button);
+  }
+
+  /**
+   * @access private
+   * @description Create friends button.
+   * @function createFriendsButton
+   * @returns {void}
+   */
+  private createFriendsButton(): void {
+    const friends_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.79, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const friends_icon: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.79, +this.scene.game.config.height * 0.76, "ui_icons", "multiplayer.png");
+
+    friends_button.scale = friends_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
+
+    // Use the hand cursor for friends button.
+    friends_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    // Event listener.
+    friends_button.on(
+      "pointerdown",
+      () => {
+        alert("friends button clicked")
+      },
+      this // Context which is a reference to Gui object in this case.
+    );
+    // Add friends button to the scene.
+    this.menuGroup.add(friends_button);
+    this.menuGroup.add(friends_icon);
   }
 
   /**
    * @access private
    * @description Create login button.
-   * @function createMenu
+   * @function createLoginButton
+   * @returns {void}
    */
   private createLoginButton(): void {
-    const login_button = this.scene.add.sprite(+this.scene.game.config.width * 0.42, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
-    const login_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.42, +this.scene.game.config.height * 0.76, "ui_icons", "singleplayer.png");
+    const login_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.42, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const login_icon: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.42, +this.scene.game.config.height * 0.76, "ui_icons", "singleplayer.png");
 
-    login_button.scale = login_icon.scale = UI_ICONS_SCALE_FACTOR;
+    login_button.scale = login_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
 
-    // Use the hand cursor for play button.
+    // Use the hand cursor for login button.
     login_button.setInteractive({
       useHandCursor: true,
     });
 
+    // Event listener.
     login_button.on(
       "pointerdown",
       () => {
         alert("login button clicked")
       },
-      this // Context which is a reference to GameOver object in this case.
+      this // Context which is a reference to Gui object in this case.
     );
+    // Add login button to the scene.
     this.menuGroup.add(login_button);
     this.menuGroup.add(login_icon);
   }
@@ -324,154 +364,141 @@ export class Gui extends Phaser.GameObjects.Group {
   /**
    * @access private
    * @description Create share button.
-   * @function createMenu
+   * @function createShareButton
+   * @returns {void}
    */
   private createShareButton(): void {
-    const share_button = this.scene.add.sprite(+this.scene.game.config.width * 0.62, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
-    const share_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.62, +this.scene.game.config.height * 0.76, "ui_icons", "share2.png");
+    const share_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.62, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const share_icon: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.62, +this.scene.game.config.height * 0.76, "ui_icons", "share2.png");
 
-    share_button.scale = share_icon.scale = UI_ICONS_SCALE_FACTOR;
+    share_button.scale = share_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
 
-    // Use the hand cursor for play button.
+    // Use the hand cursor for share button.
     share_button.setInteractive({
       useHandCursor: true,
     });
 
+    // Event listener.
     share_button.on(
       "pointerdown",
       () => {
         alert("share button clicked")
       },
-      this // Context which is a reference to GameOver object in this case.
+      this // Context which is a reference to Gui object in this case.
     );
+    // Add share button to the scene.
     this.menuGroup.add(share_button);
     this.menuGroup.add(share_icon);
   }
 
   /**
    * @access private
-   * @description Create friends button.
-   * @function createMenu
+   * @description Create shop button.
+   * @function createShopButton
+   * @returns {void}
    */
-  private createFriendsButton(): void {
-    const friends_button = this.scene.add.sprite(+this.scene.game.config.width * 0.79, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
-    const friends_icon = this.scene.add.sprite(+this.scene.game.config.width * 0.79, +this.scene.game.config.height * 0.76, "ui_icons", "multiplayer.png");
+  private createShopButton(): void {
+    const shop_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.25, +this.scene.game.config.height * 0.76, "ui_buttons", "yellow_button12.png");
+    const shop_icon: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width * 0.25, +this.scene.game.config.height * 0.76, "ui_icons", "cart.png");
 
-    friends_button.scale = friends_icon.scale = UI_ICONS_SCALE_FACTOR;
-
-    // Use the hand cursor for play button.
-    friends_button.setInteractive({
-      useHandCursor: true,
-    });
-
-    friends_button.on(
-      "pointerdown",
-      () => {
-        alert("friends button clicked")
-      },
-      this // Context which is a reference to GameOver object in this case.
-    );
-    this.menuGroup.add(friends_button);
-    this.menuGroup.add(friends_icon);
-  }
-  
-  /**
-   * @access private
-   * @description Create musicon button.
-   * @function createMenu
-   */
-   private createMusicOn(): Phaser.GameObjects.Sprite {
-    this.musicBtnBg = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_buttons", "yellow_button12.png");
-    const music_on = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "musicOn");
-    music_on.setVisible(false);
-    music_on.setDepth(5);
-    music_on.setDataEnabled();
-    music_on.data.set("clicked", false)
-    this.musicBtnBg.setName("musicbg")
-    this.musicBtnBg.setVisible(false);
-    this.musicBtnBg.setDepth(5);
-
-    this.musicBtnBg.scale = music_on.scale = UI_ICONS_SCALE_FACTOR;
+    shop_button.scale = shop_icon.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
 
     // Use the hand cursor for shop button.
-    music_on.setInteractive({
+    shop_button.setInteractive({
       useHandCursor: true,
     });
 
-    music_on.on(
+    // Event listener.
+    shop_button.on(
       "pointerdown",
       () => {
-        music_on.data.set("clicked", false)
+        alert("shop clicked");
+        this.scene.scene.start("Shop");
+      },
+      this // Context which is a reference to Gui object in this case.
+    );
+    // Add shop button to the scene.
+    this.menuGroup.add(shop_icon);
+    this.menuGroup.add(shop_button);
+  }
+
+  /**
+   * @access private
+   * @description Create music on button.
+   * @function createMusicOn
+   * @returns {void}
+   */
+  private createMusicOn(): Phaser.GameObjects.Sprite {
+    this.musicButtonBackground = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_buttons", "yellow_button12.png");
+    const music_on_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "musicOn");
+    music_on_button.setVisible(false);
+    music_on_button.setDepth(5);
+    music_on_button.setDataEnabled();
+    music_on_button.data.set("clicked", false);
+    this.musicButtonBackground.setName("musicbg");
+    this.musicButtonBackground.setVisible(false);
+    this.musicButtonBackground.setDepth(5);
+
+    this.musicButtonBackground.scale = music_on_button.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
+
+    // Use the hand cursor for music on button.
+    music_on_button.setInteractive({
+      useHandCursor: true,
+    });
+
+    // Event listener.
+    music_on_button.on(
+      "pointerdown",
+      () => {
+        music_on_button.data.set("clicked", false);
         this.scene.sound.mute = true;
         this.musicOff.setVisible(true);
         this.musicOff.data.set("clicked", true);
-        music_on.setVisible(false);
+        music_on_button.setVisible(false);
       },
-      this // Context which is a reference to GameOver object in this case.
+      this // Context which is a reference to Gui object in this case.
     );
-    this.scoreGroup.add(this.musicBtnBg)
-    this.scoreGroup.add(music_on)
-    return music_on
+    // Add music on button to the scene.
+    // this.scoreGroup.add(this.musicButtonBackground);
+    this.scoreGroup.add(music_on_button);
+
+    return music_on_button;
   }
-  
+
   /**
    * @access private
-   * @description Create musicoff button.
-   * @function createMenu
+   * @description Create music off button.
+   * @function createMusicOff
+   * @returns {void}
    */
-   private createMusicOff(): Phaser.GameObjects.Sprite {
-    const music_off = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "musicOff");
-    music_off.setVisible(false)
-    music_off.setDepth(5)
-    music_off.setDataEnabled();
+  private createMusicOff(): Phaser.GameObjects.Sprite {
+    const music_off_button: Phaser.GameObjects.Sprite = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "musicOff");
+    music_off_button.setVisible(false);
+    music_off_button.setDepth(5);
+    music_off_button.setDataEnabled();
 
-    music_off.scale = UI_ICONS_SCALE_FACTOR;
+    music_off_button.scale = UI_ICONS_SCALE_FACTOR; // Scale back button and icons based on scaling factor.
 
-    // Use the hand cursor for shop button.
-    music_off.setInteractive({
+    // Use the hand cursor for music off button.
+    music_off_button.setInteractive({
       useHandCursor: true,
     });
 
-    music_off.on(
+    // Event listener.
+    music_off_button.on(
       "pointerdown",
       () => {
-        music_off.data.set("clicked", false)
+        music_off_button.data.set("clicked", false)
         this.scene.sound.mute = false;
         this.musicOn.setVisible(true);
         this.musicOn.data.set("clicked", true);
-        music_off.setVisible(false);      
+        music_off_button.setVisible(false);
       },
-      this // Context which is a reference to GameOver object in this case.
+      this // Context which is a reference to Gui object in this case.
     );
-    this.scoreGroup.add(music_off)
-    return music_off
-  }
+    // Add music off button to the scene.
+    this.scoreGroup.add(music_off_button);
 
-  
-  /**
-   * @access private
-   * @description Create game close button.
-   * @function createCloseButton
-   */
-   private createCloseButton(): void {
-    const close_button = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_buttons", "yellow_button12.png");
-    const close_icon = this.scene.add.sprite(+this.scene.game.config.width - 50, 50, "ui_icons", "cross.png");
-
-    close_button.scale = close_icon.scale = UI_ICONS_SCALE_FACTOR;
-
-    // Use the hand cursor for play button.
-    close_button.setInteractive({
-      useHandCursor: true,
-    });
-
-    close_button.on(
-      "pointerdown",
-      () => {
-        alert("close button clicked")
-      },
-      this // Context which is a reference to GameOver object in this case.
-    );
-    this.menuGroup.add(close_icon);
-    this.menuGroup.add(close_button);
+    return music_off_button;
   }
 }

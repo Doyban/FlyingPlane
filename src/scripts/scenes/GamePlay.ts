@@ -190,7 +190,6 @@ export class GamePlay extends Phaser.Scene {
     this.events.on("onStart", this.onStart, this);
     this.events.on("reset", this.onReset, this);
     this.events.on("shutdown", this.onShutdown, this);
-
   }
 
   /**
@@ -517,16 +516,16 @@ export class GamePlay extends Phaser.Scene {
   }
 
   /**
-   * @access public
-   * @description Method invoked every time that scene core systems calls shutdown event.
+   * @access private
+   * @description Listens to on shutdown event.
    * @function onShutdown
    * @returns {void}
    */
-  onShutdown(){
+  private onShutdown(): void {
     // Event listeners.
     this.events.off("changedata");
+    this.events.off("gameOver")
     this.events.off("getReady");
     this.events.off("reset");
-    this.events.off("gameOver")
   }
 }

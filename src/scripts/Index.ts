@@ -8,13 +8,17 @@ import SplashScreen from "./scenes/SplashScreen";
  * @description Create the game canvas with respective options that are given
  */
 class Game extends Phaser.Game {
+  /**
+   * @constructor
+   * @description Create a new instance of this class.
+   */
   constructor() {
     const game_config: Phaser.Types.Core.GameConfig = {
       type: Phaser.WEBGL, // Use Renderer WebGL.
       width: 800,
       height: 480,
       parent: "content", // Use custom div element as parent.
-      scene: [SplashScreen, GamePlay, Shop], // the scenes.
+      scene: [SplashScreen, GamePlay, Shop], // Scenes.
       // Add ScaleManager for responsiveness.
       scale: {
         mode: Phaser.Scale.ScaleModes.FIT,
