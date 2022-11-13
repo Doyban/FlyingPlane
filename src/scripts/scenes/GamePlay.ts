@@ -16,6 +16,7 @@ import { Rock } from "./gameplay/Rock";
 import { Gui } from "./gameplay/Gui";
 import { GameOver } from "./gameplay/GameOver";
 import { Star } from "./gameplay/Star";
+import { SoundHandler } from "../utils/SoundHandler";
 
 /**
  * @class GamePlay
@@ -114,6 +115,12 @@ export class GamePlay extends Phaser.Scene {
     this.load.image("musicOff", "assets/images/musicOff.png");
     this.load.atlasXML("ui_icons", "assets/images/sheet_black1x.png", "assets/xml/sheet_black1x.xml");
     this.load.atlasXML("ui_buttons", "assets/images/yellowSheet.png", "assets/xml/yellowSheet.xml");
+    this.load.audio("plane", "assets/audio/heli.wav");
+    this.load.audio("crash", "assets/audio/crash.wav");
+    this.load.audio("wind", "assets/audio/wind.wav");
+    this.load.audio("explosion", "assets/audio/explosion.wav");
+    this.load.audio("gameover", "assets/audio/gameover.wav");
+    this.load.audio("click", "assets/audio/click.wav");
   }
 
   /**
@@ -124,6 +131,11 @@ export class GamePlay extends Phaser.Scene {
    * @returns {void}
    */
   public create(): void {
+    // add sound handler
+    const soundHandler : SoundHandler = new SoundHandler(this);
+    this.events.emit("play_sound", "wind", {
+      loop : true,
+    });
     this.shapes = this.cache.json.get("shapes"); // Set matter physics shapes.
 
     // Set game dimensions as positive integers of game config's dimensions.

@@ -124,6 +124,9 @@ export class ShopItem extends Phaser.GameObjects.Container {
    * @returns {void}
    */
   private onItemClicked(): void {
+    this.scene.events.emit("play_sound", "click", {
+      volume : 1
+    });
     alert(`clicked x  ${this.multiplier}`);
   }
 }
