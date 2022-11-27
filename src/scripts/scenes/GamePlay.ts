@@ -62,6 +62,8 @@ export class GamePlay extends Phaser.Scene {
   private starLevel: number = 0;
   public plane: Phaser.Physics.Matter.Sprite | null = null;
 
+  public soundHandler : SoundHandler | null = null  ;
+
   /**
    * @constructor
    * @description Create a new instance of this class.
@@ -132,7 +134,7 @@ export class GamePlay extends Phaser.Scene {
    */
   public create(): void {
     // add sound handler
-    const soundHandler : SoundHandler = new SoundHandler(this);
+    this.soundHandler = new SoundHandler(this);
     this.events.emit("play_sound", "wind", {
       loop : true,
     });
@@ -534,10 +536,14 @@ export class GamePlay extends Phaser.Scene {
    * @returns {void}
    */
   private onShutdown(): void {
+    this.soundHandler = null;
     // Event listeners.
     this.events.off("changedata");
     this.events.off("gameOver")
     this.events.off("getReady");
     this.events.off("reset");
+    this.events.off("onStart");
+    this.events.off("play_sound");
+    this.events.off("stop_sound");
   }
 }
