@@ -15,8 +15,8 @@ import {
 import { Rock } from "./gameplay/Rock";
 import { Gui } from "./gameplay/Gui";
 import { GameOver } from "./gameplay/GameOver";
-import { Star } from "./gameplay/Star";
 import { SoundHandler } from "../utils/SoundHandler";
+import { Star } from "./gameplay/Star";
 
 /**
  * @class GamePlay
@@ -61,8 +61,7 @@ export class GamePlay extends Phaser.Scene {
   private starFrame: string = "starBronze.png";
   private starLevel: number = 0;
   public plane: Phaser.Physics.Matter.Sprite | null = null;
-
-  public soundHandler : SoundHandler | null = null  ;
+  public soundHandler: SoundHandler | null = null;
 
   /**
    * @constructor
@@ -111,18 +110,18 @@ export class GamePlay extends Phaser.Scene {
       "planes",
       "assets/spritesheets/planes.png",
       "assets/json/planes.json"
-    );
-    this.load.json("shapes", "assets/json/shapes.json");
-    this.load.image("musicOn", "assets/images/musicOn.png");
-    this.load.image("musicOff", "assets/images/musicOff.png");
-    this.load.atlasXML("ui_icons", "assets/images/sheet_black1x.png", "assets/xml/sheet_black1x.xml");
+      );
     this.load.atlasXML("ui_buttons", "assets/images/yellowSheet.png", "assets/xml/yellowSheet.xml");
-    this.load.audio("plane", "assets/audio/heli.wav");
+    this.load.atlasXML("ui_icons", "assets/images/sheet_black1x.png", "assets/xml/sheet_black1x.xml");
     this.load.audio("crash", "assets/audio/crash.wav");
-    this.load.audio("wind", "assets/audio/wind.wav");
+    this.load.audio("click", "assets/audio/click.wav");
     this.load.audio("explosion", "assets/audio/explosion.wav");
     this.load.audio("gameover", "assets/audio/gameover.wav");
-    this.load.audio("click", "assets/audio/click.wav");
+    this.load.audio("plane", "assets/audio/plane.wav");
+    this.load.audio("wind", "assets/audio/wind.wav");
+    this.load.image("musicOff", "assets/images/musicOff.png");
+    this.load.image("musicOn", "assets/images/musicOn.png");
+    this.load.json("shapes", "assets/json/shapes.json");
   }
 
   /**
@@ -133,11 +132,13 @@ export class GamePlay extends Phaser.Scene {
    * @returns {void}
    */
   public create(): void {
-    // add sound handler
-    this.soundHandler = new SoundHandler(this);
+    this.soundHandler = new SoundHandler(this); // Add sound handler.
+
+    // Emit "play_sound" and "wind" events on this scene.
     this.events.emit("play_sound", "wind", {
-      loop : true,
+      loop: true,
     });
+
     this.shapes = this.cache.json.get("shapes"); // Set matter physics shapes.
 
     // Set game dimensions as positive integers of game config's dimensions.
@@ -536,8 +537,9 @@ export class GamePlay extends Phaser.Scene {
    * @returns {void}
    */
   private onShutdown(): void {
-    this.soundHandler = null;
-    // Event listeners.
+    this.soundHandler = null; // Null sound handler.
+
+    // Remove the listeners for these events.
     this.events.off("changedata");
     this.events.off("gameOver")
     this.events.off("getReady");

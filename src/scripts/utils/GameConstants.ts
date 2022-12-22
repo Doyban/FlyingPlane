@@ -23,4 +23,4 @@ export const GAME_OVER: string = "gameOver";
 export const PLANE_ANIMATION: string = "planeAnimation";
 
 // UI icons scale factor
-export const UI_ICONS_SCALE_FACTOR : number = 1.25;
+export const UI_ICONS_SCALE_FACTOR: number = 1.25;

@@ -291,9 +291,11 @@ export class Plane extends Phaser.Physics.Matter.Sprite {
     if (this.state !== states.fly) {
       if (this.initTween) this.initTween.stop(); // Play the initial flying tween.
       this.scene.events.emit("onStart"); // Emit "onStart" event on this scene.
+
+      // Emit "play_sound" and "plane" events on this scene.
       this.scene.events.emit("play_sound", "plane", {
-        loop : true,
-        volume : 0.5
+        loop: true,
+        volume: 0.5
       });
     }
 
@@ -351,7 +353,7 @@ export class Plane extends Phaser.Physics.Matter.Sprite {
     if (this.state === states.crashed) {
       this.setActive(false); // Make the puff inactive.
       if (!this.gameOverFlag) {
-        this.scene.events.emit("play_sound", "explosion"); // Emit "stop_sound" event on this scene.
+        this.scene.events.emit("play_sound", "explosion"); // Emit "play_sound" and "explosion" events on this scene.
         this.scene.events.emit("gameOver"); // Emit "gameOver" event on this scene.
         this.gameOverFlag = true; // Game is over, setting the flag accordingly.
       }

@@ -163,9 +163,11 @@ export class GameOver extends Phaser.GameObjects.Container {
    * @returns {void}
    */
   private onRetry(): void {
+    // Emit "play_sound" and "click" events on this scene.
     this.scene.events.emit("play_sound", "click", {
-      volume : 1
+      volume: 1
     });
+
     // Set up retry button.
     const retry_button: Phaser.GameObjects.GameObject = this.getByName(
       "retryButton"
@@ -300,12 +302,12 @@ export class GameOver extends Phaser.GameObjects.Container {
    * @returns {void}
    */
   private onGameOverStart(): void {
-    
     this.scene.events.emit("stop_sound"); // Emit "stop_sound" event on this scene.
 
+    // Emit "play_sound" and "gameover" events on this scene.
     this.scene.events.emit("play_sound", "gameover", {
-      volume : 1,
-      delay : 1
+      delay: 1,
+      volume: 1
     });
 
     const star_type: any = this.scene.data.get("medal"); // Get the star type.
@@ -428,9 +430,11 @@ export class GameOver extends Phaser.GameObjects.Container {
     home_button.on(
       "pointerdown",
       () => {
+        // Emit "play_sound" and "click" events on this scene.
         this.scene.events.emit("play_sound", "click", {
-          volume : 1
+          volume: 1
         });
+
         // Remove the listeners for these events.
         this.scene.events.off("gameOver", this.onGameOver, this);
         this.scene.events.off("changedata");
@@ -471,8 +475,9 @@ export class GameOver extends Phaser.GameObjects.Container {
     share_button.on(
       "pointerdown",
       () => {
+        // Emit "play_sound" and "click" events on this scene.
         this.scene.events.emit("play_sound", "click", {
-          volume : 1
+          volume: 1
         });
         alert("share button clicked")
       },

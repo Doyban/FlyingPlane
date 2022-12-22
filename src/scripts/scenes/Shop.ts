@@ -63,10 +63,12 @@ export class Shop extends Phaser.Scene {
     back_button.on(
       "pointerdown",
       () => {
+        // Emit "play_sound" and "click" events on this scene.
         this.events.emit("play_sound", "click", {
-          volume : 1
+          volume: 1
         });
-        this.scene.switch("game_play");
+
+        this.scene.switch("game_play"); // Switch to "game_play" scene.
       },
       this // Context which is a reference to Shop object in this case.
     );

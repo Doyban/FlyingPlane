@@ -119,13 +119,14 @@ export class ShopItem extends Phaser.GameObjects.Container {
 
   /**
    * @access private
-   * @callback  onItemClicked
-   * @description Listen on input down of ShopItem and perform necessary actions if it occurs.
+   * @callback onItemClicked
+   * @description Listens to input down of ShopItem.
    * @returns {void}
    */
   private onItemClicked(): void {
+    // Emit "play_sound" and "click" events on this scene.
     this.scene.events.emit("play_sound", "click", {
-      volume : 1
+      volume: 1
     });
     alert(`clicked x  ${this.multiplier}`);
   }

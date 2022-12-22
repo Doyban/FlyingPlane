@@ -94,7 +94,8 @@ export class Gui extends Phaser.GameObjects.Group {
     play_button.on(
       "pointerdown",
       () => {
-        this.playClickSound();
+        this.playClickSound(); // Play click sound.
+
         if (this.play) this.play.setVisible(false); // Set the play button to be invisible once game has started.
         this.menuGroup.children.entries.forEach((child: any) => {
           child.setVisible(false); // Set each child to be invisible.
@@ -223,8 +224,8 @@ export class Gui extends Phaser.GameObjects.Group {
     // Reset the score group children.
     this.scoreGroup.children.entries.forEach((child: any) => {
       child.setVisible(false); // Set each child to be invisible.
+
       if (child.name == "musicbg") child.setVisible(true);
-      console.log(child)
       if (child.name == "" && child.data && child.data.get("clicked")) {
         console.log('child :>> ', child);
         child.setVisible(true)
@@ -294,9 +295,8 @@ export class Gui extends Phaser.GameObjects.Group {
     close_button.on(
       "pointerdown",
       () => {
-        
         alert("close button clicked")
-        this.playClickSound();
+        this.playClickSound(); // Play click sound.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -327,7 +327,7 @@ export class Gui extends Phaser.GameObjects.Group {
       "pointerdown",
       () => {
         alert("friends button clicked");
-        this.playClickSound();
+        this.playClickSound(); // Play click sound.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -358,7 +358,7 @@ export class Gui extends Phaser.GameObjects.Group {
       "pointerdown",
       () => {
         alert("login button clicked");
-        this.playClickSound();
+        this.playClickSound(); // Play click sound.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -389,7 +389,7 @@ export class Gui extends Phaser.GameObjects.Group {
       "pointerdown",
       () => {
         alert("share button clicked")
-        this.playClickSound();
+        this.playClickSound(); // Play click sound.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -420,8 +420,8 @@ export class Gui extends Phaser.GameObjects.Group {
       "pointerdown",
       () => {
         alert("shop clicked");
-        this.playClickSound();
-        this.scene.scene.start("Shop");
+        this.playClickSound(); // Play click sound.
+        this.scene.scene.start("Shop"); // Start Shop scene.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -497,9 +497,11 @@ export class Gui extends Phaser.GameObjects.Group {
     music_off_button.on(
       "pointerdown",
       () => {
+        // Emit "play_sound" and "click" events on this scene.
         this.scene.events.emit("play_sound", "click", {
-          volume : 1
+          volume: 1
         });
+
         music_off_button.data.set("clicked", false)
         this.scene.sound.mute = false;
         this.musicOn.setVisible(true);
@@ -514,9 +516,16 @@ export class Gui extends Phaser.GameObjects.Group {
     return music_off_button;
   }
 
-  private playClickSound () : void {
+  /**
+   * @access private
+   * @description Play click sound.
+   * @function playClickSound
+   * @returns {void}
+   */
+  private playClickSound(): void {
+    // Emit "play_sound" and "click" events on this scene.
     this.scene.events.emit("play_sound", "click", {
-      volume : 1
+      volume: 1
     });
   }
 }

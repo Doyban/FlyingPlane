@@ -7,13 +7,13 @@ import { ShopItem } from "./ShopItem";
 export class ShopItemGroup {
   private colCount: number = 0;
   private itemsArray: Array<ShopItem> = [];
+  private multiplierArray: Array<number> = [];
   private offsetX: number = 0;
   private offsetY: number = 0;
   private rowCount: number = 0;
   private scene: Phaser.Scene = new Phaser.Scene('');
   private startXpos: number = 0;
   private startYpos: number = 0;
-  private multiplierArr: Array<number> = [];
 
   /**
    * @constructor
@@ -35,8 +35,8 @@ export class ShopItemGroup {
     this.rowCount = rowCount;
     this.startXpos = startX - (offsetX * (colCount - 1) * 0.5); // Set center position using the total columns and offset.
     this.startYpos = startY - (offsetY * (rowCount - 1) * 0.5); // Set center position using the total rows and offset.
-    this.multiplierArr = [2, 4, 6, 8]; // change this array to change your multiplier count for shop items
-    
+    this.multiplierArray = [2, 4, 6, 8]; // Array to change multiplier count for shop items.
+
     this.createLayout();
   }
 
@@ -54,7 +54,7 @@ export class ShopItemGroup {
 
       for (let j: number = 0; j < this.rowCount; j++) {
         let x: number = this.startXpos + (this.offsetX * j); // Change the x offset fot every new button.
-        this.itemsArray.push(new ShopItem(this.scene, this.multiplierArr[counter], x, y)); // Add ShopItems to the itemsArray array.
+        this.itemsArray.push(new ShopItem(this.scene, this.multiplierArray[counter], x, y)); // Add ShopItems to the itemsArray array.
         counter++;
       }
     }
