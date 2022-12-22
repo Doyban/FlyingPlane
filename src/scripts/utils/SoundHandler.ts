@@ -10,7 +10,7 @@ export class SoundHandler {
    * @description Create a new instance of this class.
    * @param {Phaser.Scene} scene Scene object.
    */
-    constructor (scene: Phaser.Scene) {
+    constructor(scene: Phaser.Scene) {
         this.scene = scene;
 
         // Event listeners.

@@ -110,7 +110,7 @@ export class GamePlay extends Phaser.Scene {
       "planes",
       "assets/spritesheets/planes.png",
       "assets/json/planes.json"
-      );
+    );
     this.load.atlasXML("ui_buttons", "assets/images/yellowSheet.png", "assets/xml/yellowSheet.xml");
     this.load.atlasXML("ui_icons", "assets/images/sheet_black1x.png", "assets/xml/sheet_black1x.xml");
     this.load.audio("crash", "assets/audio/crash.wav");
