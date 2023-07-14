@@ -128,6 +128,26 @@ export class ShopItem extends Phaser.GameObjects.Container {
     this.scene.events.emit("play_sound", "click", {
       volume: 1
     });
-    alert(`clicked x  ${this.multiplier}`);
+
+    const that = this;
+    store.refresh();
+
+    // Prepare product.
+    store.register({
+      id: `com.doyban.tappyplane.scorex${this.multiplier}`,
+      alias: `Score x${this.multiplier}`,
+      type: store.CONSUMABLE
+    });
+
+    // Purchase product.
+    store.order(`com.doyban.tappyplane.scorex${this.multiplier}`);
+    store.when(`com.doyban.tappyplane.scorex${this.multiplier}`).approved(function (order: any) {
+      order.finish();
+      store.refresh();
+
+      // Add extra score and begin the game.
+      localStorage.scoreRate = parseInt(that.multiplier);
+      that.scene.scene.start("Shop"); // Start Shop scene.
+    });
   }
 }

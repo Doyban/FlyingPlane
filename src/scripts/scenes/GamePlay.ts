@@ -475,7 +475,7 @@ export class GamePlay extends Phaser.Scene {
       this.levelDuration = this.getLevelDuration; // Get level duration.
       // There are only 3 frames for Stars, therefore don't increase its level to more than to third item in an array.
       if (this.starLevel < 2) {
-        this.starLevel += 1; // Set next level by increasing Star level and therefore changing Star type.
+        this.starLevel += parseInt(localStorage.scoreRate); // Set next level by increasing Star level and therefore changing Star type.
         this.starFrame = this.getStarFrame; // Get Star frame to next level.
       }
     }
@@ -547,5 +547,8 @@ export class GamePlay extends Phaser.Scene {
     this.events.off("onStart");
     this.events.off("play_sound");
     this.events.off("stop_sound");
+
+    localStorage.score = this.starLevel; // Set score to possibly share it in game over popup.
+    localStorage.scoreRate = 1; // Set to default scoreRate on game over.
   }
 }

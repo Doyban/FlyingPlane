@@ -1,4 +1,5 @@
 import { SCORE, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
+import { getAuth, signInWithRedirect, getRedirectResult, GoogleAuthProvider } from "firebase/auth/cordova";
 
 /**
  * @class Gui
@@ -295,8 +296,8 @@ export class Gui extends Phaser.GameObjects.Group {
     close_button.on(
       "pointerdown",
       () => {
-        alert("close button clicked")
         this.playClickSound(); // Play click sound.
+        navigator.app.exitApp(); // Close the game.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -326,8 +327,23 @@ export class Gui extends Phaser.GameObjects.Group {
     friends_button.on(
       "pointerdown",
       () => {
-        alert("friends button clicked");
         this.playClickSound(); // Play click sound.
+
+        // Setting up configuration for the event.
+        const options = {
+          method: "apprequests",
+          message: "Play TappyPlane with me!"
+        };
+
+        // Event handlers.
+        const onSuccess = () => {
+          alert("Inviting friends successful.");
+        };
+        const onError = () => {
+          alert("Inviting friends unsuccessful.");
+        };
+
+        facebookConnectPlugin.showDialog(options, onSuccess, onError); // Cordova plugin execution.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -357,14 +373,35 @@ export class Gui extends Phaser.GameObjects.Group {
     login_button.on(
       "pointerdown",
       () => {
-        alert("login button clicked");
         this.playClickSound(); // Play click sound.
+        this.loginUsingFirebase();
       },
       this // Context which is a reference to Gui object in this case.
     );
     // Add login button to the scene.
     this.menuGroup.add(login_button);
     this.menuGroup.add(login_icon);
+  }
+
+  /**
+   * @access private
+   * @description Login the user using Firebase Google authentication.
+   * @function loginUsingFirebase
+   * @returns {void}
+   */
+  private loginUsingFirebase(): void {
+    const auth = getAuth(); // Create an instance of the authentication object.
+
+    // Sign in by redirecting to the sign-in page.
+    signInWithRedirect(auth, new GoogleAuthProvider())
+      .then(() => {
+        return getRedirectResult(auth);
+      })
+      .then(() => {
+        alert('Authentication successful.')
+      }).catch(() => {
+        alert('Authentication unsuccessful.')
+      });
   }
 
   /**
@@ -388,8 +425,25 @@ export class Gui extends Phaser.GameObjects.Group {
     share_button.on(
       "pointerdown",
       () => {
-        alert("share button clicked")
         this.playClickSound(); // Play click sound.
+
+        // Setting up configuration for the event.
+        const options = {
+          message: "Play TappyPlane!", // not supported on some apps (Facebook, Instagram)
+          subject: "Cool game to be played :-)", // fi. for email
+          files: ["www/assets/images/logo.png"], // an array of filenames either locally or remotely
+          url: "https://doyban.com/games/tappyplane",
+        };
+
+        // Event handlers.
+        const onSuccess = () => {
+          alert("Sharing successful.");
+        };
+        const onError = () => {
+          alert("Sharing unsuccessful.");
+        };
+
+        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -419,7 +473,6 @@ export class Gui extends Phaser.GameObjects.Group {
     shop_button.on(
       "pointerdown",
       () => {
-        alert("shop clicked");
         this.playClickSound(); // Play click sound.
         this.scene.scene.start("Shop"); // Start Shop scene.
       },
@@ -467,7 +520,6 @@ export class Gui extends Phaser.GameObjects.Group {
       this // Context which is a reference to Gui object in this case.
     );
     // Add music on button to the scene.
-    // this.scoreGroup.add(this.musicButtonBackground);
     this.scoreGroup.add(music_on_button);
 
     return music_on_button;

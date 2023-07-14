@@ -479,7 +479,24 @@ export class GameOver extends Phaser.GameObjects.Container {
         this.scene.events.emit("play_sound", "click", {
           volume: 1
         });
-        alert("share button clicked")
+
+        // Setting up configuration for the event.
+        const options = {
+          message: "Play TappyPlane!", // not supported on some apps (Facebook, Instagram)
+          subject: "My star level in TappyPlane is " + localStorage.score + "!", // fi. for email
+          files: ["www/assets/images/logo.png"], // an array of filenames either locally or remotely
+          url: "https://doyban.com/games/tappyplane",
+        };
+
+        // Event handlers.
+        const onSuccess = () => {
+          alert("Sharing result successful.");
+        };
+        const onError = () => {
+          alert("Sharing result unsuccessful.");
+        };
+
+        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.
       },
       this // Context which is a reference to GameOver object in this case.
     );
