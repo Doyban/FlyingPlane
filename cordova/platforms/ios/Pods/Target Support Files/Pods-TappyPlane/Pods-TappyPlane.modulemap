@@ -1,0 +1,6 @@
+framework module Pods_TappyPlane {
+  umbrella header "Pods-TappyPlane-umbrella.h"
+
+  export *
+  module * { export * }
+}

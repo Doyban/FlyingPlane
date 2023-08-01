@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.doyban.tappyplane" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="FacebookConnectPlugin">
+        <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <access origin="https://m.facebook.com" />
+    <access origin="https://graph.facebook.com" />
+    <access origin="https://api.facebook.com" />
+    <access origin="https://*.fbcdn.net" />
+    <access origin="https://*.akamaihd.net" />
+    <feature name="InAppBillingPlugin">
+        <param name="android-package" value="cc.fovea.PurchasePlugin" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="AdMob">
+        <param name="android-package" value="admob.plus.cordova.AdMob" />
+    </feature>
+    <feature name="BuildInfo">
+        <param name="android-package" value="org.apache.cordova.buildinfo.BuildInfo" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="LaunchMyApp">
+        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
+    </feature>
+    <feature name="BrowserTab">
+        <param name="android-package" value="com.google.cordova.plugin.browsertab.BrowserTab" />
+    </feature>
+    <feature name="UniversalLinks">
+        <param name="android-package" value="com.nordnetab.cordova.ul.UniversalLinksPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>TappyPlane</name>
+    <description>Tap Game TappyPlane</description>
+    <author email="contact@doyban.com" href="https://doyban.com">Doyban</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <widget>
+    </widget>
+    <universal-links>
+        <host name="doyban.page.link" scheme="https" />
+        <host name="tappyplane-b349f.firebaseapp.com" scheme="https">
+            <path url="/__/auth/callback" />
+        </host>
+    </universal-links>
+    <allow-intent href="market:*" />
+    <config-file parent="/manifest/application" target="AndroidManifest.xml">
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4865595196880143~4169283752" />
+    </config-file>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="android-minSdkVersion" value="21" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="android-targetSdkVersion" value="33" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <preference name="orientation" value="landscape" />
+</widget>
