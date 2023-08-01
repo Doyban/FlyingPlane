@@ -9,6 +9,7 @@
   },
   "author": "Doyban",
   "dependencies": {
+    "firebase": "^10.1.0",
     "phaser": "^3.19.0"
   },
   "devDependencies": {

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.doyban.tappyplane" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TappyPlane</name>
+    <description>Tap Game TappyPlane</description>
+    <author email="contact@doyban.com" href="https://doyban.com">Doyban</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <preference name="android-targetSdkVersion" value="33" />
+        <preference name="AndroidXEnabled" value="true" />
+        <allow-intent href="market:*" />
+        <preference name="AndroidLaunchMode" value="singleTask" />
+    </platform>
+    <preference name="Fullscreen" value="true" />
+    <plugin name="cordova-plugin-purchase" spec="*" />
+    <platform name="android">
+        <preference name="orientation" value="landscape" />
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4865595196880143~4169283752" />
+        </config-file>
+    </platform>
+    <widget>
+        <platform name="ios">
+            <preference name="deployment-target" value="12.0" />
+            <preference name="SwiftVersion" value="5.3" />
+            <allow-intent href="itms:*" />
+            <allow-intent href="itms-apps:*" />
+        </platform>
+    </widget>
+    <feature name="FacebookConnectPlugin">
+        <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+    </feature>
+    <plugin name="cordova-plugin-x-socialsharing" spec="*" />
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+    </feature>
+    <config-file parent="/manifest/application" target="AndroidManifest.xml">
+    </config-file>
+    <universal-links>
+        <host name="doyban.page.link" scheme="https" />
+        <host name="tappyplane-b349f.firebaseapp.com" scheme="https">
+            <path url="/__/auth/callback" />
+        </host>
+    </universal-links>
+</widget>

@@ -33,3 +33,7 @@ This will run a server so game automatically opens in your defualt browser with 
 
 - Use **UpperCamelCase** for class names
   Ex :- `class ClassName {}`
+
+### Webpack fix
+
+Running `export NODE_OPTIONS=--openssl-legacy-provider` might be needed before `npm run start` due to `webpack` problem.
