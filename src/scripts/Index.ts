@@ -1,4 +1,6 @@
 import "phaser";
+import { initializeApp, FirebaseApp } from 'firebase/app';
+import { getAnalytics } from "firebase/analytics";
 import { GamePlay } from "./scenes/GamePlay";
 import { Shop } from "./scenes/Shop";
 import SplashScreen from "./scenes/SplashScreen";
@@ -30,6 +32,19 @@ class Game extends Phaser.Game {
       backgroundColor: "#D5EDF7", // Add default background color to the game.
     };
     super(game_config);
+
+    // Initialize Firebase.
+    const firebaseConfig = {
+      apiKey: "AIzaSyDKeJo8HZ9lrOY3faPvAyyoDcWNVp68BKE",
+      authDomain: "tappyplane-b349f.firebaseapp.com",
+      projectId: "tappyplane-b349f",
+      storageBucket: "tappyplane-b349f.appspot.com",
+      messagingSenderId: "720362866065",
+      appId: "1:720362866065:web:313e8e6add852baf248630",
+      measurementId: "G-XTTSG1N422"
+    };
+    const app: FirebaseApp = initializeApp(firebaseConfig);
+    getAnalytics(app);
   }
 }
 

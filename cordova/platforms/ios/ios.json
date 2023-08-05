@@ -1,0 +1,340 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"ios-package\" value=\"FacebookConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://m.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://graph.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://api.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.fbcdn.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.akamaihd.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"AdMob\"><param name=\"ios-package\" value=\"AMBPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppPurchase\"><param name=\"ios-package\" value=\"InAppPurchase\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BuildInfo\"><param name=\"ios-package\" value=\"CDVBuildInfo\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVWKInAppBrowser\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BrowserTab\"><param name=\"ios-package\" value=\"CBTBrowserTab\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"UniversalLinks\"><param name=\"ios-package\" value=\"CULPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "FacebookAppID": [
+            {
+              "xml": "<string>757927572827959</string>",
+              "count": 1
+            }
+          ],
+          "FacebookDisplayName": [
+            {
+              "xml": "<string>TappyPlane</string>",
+              "count": 1
+            }
+          ],
+          "FacebookUrlSchemeSuffix": [
+            {
+              "xml": "<string>FACEBOOK_URL_SCHEME_SUFFIX_PLACEHOLDER</string>",
+              "count": 1
+            }
+          ],
+          "FacebookAutoLogAppEventsEnabled_PLACEHOLDER": [
+            {
+              "xml": "<string>FACEBOOK_AUTO_LOG_APP_EVENTS_PLACEHOLDER</string>",
+              "count": 1
+            }
+          ],
+          "FacebookHybridAppEvents": [
+            {
+              "xml": "<string>false</string>",
+              "count": 1
+            }
+          ],
+          "FacebookAdvertiserIDCollectionEnabled_PLACEHOLDER": [
+            {
+              "xml": "<string>FACEBOOK_ADVERTISER_ID_COLLECTION_PLACEHOLDER</string>",
+              "count": 1
+            }
+          ],
+          "CFBundleURLTypes": [
+            {
+              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>fb757927572827959FACEBOOK_URL_SCHEME_SUFFIX_PLACEHOLDER</string><string>OTHER_APP_SCHEMES_PLACEHOLDER</string></array></dict></array>",
+              "count": 1
+            },
+            {
+              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>mycoolapp</string></array></dict></array>",
+              "count": 1
+            }
+          ],
+          "NSAppTransportSecurity": [
+            {
+              "xml": "<dict><key>NSExceptionDomains</key><dict><key>facebook.com</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>fbcdn.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict><key>akamaihd.net</key><dict><key>NSIncludesSubdomains</key><true /><key>NSThirdPartyExceptionRequiresForwardSecrecy</key><false /></dict></dict></dict>",
+              "count": 1
+            },
+            {
+              "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /><key>NSAllowsArbitraryLoadsForMedia</key><true /><key>NSAllowsArbitraryLoadsInWebContent</key><true /></dict>",
+              "count": 1
+            }
+          ],
+          "LSApplicationQueriesSchemes": [
+            {
+              "xml": "<array><string>fbapi</string><string>fb-messenger-api</string><string>fbauth2</string><string>fbshareextension</string></array>",
+              "count": 1
+            }
+          ],
+          "GADApplicationIdentifier": [
+            {
+              "xml": "<string>ca-app-pub-4865595196880143~7209793334</string>",
+              "count": 1
+            }
+          ],
+          "GADDelayAppMeasurementInit": [
+            {
+              "xml": "<true />",
+              "count": 1
+            }
+          ],
+          "NSUserTrackingUsageDescription": [
+            {
+              "xml": "<string>This identifier will be used to deliver personalized ads to you.</string>",
+              "count": 1
+            }
+          ],
+          "GADIntegrationManager": [
+            {
+              "xml": "<string>webview</string>",
+              "count": 1
+            }
+          ],
+          "SKAdNetworkItems": [
+            {
+              "xml": "<array><dict><key>SKAdNetworkIdentifier</key><string>cstr6suwn9.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>4fzdc2evr5.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>4pfyvq9l8r.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>2fnua5tdw4.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>ydx93a7ass.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>5a6flpkh64.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>p78axxw29g.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>v72qych5uu.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>ludvb6z3bs.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>cp8zw746q7.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>c6k4g5qg8m.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>s39g8k73mm.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>3qy4746246.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>3sh42y64q3.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>f38h382jlk.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>hs6bdukanm.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>prcb7njmu6.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>v4nxqhlyqp.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>wzmmz9fp6w.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>yclnxrl5pm.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>t38b2kh725.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>7ug5zh24hu.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>9rd848q2bz.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>y5ghdn5j9k.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>n6fk4nfna4.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>v9wttpbfk9.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>n38lu8286q.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>47vhws6wlr.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>kbd757ywx3.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>9t245vhmpl.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>a2p9lx4jpn.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>22mmun2rn5.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>4468km3ulz.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>2u9pt9hc89.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>8s468mfl3y.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>av6w8kgt66.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>klf5c3l5u5.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>ppxm28t8ap.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>424m5254lk.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>ecpz2srf59.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>uw77j35x4d.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>mlmmfzh3r3.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>578prtvx9j.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>4dzt52r2t5.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>gta9lk7p23.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>e5fvkxwrpn.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>8c4e2ghe7u.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>zq492l623r.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>3rd42ekr43.skadnetwork</string></dict><dict><key>SKAdNetworkIdentifier</key><string>3qcr597p9d.skadnetwork</string></dict></array>",
+              "count": 1
+            }
+          ],
+          "NSPhotoLibraryAddUsageDescription": [
+            {
+              "xml": "<string>This app requires photo library access to function properly.</string>",
+              "count": 1
+            }
+          ],
+          "NSPhotoLibraryUsageDescription": [
+            {
+              "xml": "<string>This app requires photo library access to function properly.</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-xxxxxxxx~zzzzzzzz\" />",
+              "count": 12
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-facebook-connect": {
+      "APP_ID": "757927572827959",
+      "APP_NAME": "TappyPlane",
+      "FACEBOOK_URL_SCHEME_SUFFIX": " ",
+      "OTHER_APP_SCHEMES": " ",
+      "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
+      "FACEBOOK_HYBRID_APP_EVENTS": "false",
+      "FACEBOOK_ADVERTISER_ID_COLLECTION": "true",
+      "FACEBOOK_ANDROID_SDK_VERSION": "11.3.0",
+      "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
+      "FACEBOOK_BROWSER_SDK_VERSION": "v11.0",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "admob-plus-cordova": {
+      "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334",
+      "USAGE": "This identifier will be used to deliver personalized ads to you.",
+      "DISABLESDKCRASHREPORTING": "false",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "mycoolapp",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-purchase": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-buildinfo": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-browsertab": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-facebook-connect.FacebookConnectPlugin",
+      "file": "plugins/cordova-plugin-facebook-connect/www/facebook-native.js",
+      "pluginId": "cordova-plugin-facebook-connect",
+      "clobbers": [
+        "facebookConnectPlugin"
+      ]
+    },
+    {
+      "id": "admob-plus-cordova.AdMob",
+      "file": "plugins/admob-plus-cordova/www/admob.js",
+      "pluginId": "admob-plus-cordova",
+      "clobbers": [
+        "admob"
+      ]
+    },
+    {
+      "id": "cordova-plugin-customurlscheme.LaunchMyApp",
+      "file": "plugins/cordova-plugin-customurlscheme/www/ios/LaunchMyApp.js",
+      "pluginId": "cordova-plugin-customurlscheme",
+      "clobbers": [
+        "window.plugins.launchmyapp"
+      ]
+    },
+    {
+      "id": "cordova-plugin-purchase.CdvPurchase",
+      "file": "plugins/cordova-plugin-purchase/www/store.js",
+      "pluginId": "cordova-plugin-purchase",
+      "clobbers": [
+        "CdvPurchase",
+        "store"
+      ]
+    },
+    {
+      "id": "es6-promise-plugin.Promise",
+      "file": "plugins/es6-promise-plugin/www/promise.js",
+      "pluginId": "es6-promise-plugin",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-x-socialsharing.SocialSharing",
+      "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+      "pluginId": "cordova-plugin-x-socialsharing",
+      "clobbers": [
+        "window.plugins.socialsharing"
+      ]
+    },
+    {
+      "id": "cordova-plugin-buildinfo.BuildInfo",
+      "file": "plugins/cordova-plugin-buildinfo/www/buildinfo.js",
+      "pluginId": "cordova-plugin-buildinfo",
+      "clobbers": [
+        "BuildInfo"
+      ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open"
+      ]
+    },
+    {
+      "id": "cordova-plugin-browsertab.BrowserTab",
+      "file": "plugins/cordova-plugin-browsertab/www/browsertab.js",
+      "pluginId": "cordova-plugin-browsertab",
+      "clobbers": [
+        "cordova.plugins.browsertab"
+      ]
+    },
+    {
+      "id": "cordova-universal-links-plugin.universalLinks",
+      "file": "plugins/cordova-universal-links-plugin/www/universal_links.js",
+      "pluginId": "cordova-universal-links-plugin",
+      "clobbers": [
+        "universalLinks"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-facebook-connect": "3.2.0",
+    "admob-plus-cordova": "2.0.0-alpha.8",
+    "cordova-plugin-customurlscheme": "5.0.2",
+    "cordova-plugin-purchase": "13.6.0",
+    "es6-promise-plugin": "4.2.2",
+    "cordova-plugin-x-socialsharing": "6.0.4",
+    "cordova-plugin-buildinfo": "4.0.0",
+    "cordova-plugin-inappbrowser": "5.0.0",
+    "cordova-plugin-compat": "1.2.0",
+    "cordova-plugin-browsertab": "0.2.0",
+    "cordova-plugin-androidx": "3.0.0",
+    "cordova-universal-links-plugin": "1.2.1"
+  }
+}

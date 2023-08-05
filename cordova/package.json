@@ -1,0 +1,76 @@
+{
+  "name": "com.doyban.tappyplane",
+  "displayName": "TappyPlane",
+  "version": "1.0.0",
+  "description": "Tap Game TappyPlane",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Doyban",
+  "devDependencies": {
+    "cordova-android": "^12.0.0",
+    "cordova-ios": "^6.3.0",
+    "cordova-plugin-androidx": "^3.0.0",
+    "cordova-plugin-purchase": "^13.6.0",
+    "cordova-plugin-x-socialsharing": "^6.0.4",
+    "cordova-universal-links-plugin": "github:walteram/cordova-universal-links-plugin",
+    "es6-promise-plugin": "^4.2.2"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-facebook-connect": {
+        "APP_ID": "757927572827959",
+        "APP_NAME": "TappyPlane",
+        "FACEBOOK_URL_SCHEME_SUFFIX": " ",
+        "OTHER_APP_SCHEMES": " ",
+        "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ADVERTISER_ID_COLLECTION": "true",
+        "FACEBOOK_ANDROID_SDK_VERSION": "11.3.0",
+        "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
+        "FACEBOOK_BROWSER_SDK_VERSION": "v11.0"
+      },
+      "admob-plus-cordova": {
+        "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+        "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334",
+        "PLAY_SERVICES_VERSION": "22.1.0"
+      },
+      "cordova-plugin-purchase": {
+        "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6olW2chhUqj4RG0Ye0w4KVUAVjEFv84hEGxvsfOAvuYH1Ey9Wi/DhshF3dA78Z9rJkyo0Y+Ie6RifagJCjryet4Gdby3AcQ/hPXCAR7saAvuUYmHKnhI0hreC1/Rh79GvI56DG+W1QXtszn7m02zF09kdr+krIqqr1C0kesc6VS4akusnxB6v/0r2GQpmvUDqwADal4eHayYGnp7orXfUGA7G710hx9aaDezFmPTuVu3emCJ4ZJMtSJM6923z52TzgE+kwUNoKzVWoNCGQu89p1+pbkc7A6eLs/jI88JHj9FxG3MLaHziyIGkTaWG0jvBwnez72XY+wuf1xm8fpnZQIDAQAB"
+      },
+      "cordova-plugin-x-socialsharing": {
+        "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
+      },
+      "cordova-plugin-buildinfo": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-customurlscheme": {
+        "URL_SCHEME": "com.doyban.tappyplane",
+        "ANDROID_SCHEME": " ",
+        "ANDROID_HOST": " ",
+        "ANDROID_PATHPREFIX": "/"
+      },
+      "cordova-plugin-browsertab": {},
+      "cordova-plugin-androidx": {},
+      "cordova-universal-links-plugin": {}
+    }
+  },
+  "dependencies": {
+    "admob-plus-cordova": "2.0.0-alpha.8",
+    "cordova-plugin-browsertab": "0.2.0",
+    "cordova-plugin-buildinfo": "4.0.0",
+    "cordova-plugin-compat": "1.2.0",
+    "cordova-plugin-customurlscheme": "5.0.2",
+    "cordova-plugin-facebook-connect": "3.2.0",
+    "cordova-plugin-inappbrowser": "5.0.0",
+    "cordova-universal-links-plugin-fix": "1.2.1"
+  }
+}

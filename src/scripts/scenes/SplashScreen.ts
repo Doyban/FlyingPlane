@@ -30,6 +30,8 @@ export default class SplashScreen extends Phaser.Scene {
       "assets/spritesheets/sheet.png",
       "assets/json/sheet.json"
     );
+
+    localStorage.scoreRate = localStorage.scoreRate || 1; // Initialize scoreRate.
   }
 
   /**

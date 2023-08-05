@@ -1,0 +1,334 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<provider android:authorities=\"${applicationId}.sharing.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"nl.xservices.plugins.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/sharing_paths\" /></provider>",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:excludeFromRecents=\"true\" android:name=\"com.google.android.gms.ads.AdActivity\" android:noHistory=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-4865595196880143~4169283752\" />",
+              "count": 17
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT\" android:value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\" android:value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\" android:value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.flag.INTEGRATION_MANAGER\" android:value=\"webview\" />",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<queries><package android:name=\"com.facebook.katana\" /></queries>",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.android.vending.BILLING\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            }
+          ],
+          "application": [
+            {
+              "xml": "<meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"@string/fb_app_id\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.facebook.sdk.ApplicationName\" android:value=\"@string/fb_app_name\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.facebook.sdk.AutoLogAppEventsEnabled\" android:value=\"@bool/fb_auto_log_app_events_enabled\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.facebook.sdk.AdvertiserIDCollectionEnabled\" android:value=\"@bool/fb_advertiser_id_collection_enabled\" />",
+              "count": 1
+            },
+            {
+              "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|screenLayout|screenSize|orientation\" android:label=\"@string/fb_app_name\" android:name=\"com.facebook.FacebookActivity\" />",
+              "count": 1
+            },
+            {
+              "xml": "<provider android:authorities=\"com.facebook.app.FacebookContentProvider757927572827959\" android:exported=\"true\" android:name=\"com.facebook.FacebookContentProvider\" />",
+              "count": 1
+            }
+          ],
+          "/*/application": [
+            {
+              "xml": "<receiver android:enabled=\"true\" android:exported=\"true\" android:name=\"nl.xservices.plugins.ShareChooserPendingIntent\"><intent-filter><action android:name=\"android.intent.action.SEND\" /></intent-filter></receiver>",
+              "count": 1
+            }
+          ],
+          "/manifest/application/activity": [
+            {
+              "xml": "<intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"com.doyban.tappyplane\" /></intent-filter>",
+              "count": 1
+            },
+            {
+              "xml": "<intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\" \" android:pathPrefix=\"/\" android:scheme=\" \" /></intent-filter>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.facebook.ConnectPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://m.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://graph.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://api.facebook.com\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.fbcdn.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.akamaihd.net\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"android-minSdkVersion\" value=\"21\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBillingPlugin\"><param name=\"android-package\" value=\"cc.fovea.PurchasePlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"admob.plus.cordova.AdMob\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BuildInfo\"><param name=\"android-package\" value=\"org.apache.cordova.buildinfo.BuildInfo\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BrowserTab\"><param name=\"android-package\" value=\"com.google.cordova.plugin.browsertab.BrowserTab\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"UniversalLinks\"><param name=\"android-package\" value=\"com.nordnetab.cordova.ul.UniversalLinksPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "app/src/main/res/values/facebookconnect.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<string name=\"fb_app_id\">757927572827959</string>",
+              "count": 1
+            },
+            {
+              "xml": "<string name=\"fb_app_name\">TappyPlane</string>",
+              "count": 1
+            },
+            {
+              "xml": "<bool name=\"fb_auto_log_app_events_enabled\">true</bool>",
+              "count": 1
+            },
+            {
+              "xml": "<bool name=\"fb_hybrid_app_events\">false</bool>",
+              "count": 1
+            },
+            {
+              "xml": "<bool name=\"fb_advertiser_id_collection_enabled\">true</bool>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-facebook-connect": {
+      "APP_ID": "757927572827959",
+      "APP_NAME": "TappyPlane",
+      "FACEBOOK_URL_SCHEME_SUFFIX": " ",
+      "OTHER_APP_SCHEMES": " ",
+      "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
+      "FACEBOOK_HYBRID_APP_EVENTS": "false",
+      "FACEBOOK_ADVERTISER_ID_COLLECTION": "true",
+      "FACEBOOK_ANDROID_SDK_VERSION": "11.3.0",
+      "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
+      "FACEBOOK_BROWSER_SDK_VERSION": "v11.0",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-purchase": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "admob-plus-cordova": {
+      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+      "PLAY_SERVICES_VERSION": "22.1.0",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-buildinfo": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "com.doyban.tappyplane",
+      "ANDROID_SCHEME": " ",
+      "ANDROID_HOST": " ",
+      "ANDROID_PATHPREFIX": "/",
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-plugin-browsertab": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-facebook-connect.FacebookConnectPlugin",
+      "file": "plugins/cordova-plugin-facebook-connect/www/facebook-native.js",
+      "pluginId": "cordova-plugin-facebook-connect",
+      "clobbers": [
+        "facebookConnectPlugin"
+      ]
+    },
+    {
+      "id": "cordova-plugin-purchase.CdvPurchase",
+      "file": "plugins/cordova-plugin-purchase/www/store.js",
+      "pluginId": "cordova-plugin-purchase",
+      "clobbers": [
+        "store",
+        "CdvPurchase"
+      ]
+    },
+    {
+      "id": "es6-promise-plugin.Promise",
+      "file": "plugins/es6-promise-plugin/www/promise.js",
+      "pluginId": "es6-promise-plugin",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-x-socialsharing.SocialSharing",
+      "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+      "pluginId": "cordova-plugin-x-socialsharing",
+      "clobbers": [
+        "window.plugins.socialsharing"
+      ]
+    },
+    {
+      "id": "admob-plus-cordova.AdMob",
+      "file": "plugins/admob-plus-cordova/www/admob.js",
+      "pluginId": "admob-plus-cordova",
+      "clobbers": [
+        "admob"
+      ]
+    },
+    {
+      "id": "cordova-plugin-buildinfo.BuildInfo",
+      "file": "plugins/cordova-plugin-buildinfo/www/buildinfo.js",
+      "pluginId": "cordova-plugin-buildinfo",
+      "clobbers": [
+        "BuildInfo"
+      ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open"
+      ]
+    },
+    {
+      "id": "cordova-plugin-customurlscheme.LaunchMyApp",
+      "file": "plugins/cordova-plugin-customurlscheme/www/android/LaunchMyApp.js",
+      "pluginId": "cordova-plugin-customurlscheme",
+      "clobbers": [
+        "window.plugins.launchmyapp"
+      ]
+    },
+    {
+      "id": "cordova-plugin-browsertab.BrowserTab",
+      "file": "plugins/cordova-plugin-browsertab/www/browsertab.js",
+      "pluginId": "cordova-plugin-browsertab",
+      "clobbers": [
+        "cordova.plugins.browsertab"
+      ]
+    },
+    {
+      "id": "cordova-universal-links-plugin.universalLinks",
+      "file": "plugins/cordova-universal-links-plugin/www/universal_links.js",
+      "pluginId": "cordova-universal-links-plugin",
+      "clobbers": [
+        "universalLinks"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-facebook-connect": "3.2.0",
+    "cordova-plugin-purchase": "13.6.0",
+    "es6-promise-plugin": "4.2.2",
+    "cordova-plugin-x-socialsharing": "6.0.4",
+    "admob-plus-cordova": "2.0.0-alpha.8",
+    "cordova-plugin-buildinfo": "4.0.0",
+    "cordova-plugin-inappbrowser": "5.0.0",
+    "cordova-plugin-customurlscheme": "5.0.2",
+    "cordova-plugin-browsertab": "0.2.0",
+    "cordova-universal-links-plugin": "1.2.1"
+  }
+}

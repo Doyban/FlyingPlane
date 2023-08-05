@@ -1,0 +1,108 @@
+{
+  "cordova-plugin-compat": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-compat@^1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-facebook-connect": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook-connect"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "757927572827959",
+      "APP_NAME": "MoveUp"
+    }
+  },
+  "admob-plus-cordova": {
+    "source": {
+      "type": "registry",
+      "id": "admob-plus-cordova@2.0.0-alpha.8"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+      "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334"
+    }
+  },
+  "cordova-plugin-customurlscheme": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-customurlscheme"
+    },
+    "is_top_level": true,
+    "variables": {
+      "URL_SCHEME": "com.doyban.tappyplane"
+    }
+  },
+  "cordova-plugin-purchase": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-purchase"
+    },
+    "is_top_level": true,
+    "variables": {
+      "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6olW2chhUqj4RG0Ye0w4KVUAVjEFv84hEGxvsfOAvuYH1Ey9Wi/DhshF3dA78Z9rJkyo0Y+Ie6RifagJCjryet4Gdby3AcQ/hPXCAR7saAvuUYmHKnhI0hreC1/Rh79GvI56DG+W1QXtszn7m02zF09kdr+krIqqr1C0kesc6VS4akusnxB6v/0r2GQpmvUDqwADal4eHayYGnp7orXfUGA7G710hx9aaDezFmPTuVu3emCJ4ZJMtSJM6923z52TzgE+kwUNoKzVWoNCGQu89p1+pbkc7A6eLs/jI88JHj9FxG3MLaHziyIGkTaWG0jvBwnez72XY+wuf1xm8fpnZQIDAQAB"
+    }
+  },
+  "cordova-plugin-x-socialsharing": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-x-socialsharing"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "es6-promise-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "es6-promise-plugin@^4.1.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-buildinfo": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-buildinfo@4.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-inappbrowser": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-inappbrowser@5.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-browsertab": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-browsertab"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-androidx": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-androidx"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-universal-links-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/walteram/cordova-universal-links-plugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

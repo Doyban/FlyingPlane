@@ -355,6 +355,8 @@ export class GameOver extends Phaser.GameObjects.Container {
     // Play badge animation on badge3.
     const badge_3 = this.getByName("badge_3"); // Get the desired object by name.
     this.playBadgeTween(badge_3);
+
+    this.showAdMobAds(); // Show ads.
   }
 
   /**
@@ -403,6 +405,31 @@ export class GameOver extends Phaser.GameObjects.Container {
     params: any // Even though this parameter is not being used it must be here due to Phaser API and/or TypeScript type safety requirements.
   ): void {
     targets[0].setVisible(true); // Set the first element of targeted badges to be visible.
+  }
+
+  /**
+   * @access private
+   * @description Show AdMob ads.
+   * @function showAdMobAds
+   * @returns {void}
+   */
+  private showAdMobAds(): void {
+    let interstitial: any;
+
+    document.addEventListener('deviceready', async () => {
+      interstitial = new admob.InterstitialAd({
+        adUnitId: 'ca-app-pub-4865595196880143/3742688595',
+      })
+
+      await interstitial.load()
+      await interstitial.show()
+    }, false);
+
+    document.addEventListener('admob.ad.dismiss', async () => {
+      // Once a interstitial ad is shown, it cannot be shown again.
+      // Starts loading the next interstitial ad as soon as it is dismissed.
+      await interstitial.load()
+    });
   }
 
   /**
@@ -479,7 +506,24 @@ export class GameOver extends Phaser.GameObjects.Container {
         this.scene.events.emit("play_sound", "click", {
           volume: 1
         });
-        alert("share button clicked")
+
+        // Setting up configuration for the event.
+        const options = {
+          message: "Play TappyPlane!", // not supported on some apps (Facebook, Instagram)
+          subject: "My star level in TappyPlane is " + localStorage.score + "!", // fi. for email
+          files: ["www/assets/images/logo.png"], // an array of filenames either locally or remotely
+          url: "https://doyban.com/games/tappyplane",
+        };
+
+        // Event handlers.
+        const onSuccess = () => {
+          alert("Sharing result successful.");
+        };
+        const onError = () => {
+          alert("Sharing result unsuccessful.");
+        };
+
+        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.
       },
       this // Context which is a reference to GameOver object in this case.
     );

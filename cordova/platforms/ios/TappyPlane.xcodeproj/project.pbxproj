@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		057E3011AEFB4805869F802C /* AMBRewarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394763D6BBF494B9DE70DB4 /* AMBRewarded.swift */; };
+		0EFFB91715A943C1AB43CB70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00A6DFE219941D8BF4A15E9 /* StoreKit.framework */; };
+		151236890F7848B3A4CC5005 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE8325A5C95441BBEB41C10 /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		17DF3F94F5DC41D48332E84C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317E1A6591D04797A3E975E4 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1E44CF219B1D482CB4880E31 /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B6B57117E94174AA2A7A89 /* InAppPurchase.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3EDC7C50F60E44B9A37665FA /* NSString+SSURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E4E0541C1473187599BE3 /* NSString+SSURLEncoding.m */; };
+		488755CEEA3B4FBDBBD54BFB /* AMBAdBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB255630B92643DE9A22E2DF /* AMBAdBase.swift */; };
+		48F0137076044705BFC5BAA1 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A09D856E86495490763516 /* FacebookConnectPlugin.m */; };
+		49D70D5C87554637B4ED5930 /* AMBGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573B701054A4BE09513C68D /* AMBGenerated.swift */; };
+		4BA459140BBD4DB8AF431819 /* AMBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824322E6C43487C85956BEA /* AMBPlugin.swift */; };
+		574F9C0D8A7442E691754073 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3FA98C865423191FB2364 /* SKProduct+LocalizedPrice.m */; };
+		69747DC6CA994422AFE76D32 /* TappyPlane.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = E282426CE8DA4C29B348870C /* TappyPlane.entitlements */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		6B4088C1620A428686A993DD /* AMBInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A9EF43D4647C8A760F101 /* AMBInterstitial.swift */; };
+		6D717C22BD484D8E94B0C7B9 /* AMBContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A148AB4C542299E575510 /* AMBContext.swift */; };
+		6DAB65BDEB8C45068C1823F4 /* AMBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB8779631B44E0B71649C8 /* AMBBanner.swift */; };
+		71D408A81D25483E87C0B23F /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BA0544CE0B42FA811A1063 /* FileUtility.m */; };
+		804D94C9E83048DE88F74DC7 /* AMBRewardedInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52A82F3B6F4408399BDE92C /* AMBRewardedInterstitial.swift */; };
+		8CF37A8205B04C79B73592AF /* AMBAppOpenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F220DB6D7047079B149799 /* AMBAppOpenAd.swift */; };
+		AC42DDB2A29E47E48DC8D43C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAA8ADF542E4F3693AB1876 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C8D130E99C1945F5AAD5FED0 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27F77FE3E6412AB2903842 /* SocialSharing.m */; };
+		CE5F2301DCD74386983C8D5D /* AMBNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF66205BC842C5AF896314 /* AMBNativeAd.swift */; };
+		D28CA3B78E1A4F559E258AD2 /* SKProductDiscount+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB95A8A26B4EF2A25F88C4 /* SKProductDiscount+LocalizedPrice.m */; };
+		D9930F671CB9B0972273432D /* Pods_TappyPlane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6AE954FB0DAFCCDB7F4941 /* Pods_TappyPlane.framework */; };
+		F5E25FA21338487CAB84A6FB /* AMBCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B184CC66C4E88A390344E /* AMBCore.swift */; };
+		750E4C2E395547F18419E7BE /* CDVBuildInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A846536B44481F9C449A12 /* CDVBuildInfo.m */; };
+		1AC006D0E0274EBFB0C234D9 /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 691F1B92A95B47238EF296B3 /* CDVInAppBrowserOptions.m */; };
+		BF0F7EB5446240768A81A09B /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B7C17A59C470F9A032E1F /* CDVInAppBrowserNavigationController.m */; };
+		E92EA786211C43DB927C94E9 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE59263C949F98A7C8AC2 /* CDVWKInAppBrowser.m */; };
+		456BE27108B54E059F1584BA /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4407811B75EA46329FB8DE5C /* CDVWKInAppBrowserUIDelegate.m */; };
+		089F3D8DD3F449B78CD01AD7 /* CBTBrowserTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7053DB04D4E58BB7CA5EB /* CBTBrowserTab.m */; };
+		D2CC09EE06074C7294BE8DA0 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C83F1C7FFB74708839DCEED /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C440E05442C44F9CA2F2334D /* CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE523D6BAC643A98BD4CE8E /* CULPlugin.m */; };
+		D8B88C4C89F84BEC9C79083C /* AppDelegate+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E181980BEB484DAB7FA708 /* AppDelegate+CULPlugin.m */; };
+		C20F5963F0854B959D9C4526 /* CDVPluginResult+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D55EC0C1FB4587A1EACD4C /* CDVPluginResult+CULPlugin.m */; };
+		EDDCF1A90B064B1181CD0EFD /* CDVInvokedUrlCommand+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A321A03103A94E7F805E33D7 /* CDVInvokedUrlCommand+CULPlugin.m */; };
+		B0B85A89D99C465AB83C87B0 /* CULHost.m in Sources */ = {isa = PBXBuildFile; fileRef = C5527DB3230E4B22BF56D2E3 /* CULHost.m */; };
+		904E6363C9554D1E86F71F27 /* CULPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B47C03A45E424C13BDF9FD7E /* CULPath.m */; };
+		663B0BCDD07A4F2FAA580756 /* CULXmlTags.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE906588C2D470DB6874E27 /* CULXmlTags.m */; };
+		4B7E509D144349B7B74FE122 /* CULConfigXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB80ED63C144C6AB83067A /* CULConfigXmlParser.m */; };
+		8B871577F8BF42549BECA0CB /* CULConfigJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3B2F7306E47E98E1BE803 /* CULConfigJsonParser.m */; };
+		348F6217F61B43959E9B3FB2 /* NSBundle+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B12AD0FB0B51493BB3E48364 /* NSBundle+CULPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TappyPlane/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		070A148AB4C542299E575510 /* AMBContext.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBContext.swift; path = "admob-plus-cordova/AMBContext.swift"; sourceTree = "<group>"; };
+		0DA49F146CB34F65A9344606 /* SKProductDiscount+LocalizedPrice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "SKProductDiscount+LocalizedPrice.h"; path = "cordova-plugin-purchase/SKProductDiscount+LocalizedPrice.h"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TappyPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBB95A8A26B4EF2A25F88C4 /* SKProductDiscount+LocalizedPrice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "SKProductDiscount+LocalizedPrice.m"; path = "cordova-plugin-purchase/SKProductDiscount+LocalizedPrice.m"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E95B7AC50853E57064C41CE /* Pods-TappyPlane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyPlane.debug.xcconfig"; path = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane.debug.xcconfig"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		317E1A6591D04797A3E975E4 /* MessageUI.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		32CA4F630368D1EE00C91783 /* TappyPlane-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TappyPlane-Prefix.pch"; sourceTree = "<group>"; };
+		4573B701054A4BE09513C68D /* AMBGenerated.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBGenerated.swift; path = "admob-plus-cordova/AMBGenerated.swift"; sourceTree = "<group>"; };
+		54AF66205BC842C5AF896314 /* AMBNativeAd.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBNativeAd.swift; path = "admob-plus-cordova/AMBNativeAd.swift"; sourceTree = "<group>"; };
+		5FAA8ADF542E4F3693AB1876 /* Social.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = TappyPlane/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		70A09D856E86495490763516 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = "cordova-plugin-facebook-connect/FacebookConnectPlugin.m"; sourceTree = "<group>"; };
+		752B184CC66C4E88A390344E /* AMBCore.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBCore.swift; path = "admob-plus-cordova/AMBCore.swift"; sourceTree = "<group>"; };
+		7CD3FA98C865423191FB2364 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "SKProduct+LocalizedPrice.m"; path = "cordova-plugin-purchase/SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
+		7E8D57EDD5BB4EC1914773E3 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "cordova-plugin-facebook-connect/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
+		8394763D6BBF494B9DE70DB4 /* AMBRewarded.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBRewarded.swift; path = "admob-plus-cordova/AMBRewarded.swift"; sourceTree = "<group>"; };
+		8CFF252BB9C24E64865C2E95 /* NSString+SSURLEncoding.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSString+SSURLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+SSURLEncoding.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TappyPlane-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TappyPlane-Info.plist"; path = "TappyPlane/TappyPlane-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		A0F220DB6D7047079B149799 /* AMBAppOpenAd.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBAppOpenAd.swift; path = "admob-plus-cordova/AMBAppOpenAd.swift"; sourceTree = "<group>"; };
+		A688DD6D04D64A51A2825A81 /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "SKProduct+LocalizedPrice.h"; path = "cordova-plugin-purchase/SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
+		A71A9EF43D4647C8A760F101 /* AMBInterstitial.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBInterstitial.swift; path = "admob-plus-cordova/AMBInterstitial.swift"; sourceTree = "<group>"; };
+		AC7E4E0541C1473187599BE3 /* NSString+SSURLEncoding.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "NSString+SSURLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+SSURLEncoding.m"; sourceTree = "<group>"; };
+		B52A82F3B6F4408399BDE92C /* AMBRewardedInterstitial.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBRewardedInterstitial.swift; path = "admob-plus-cordova/AMBRewardedInterstitial.swift"; sourceTree = "<group>"; };
+		BB255630B92643DE9A22E2DF /* AMBAdBase.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBAdBase.swift; path = "admob-plus-cordova/AMBAdBase.swift"; sourceTree = "<group>"; };
+		BF4700F681A347E3A23179AD /* SocialSharing.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SocialSharing.h; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; };
+		C00A6DFE219941D8BF4A15E9 /* StoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C0CB8779631B44E0B71649C8 /* AMBBanner.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBBanner.swift; path = "admob-plus-cordova/AMBBanner.swift"; sourceTree = "<group>"; };
+		CE8EC99E59222C18187BC474 /* Pods-TappyPlane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyPlane.release.xcconfig"; path = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane.release.xcconfig"; sourceTree = "<group>"; };
+		D437EE2EC93F40AB8D19036B /* FileUtility.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FileUtility.h; path = "cordova-plugin-purchase/FileUtility.h"; sourceTree = "<group>"; };
+		D824322E6C43487C85956BEA /* AMBPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBPlugin.swift; path = "admob-plus-cordova/AMBPlugin.swift"; sourceTree = "<group>"; };
+		E282426CE8DA4C29B348870C /* TappyPlane.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = TappyPlane.entitlements; sourceTree = "<group>"; };
+		E5BA0544CE0B42FA811A1063 /* FileUtility.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FileUtility.m; path = "cordova-plugin-purchase/FileUtility.m"; sourceTree = "<group>"; };
+		EA6AE954FB0DAFCCDB7F4941 /* Pods_TappyPlane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TappyPlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F3B6B57117E94174AA2A7A89 /* InAppPurchase.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = InAppPurchase.m; path = "cordova-plugin-purchase/InAppPurchase.m"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = TappyPlane/config.xml; sourceTree = "<group>"; };
+		F9E29B5D06014D8F8CAE6715 /* InAppPurchase.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = InAppPurchase.h; path = "cordova-plugin-purchase/InAppPurchase.h"; sourceTree = "<group>"; };
+		FA27F77FE3E6412AB2903842 /* SocialSharing.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SocialSharing.m; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; };
+		FAE8325A5C95441BBEB41C10 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		86A846536B44481F9C449A12 /* CDVBuildInfo.m */ = {isa = PBXFileReference; name = "CDVBuildInfo.m"; path = "cordova-plugin-buildinfo/CDVBuildInfo.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F703A9056F454185A1A07FC7 /* CDVBuildInfo.h */ = {isa = PBXFileReference; name = "CDVBuildInfo.h"; path = "cordova-plugin-buildinfo/CDVBuildInfo.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		691F1B92A95B47238EF296B3 /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B26B7C17A59C470F9A032E1F /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CC9AE59263C949F98A7C8AC2 /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4407811B75EA46329FB8DE5C /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A78F7D88A5FD454180CA3B5B /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E2ACC373A69C4B0095361422 /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4EA87602114347EDB3F81A0E /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0A383CECC59E4EBE8BAA1BAE /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		49C7053DB04D4E58BB7CA5EB /* CBTBrowserTab.m */ = {isa = PBXFileReference; name = "CBTBrowserTab.m"; path = "cordova-plugin-browsertab/CBTBrowserTab.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		BEA40F7F735843D88380902B /* CBTBrowserTab.h */ = {isa = PBXFileReference; name = "CBTBrowserTab.h"; path = "cordova-plugin-browsertab/CBTBrowserTab.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2C83F1C7FFB74708839DCEED /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8CE523D6BAC643A98BD4CE8E /* CULPlugin.m */ = {isa = PBXFileReference; name = "CULPlugin.m"; path = "cordova-universal-links-plugin/CULPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		47E181980BEB484DAB7FA708 /* AppDelegate+CULPlugin.m */ = {isa = PBXFileReference; name = "AppDelegate+CULPlugin.m"; path = "cordova-universal-links-plugin/AppDelegate+CULPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		98D55EC0C1FB4587A1EACD4C /* CDVPluginResult+CULPlugin.m */ = {isa = PBXFileReference; name = "CDVPluginResult+CULPlugin.m"; path = "cordova-universal-links-plugin/JS/CDVPluginResult+CULPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A321A03103A94E7F805E33D7 /* CDVInvokedUrlCommand+CULPlugin.m */ = {isa = PBXFileReference; name = "CDVInvokedUrlCommand+CULPlugin.m"; path = "cordova-universal-links-plugin/JS/CDVInvokedUrlCommand+CULPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C5527DB3230E4B22BF56D2E3 /* CULHost.m */ = {isa = PBXFileReference; name = "CULHost.m"; path = "cordova-universal-links-plugin/Model/CULHost.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B47C03A45E424C13BDF9FD7E /* CULPath.m */ = {isa = PBXFileReference; name = "CULPath.m"; path = "cordova-universal-links-plugin/Model/CULPath.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CAE906588C2D470DB6874E27 /* CULXmlTags.m */ = {isa = PBXFileReference; name = "CULXmlTags.m"; path = "cordova-universal-links-plugin/Parser/XML/CULXmlTags.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2EBB80ED63C144C6AB83067A /* CULConfigXmlParser.m */ = {isa = PBXFileReference; name = "CULConfigXmlParser.m"; path = "cordova-universal-links-plugin/Parser/XML/CULConfigXmlParser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		69C3B2F7306E47E98E1BE803 /* CULConfigJsonParser.m */ = {isa = PBXFileReference; name = "CULConfigJsonParser.m"; path = "cordova-universal-links-plugin/Parser/JSON/CULConfigJsonParser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B12AD0FB0B51493BB3E48364 /* NSBundle+CULPlugin.m */ = {isa = PBXFileReference; name = "NSBundle+CULPlugin.m"; path = "cordova-universal-links-plugin/Utils/NSBundle+CULPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3291801C9FA94DDC9EB3CF42 /* CULPlugin.h */ = {isa = PBXFileReference; name = "CULPlugin.h"; path = "cordova-universal-links-plugin/CULPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		96347F2649104DE987075AB4 /* AppDelegate+CULPlugin.h */ = {isa = PBXFileReference; name = "AppDelegate+CULPlugin.h"; path = "cordova-universal-links-plugin/AppDelegate+CULPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3F4F1DC2CBE34B79A00D21C2 /* CDVPluginResult+CULPlugin.h */ = {isa = PBXFileReference; name = "CDVPluginResult+CULPlugin.h"; path = "cordova-universal-links-plugin/JS/CDVPluginResult+CULPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A9EF6ED519D342A5B72AF008 /* CDVInvokedUrlCommand+CULPlugin.h */ = {isa = PBXFileReference; name = "CDVInvokedUrlCommand+CULPlugin.h"; path = "cordova-universal-links-plugin/JS/CDVInvokedUrlCommand+CULPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DAEEF35C63CD493684183D37 /* CULHost.h */ = {isa = PBXFileReference; name = "CULHost.h"; path = "cordova-universal-links-plugin/Model/CULHost.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ABC159E13EAD4454B312ACBB /* CULPath.h */ = {isa = PBXFileReference; name = "CULPath.h"; path = "cordova-universal-links-plugin/Model/CULPath.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		234DC21146BA47B491387745 /* CULXmlTags.h */ = {isa = PBXFileReference; name = "CULXmlTags.h"; path = "cordova-universal-links-plugin/Parser/XML/CULXmlTags.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DFD01AA6EC474D70BEBE27F0 /* CULConfigXmlParser.h */ = {isa = PBXFileReference; name = "CULConfigXmlParser.h"; path = "cordova-universal-links-plugin/Parser/XML/CULConfigXmlParser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9A330CF318B8458A9DC54C75 /* CULConfigJsonParser.h */ = {isa = PBXFileReference; name = "CULConfigJsonParser.h"; path = "cordova-universal-links-plugin/Parser/JSON/CULConfigJsonParser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		497B2122F99843AC9CEC3E2E /* NSBundle+CULPlugin.h */ = {isa = PBXFileReference; name = "NSBundle+CULPlugin.h"; path = "cordova-universal-links-plugin/Utils/NSBundle+CULPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				D9930F671CB9B0972273432D /* Pods_TappyPlane.framework in Frameworks */,
+				151236890F7848B3A4CC5005 /* AppTrackingTransparency.framework in Frameworks */,
+				0EFFB91715A943C1AB43CB70 /* StoreKit.framework in Frameworks */,
+				AC42DDB2A29E47E48DC8D43C /* Social.framework in Frameworks */,
+				17DF3F94F5DC41D48332E84C /* MessageUI.framework in Frameworks */,
+				D2CC09EE06074C7294BE8DA0 /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00365DF8901376CA5D5F1251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E95B7AC50853E57064C41CE /* Pods-TappyPlane.debug.xcconfig */,
+				CE8EC99E59222C18187BC474 /* Pods-TappyPlane.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = TappyPlane/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TappyPlane.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				00365DF8901376CA5D5F1251 /* Pods */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TappyPlane-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = TappyPlane;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* TappyPlane-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				E282426CE8DA4C29B348870C /* TappyPlane.entitlements */,
+			);
+			name = Resources;
+			path = TappyPlane/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA6AE954FB0DAFCCDB7F4941 /* Pods_TappyPlane.framework */,
+				FAE8325A5C95441BBEB41C10 /* AppTrackingTransparency.framework */,
+				C00A6DFE219941D8BF4A15E9 /* StoreKit.framework */,
+				5FAA8ADF542E4F3693AB1876 /* Social.framework */,
+				317E1A6591D04797A3E975E4 /* MessageUI.framework */,
+				2C83F1C7FFB74708839DCEED /* SafariServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				70A09D856E86495490763516 /* FacebookConnectPlugin.m */,
+				7E8D57EDD5BB4EC1914773E3 /* FacebookConnectPlugin.h */,
+				BB255630B92643DE9A22E2DF /* AMBAdBase.swift */,
+				A0F220DB6D7047079B149799 /* AMBAppOpenAd.swift */,
+				C0CB8779631B44E0B71649C8 /* AMBBanner.swift */,
+				070A148AB4C542299E575510 /* AMBContext.swift */,
+				752B184CC66C4E88A390344E /* AMBCore.swift */,
+				4573B701054A4BE09513C68D /* AMBGenerated.swift */,
+				A71A9EF43D4647C8A760F101 /* AMBInterstitial.swift */,
+				54AF66205BC842C5AF896314 /* AMBNativeAd.swift */,
+				D824322E6C43487C85956BEA /* AMBPlugin.swift */,
+				8394763D6BBF494B9DE70DB4 /* AMBRewarded.swift */,
+				B52A82F3B6F4408399BDE92C /* AMBRewardedInterstitial.swift */,
+				F3B6B57117E94174AA2A7A89 /* InAppPurchase.m */,
+				7CD3FA98C865423191FB2364 /* SKProduct+LocalizedPrice.m */,
+				1DBB95A8A26B4EF2A25F88C4 /* SKProductDiscount+LocalizedPrice.m */,
+				E5BA0544CE0B42FA811A1063 /* FileUtility.m */,
+				F9E29B5D06014D8F8CAE6715 /* InAppPurchase.h */,
+				A688DD6D04D64A51A2825A81 /* SKProduct+LocalizedPrice.h */,
+				0DA49F146CB34F65A9344606 /* SKProductDiscount+LocalizedPrice.h */,
+				D437EE2EC93F40AB8D19036B /* FileUtility.h */,
+				AC7E4E0541C1473187599BE3 /* NSString+SSURLEncoding.m */,
+				FA27F77FE3E6412AB2903842 /* SocialSharing.m */,
+				8CFF252BB9C24E64865C2E95 /* NSString+SSURLEncoding.h */,
+				BF4700F681A347E3A23179AD /* SocialSharing.h */,
+				86A846536B44481F9C449A12 /* CDVBuildInfo.m */,
+				F703A9056F454185A1A07FC7 /* CDVBuildInfo.h */,
+				691F1B92A95B47238EF296B3 /* CDVInAppBrowserOptions.m */,
+				B26B7C17A59C470F9A032E1F /* CDVInAppBrowserNavigationController.m */,
+				CC9AE59263C949F98A7C8AC2 /* CDVWKInAppBrowser.m */,
+				4407811B75EA46329FB8DE5C /* CDVWKInAppBrowserUIDelegate.m */,
+				A78F7D88A5FD454180CA3B5B /* CDVInAppBrowserOptions.h */,
+				E2ACC373A69C4B0095361422 /* CDVInAppBrowserNavigationController.h */,
+				4EA87602114347EDB3F81A0E /* CDVWKInAppBrowser.h */,
+				0A383CECC59E4EBE8BAA1BAE /* CDVWKInAppBrowserUIDelegate.h */,
+				49C7053DB04D4E58BB7CA5EB /* CBTBrowserTab.m */,
+				BEA40F7F735843D88380902B /* CBTBrowserTab.h */,
+				8CE523D6BAC643A98BD4CE8E /* CULPlugin.m */,
+				47E181980BEB484DAB7FA708 /* AppDelegate+CULPlugin.m */,
+				98D55EC0C1FB4587A1EACD4C /* CDVPluginResult+CULPlugin.m */,
+				A321A03103A94E7F805E33D7 /* CDVInvokedUrlCommand+CULPlugin.m */,
+				C5527DB3230E4B22BF56D2E3 /* CULHost.m */,
+				B47C03A45E424C13BDF9FD7E /* CULPath.m */,
+				CAE906588C2D470DB6874E27 /* CULXmlTags.m */,
+				2EBB80ED63C144C6AB83067A /* CULConfigXmlParser.m */,
+				69C3B2F7306E47E98E1BE803 /* CULConfigJsonParser.m */,
+				B12AD0FB0B51493BB3E48364 /* NSBundle+CULPlugin.m */,
+				3291801C9FA94DDC9EB3CF42 /* CULPlugin.h */,
+				96347F2649104DE987075AB4 /* AppDelegate+CULPlugin.h */,
+				3F4F1DC2CBE34B79A00D21C2 /* CDVPluginResult+CULPlugin.h */,
+				A9EF6ED519D342A5B72AF008 /* CDVInvokedUrlCommand+CULPlugin.h */,
+				DAEEF35C63CD493684183D37 /* CULHost.h */,
+				ABC159E13EAD4454B312ACBB /* CULPath.h */,
+				234DC21146BA47B491387745 /* CULXmlTags.h */,
+				DFD01AA6EC474D70BEBE27F0 /* CULConfigXmlParser.h */,
+				9A330CF318B8458A9DC54C75 /* CULConfigJsonParser.h */,
+				497B2122F99843AC9CEC3E2E /* NSBundle+CULPlugin.h */,
+			);
+			name = Plugins;
+			path = TappyPlane/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TappyPlane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TappyPlane" */;
+			buildPhases = (
+				9122E6E53664427730601354 /* [CP] Check Pods Manifest.lock */,
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9A6E9D96052C1F1080B06FB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = TappyPlane;
+			productName = TappyPlane;
+			productReference = 1D6058910D05DD3D006BFB54 /* TappyPlane.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TappyPlane" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TappyPlane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				69747DC6CA994422AFE76D32 /* TappyPlane.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/TappyPlane/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		9122E6E53664427730601354 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TappyPlane-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A6E9D96052C1F1080B06FB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TappyPlane/Pods-TappyPlane-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TappyPlane/Pods-TappyPlane-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TappyPlane/Pods-TappyPlane-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				48F0137076044705BFC5BAA1 /* FacebookConnectPlugin.m in Sources */,
+				488755CEEA3B4FBDBBD54BFB /* AMBAdBase.swift in Sources */,
+				8CF37A8205B04C79B73592AF /* AMBAppOpenAd.swift in Sources */,
+				6DAB65BDEB8C45068C1823F4 /* AMBBanner.swift in Sources */,
+				6D717C22BD484D8E94B0C7B9 /* AMBContext.swift in Sources */,
+				F5E25FA21338487CAB84A6FB /* AMBCore.swift in Sources */,
+				49D70D5C87554637B4ED5930 /* AMBGenerated.swift in Sources */,
+				6B4088C1620A428686A993DD /* AMBInterstitial.swift in Sources */,
+				CE5F2301DCD74386983C8D5D /* AMBNativeAd.swift in Sources */,
+				4BA459140BBD4DB8AF431819 /* AMBPlugin.swift in Sources */,
+				057E3011AEFB4805869F802C /* AMBRewarded.swift in Sources */,
+				804D94C9E83048DE88F74DC7 /* AMBRewardedInterstitial.swift in Sources */,
+				1E44CF219B1D482CB4880E31 /* InAppPurchase.m in Sources */,
+				574F9C0D8A7442E691754073 /* SKProduct+LocalizedPrice.m in Sources */,
+				D28CA3B78E1A4F559E258AD2 /* SKProductDiscount+LocalizedPrice.m in Sources */,
+				71D408A81D25483E87C0B23F /* FileUtility.m in Sources */,
+				3EDC7C50F60E44B9A37665FA /* NSString+SSURLEncoding.m in Sources */,
+				C8D130E99C1945F5AAD5FED0 /* SocialSharing.m in Sources */,
+				750E4C2E395547F18419E7BE /* CDVBuildInfo.m in Sources */,
+				1AC006D0E0274EBFB0C234D9 /* CDVInAppBrowserOptions.m in Sources */,
+				BF0F7EB5446240768A81A09B /* CDVInAppBrowserNavigationController.m in Sources */,
+				E92EA786211C43DB927C94E9 /* CDVWKInAppBrowser.m in Sources */,
+				456BE27108B54E059F1584BA /* CDVWKInAppBrowserUIDelegate.m in Sources */,
+				089F3D8DD3F449B78CD01AD7 /* CBTBrowserTab.m in Sources */,
+				C440E05442C44F9CA2F2334D /* CULPlugin.m in Sources */,
+				D8B88C4C89F84BEC9C79083C /* AppDelegate+CULPlugin.m in Sources */,
+				C20F5963F0854B959D9C4526 /* CDVPluginResult+CULPlugin.m in Sources */,
+				EDDCF1A90B064B1181CD0EFD /* CDVInvokedUrlCommand+CULPlugin.m in Sources */,
+				B0B85A89D99C465AB83C87B0 /* CULHost.m in Sources */,
+				904E6363C9554D1E86F71F27 /* CULPath.m in Sources */,
+				663B0BCDD07A4F2FAA580756 /* CULXmlTags.m in Sources */,
+				4B7E509D144349B7B74FE122 /* CULConfigXmlParser.m in Sources */,
+				8B871577F8BF42549BECA0CB /* CULConfigJsonParser.m in Sources */,
+				348F6217F61B43959E9B3FB2 /* NSBundle+CULPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "TappyPlane/Resources/TappyPlane.entitlements";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9D3QHQ7CMS;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TappyPlane/TappyPlane-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "TappyPlane/TappyPlane-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.action-games";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doyban.tappyplane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "TappyPlane/Resources/TappyPlane.entitlements";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9D3QHQ7CMS;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TappyPlane/TappyPlane-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "TappyPlane/TappyPlane-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.action-games";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doyban.tappyplane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "TappyPlane/Resources/TappyPlane.entitlements";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "TappyPlane/Resources/TappyPlane.entitlements";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TappyPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TappyPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

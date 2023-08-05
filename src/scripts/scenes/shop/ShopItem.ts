@@ -128,6 +128,37 @@ export class ShopItem extends Phaser.GameObjects.Container {
     this.scene.events.emit("play_sound", "click", {
       volume: 1
     });
-    alert(`clicked x  ${this.multiplier}`);
+
+    const that = this;
+
+    const store = CdvPurchase.store;
+    const { ProductType, Platform } = CdvPurchase; // shortcuts
+
+    // Prepare product.
+    store.register({
+      id: `com.doyban.tappyplane.scorex${this.multiplier}`,
+      type: ProductType.CONSUMABLE,
+      platform: Platform.GOOGLE_PLAY,
+    });
+
+    store.when()
+      .approved((transaction: any) => {
+        transaction.verify()
+      })
+      .verified((receipt: any) => {
+        receipt.finish();
+
+        // Add extra score and begin the game.
+        localStorage.scoreRate = parseInt(that.multiplier);
+        that.scene.scene.start("Shop"); // Start Shop scene.
+      });
+
+    store.initialize([
+      Platform.GOOGLE_PLAY,
+    ]);
+
+    // Purchase product.
+    const offer: any = store.get(`com.doyban.tappyplane.scorex${this.multiplier}`, Platform.GOOGLE_PLAY).getOffer();
+    if (offer) store.order(offer);
   }
 }
