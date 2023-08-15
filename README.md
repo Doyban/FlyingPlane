@@ -37,3 +37,7 @@ This will run a server so game automatically opens in your defualt browser with 
 ### Webpack fix
 
 Running `export NODE_OPTIONS=--openssl-legacy-provider` might be needed before `npm run start` due to `webpack` problem.
+
+### Important
+
+Even though the package name in stores is `HappyPlane`, keep package details as `com.doyban.tappyplane` to avoid extra work related to migrations of integrations. `TappyPlane` wasn't possible to submit to `Google PlayStore`.

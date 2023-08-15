@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleDisplayName</key>
-	<string>TappyPlane</string>
+	<string>HappyPlane</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -111,7 +111,7 @@
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookDisplayName</key>
-	<string>TappyPlane</string>
+	<string>HappyPlane</string>
 	<key>FacebookHybridAppEvents</key>
 	<string>false</string>
 	<key>GADApplicationIdentifier</key>

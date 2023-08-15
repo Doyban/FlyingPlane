@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.doyban.tappyplane" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.doyban.tappyplane" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="FacebookConnectPlugin">
         <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
         <param name="onload" value="true" />
@@ -34,8 +34,8 @@
         <param name="android-package" value="com.nordnetab.cordova.ul.UniversalLinksPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>TappyPlane</name>
-    <description>Tap Game TappyPlane</description>
+    <name>HappyPlane</name>
+    <description>Tap Plane Game, similar to well known FlappyBird</description>
     <author email="contact@doyban.com" href="https://doyban.com">Doyban</author>
     <content src="index.html" />
     <access origin="*" />

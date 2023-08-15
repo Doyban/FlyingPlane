@@ -9,7 +9,7 @@
   "installed_plugins": {
     "cordova-plugin-facebook-connect": {
       "APP_ID": "757927572827959",
-      "APP_NAME": "TappyPlane",
+      "APP_NAME": "FlappyPlane",
       "FACEBOOK_URL_SCHEME_SUFFIX": " ",
       "OTHER_APP_SCHEMES": " ",
       "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
