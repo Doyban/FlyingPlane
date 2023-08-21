@@ -130,9 +130,8 @@ export class ShopItem extends Phaser.GameObjects.Container {
     });
 
     const that = this;
-
     const store = CdvPurchase.store;
-    const { ProductType, Platform } = CdvPurchase; // shortcuts
+    const { ProductType, Platform } = CdvPurchase;
 
     // Prepare product.
     store.register({
@@ -140,14 +139,10 @@ export class ShopItem extends Phaser.GameObjects.Container {
       type: ProductType.CONSUMABLE,
       platform: Platform.GOOGLE_PLAY,
     });
+    store.update();
 
-    store.when()
-      .approved((transaction: any) => {
-        transaction.verify()
-      })
-      .verified((receipt: any) => {
-        receipt.finish();
-
+    store.when(`com.doyban.tappyplane.scorex${this.multiplier}`)
+      .approved(() => {
         // Add extra score and begin the game.
         localStorage.scoreRate = parseInt(that.multiplier);
         that.scene.scene.start("Shop"); // Start Shop scene.
@@ -155,10 +150,8 @@ export class ShopItem extends Phaser.GameObjects.Container {
 
     store.initialize([
       Platform.GOOGLE_PLAY,
-    ]);
-
-    // Purchase product.
-    const offer: any = store.get(`com.doyban.tappyplane.scorex${this.multiplier}`, Platform.GOOGLE_PLAY).getOffer();
-    if (offer) store.order(offer);
+    ]).then(() => {
+      console.log('products2', store.products);
+    });;
   }
 }
