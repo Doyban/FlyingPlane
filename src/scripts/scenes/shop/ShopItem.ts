@@ -129,19 +129,12 @@ export class ShopItem extends Phaser.GameObjects.Container {
       volume: 1
     });
 
+    // Purchase In-App Purchase (IAP) item.
     const that = this;
     const store = CdvPurchase.store;
-    const { ProductType, Platform } = CdvPurchase;
+    const { Platform } = CdvPurchase;
 
-    // Prepare product.
-    store.register({
-      id: `com.doyban.tappyplane.scorex${this.multiplier}`,
-      type: ProductType.CONSUMABLE,
-      platform: Platform.GOOGLE_PLAY,
-    });
-    store.update();
-
-    store.when(`com.doyban.tappyplane.scorex${this.multiplier}`)
+    store.when()
       .approved(() => {
         // Add extra score and begin the game.
         localStorage.scoreRate = parseInt(that.multiplier);
@@ -150,8 +143,9 @@ export class ShopItem extends Phaser.GameObjects.Container {
 
     store.initialize([
       Platform.GOOGLE_PLAY,
-    ]).then(() => {
-      console.log('products2', store.products);
-    });;
+    ]);
+
+    const offer: any = store.get(`scorex${this.multiplier}`).getOffer();
+    store.order(offer);
   }
 }
