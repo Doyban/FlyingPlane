@@ -32,6 +32,7 @@ export default class SplashScreen extends Phaser.Scene {
     );
 
     localStorage.scoreRate = localStorage.scoreRate || 1; // Initialize scoreRate.
+    localStorage.score = 0;
   }
 
   /**

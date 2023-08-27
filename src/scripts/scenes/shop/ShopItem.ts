@@ -130,15 +130,14 @@ export class ShopItem extends Phaser.GameObjects.Container {
     });
 
     // Purchase In-App Purchase (IAP) item.
-    const that = this;
     const store = CdvPurchase.store;
     const { Platform } = CdvPurchase;
 
     store.when()
       .approved(() => {
         // Add extra score and begin the game.
-        localStorage.scoreRate = parseInt(that.multiplier);
-        that.scene.scene.start("Shop"); // Start Shop scene.
+        localStorage.scoreRate = this.multiplier;
+        this.scene.scene.start("Shop"); // Start Shop scene.
       });
 
     store.initialize([

@@ -289,13 +289,13 @@ export class GamePlay extends Phaser.Scene {
           // Set appropriate medal to show and update score accordingly to collided Stars.
           if (gameObject2.gameObject.frame.name === "starBronze.png") {
             this.data.set("medal", 0);
-            this.data.set(SCORE, this.data.get(SCORE) + 1);
+            this.data.set(SCORE, this.data.get(SCORE) + (1 * localStorage.scoreRate));
           } else if (gameObject2.gameObject.frame.name === "starSilver.png") {
             this.data.set("medal", 1);
-            this.data.set(SCORE, this.data.get(SCORE) + 2);
+            this.data.set(SCORE, this.data.get(SCORE) + (2 * localStorage.scoreRate));
           } else if (gameObject2.gameObject.frame.name === "starGold.png") {
             this.data.set("medal", 2);
-            this.data.set(SCORE, this.data.get(SCORE) + 3);
+            this.data.set(SCORE, this.data.get(SCORE) + (3 * localStorage.scoreRate));
           }
           gameObject2.gameObject.destroy(); // Destroy Star.
 
@@ -475,7 +475,7 @@ export class GamePlay extends Phaser.Scene {
       this.levelDuration = this.getLevelDuration; // Get level duration.
       // There are only 3 frames for Stars, therefore don't increase its level to more than to third item in an array.
       if (this.starLevel < 2) {
-        this.starLevel += parseInt(localStorage.scoreRate); // Set next level by increasing Star level and therefore changing Star type.
+        this.starLevel += 1; // Set next level by increasing Star level and therefore changing Star type.
         this.starFrame = this.getStarFrame; // Get Star frame to next level.
       }
     }
@@ -548,7 +548,7 @@ export class GamePlay extends Phaser.Scene {
     this.events.off("play_sound");
     this.events.off("stop_sound");
 
-    localStorage.score = this.starLevel; // Set score to possibly share it in game over popup.
+    localStorage.score = this.data.get(SCORE); // Set score to possibly share it in game over popup.
     localStorage.scoreRate = 1; // Set to default scoreRate on game over.
   }
 }
