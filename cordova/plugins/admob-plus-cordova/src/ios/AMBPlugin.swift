@@ -129,7 +129,7 @@ class AMBPlugin: CDVPlugin {
                 if ad != nil {
                     ctx.resolve()
                 } else {
-                    ctx.reject("fail to create ad: \(ctx.optId() ?? "-")")
+                    ctx.reject("fail to create ad: \(ctx.optId() ?? -1)")
                 }
             } else {
                 ctx.reject()
@@ -190,21 +190,9 @@ class AMBPlugin: CDVPlugin {
         }
     }
 
-    @objc func webviewGoto(_ command: CDVInvokedUrlCommand) {
-        let ctx = AMBContext(command)
-
-        DispatchQueue.main.async {
-            if let url = URL(string: ctx.optWebviewGoto()+"#from_webview_goto") {
-                let webView = self.webViewEngine.engineWebView as! WKWebView
-                webView.load(URLRequest(url: url))
-            }
-        }
-    }
-
     func emit(_ eventName: String, data: Any = NSNull()) {
         let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: ["type": eventName, "data": data])
         result?.setKeepCallbackAs(true)
         self.commandDelegate.send(result, callbackId: readyCallbackId)
     }
-
 }

@@ -9,14 +9,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "admob-plus-cordova.AdMob",
-      "file": "plugins/admob-plus-cordova/www/admob.js",
-      "pluginId": "admob-plus-cordova",
-      "clobbers": [
-        "admob"
-      ]
-    },
-    {
       "id": "cordova-plugin-customurlscheme.LaunchMyApp",
       "file": "plugins/cordova-plugin-customurlscheme/www/ios/LaunchMyApp.js",
       "pluginId": "cordova-plugin-customurlscheme",
@@ -78,11 +70,18 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "universalLinks"
       ]
+    },
+    {
+      "id": "admob-plus-cordova.AdMob",
+      "file": "plugins/admob-plus-cordova/www/admob.js",
+      "pluginId": "admob-plus-cordova",
+      "clobbers": [
+        "admob"
+      ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-facebook-connect": "3.2.0",
-    "admob-plus-cordova": "2.0.0-alpha.8",
     "cordova-plugin-customurlscheme": "5.0.2",
     "cordova-plugin-purchase": "13.6.0",
     "es6-promise-plugin": "4.2.2",
@@ -92,6 +91,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-compat": "1.2.0",
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-plugin-androidx": "3.0.0",
-    "cordova-universal-links-plugin": "1.2.1"
+    "cordova-universal-links-plugin": "1.2.1",
+    "admob-plus-cordova": "1.28.0"
   };
 });

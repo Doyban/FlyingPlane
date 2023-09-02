@@ -9,7 +9,7 @@
   "installed_plugins": {
     "cordova-plugin-facebook-connect": {
       "APP_ID": "757927572827959",
-      "APP_NAME": "FlappyPlane",
+      "APP_NAME": "HappyPlane",
       "FACEBOOK_URL_SCHEME_SUFFIX": " ",
       "OTHER_APP_SCHEMES": " ",
       "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
@@ -24,11 +24,6 @@
       "PACKAGE_NAME": "com.doyban.tappyplane"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
-    },
-    "admob-plus-cordova": {
-      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
-      "PLAY_SERVICES_VERSION": "22.1.0",
       "PACKAGE_NAME": "com.doyban.tappyplane"
     },
     "cordova-plugin-buildinfo": {
@@ -48,6 +43,11 @@
       "PACKAGE_NAME": "com.doyban.tappyplane"
     },
     "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "admob-plus-cordova": {
+      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+      "PLAY_SERVICES_VERSION": "20.6.0",
       "PACKAGE_NAME": "com.doyban.tappyplane"
     }
   },

@@ -29,15 +29,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var cordova = __importStar(require("cordova"));
 var channel_1 = __importDefault(require("cordova/channel"));
 var exec_1 = __importDefault(require("cordova/exec"));
-var index_1 = require("./index");
-var base_1 = require("./ads/base");
-var common_1 = require("./common");
-var admob = new index_1.AdMob();
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+var _1 = require(".");
+var shared_1 = require("./shared");
+var admob = new _1.AdMob();
 function onMessageFromNative(event) {
     var data = event.data;
     if (data && data.adId) {
-        data.ad = base_1.MobileAd.getAdById(data.adId);
+        data.ad = shared_1.MobileAd.getAdById(data.adId);
     }
     cordova.fireDocumentEvent(event.type, data);
 }
@@ -45,8 +43,7 @@ var feature = 'onAdMobPlusReady';
 channel_1.default.createSticky(feature);
 channel_1.default.waitForInitialization(feature);
 channel_1.default.onCordovaReady.subscribe(function () {
-    var action = 'ready';
-    (0, exec_1.default)(onMessageFromNative, console.error, common_1.CordovaService, action, []);
+    (0, exec_1.default)(onMessageFromNative, console.error, 'AdMob', shared_1.NativeActions.ready, []);
     channel_1.default.initializationComplete(feature);
 });
 exports.default = admob;

@@ -14,7 +14,7 @@ extension AMBHelperAdapter {
 }
 
 class AMBHelper {
-    static let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })!
+    static let window = UIApplication.shared.keyWindow!
 
     static var topAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
@@ -77,8 +77,8 @@ extension AMBCoreContext {
         return optFloat("appVolume")
     }
 
-    func optId() -> String? {
-        return optString("id")
+    func optId() -> Int? {
+        return optInt("id")
     }
 
     func optPosition() -> String {
@@ -102,7 +102,7 @@ extension AMBCoreContext {
         if let ad = optAd() {
             return ad
         } else {
-            reject("Ad not found: \(optId() ?? "-")")
+            reject("Ad not found: \(optId() ?? -1)")
             return nil
         }
     }
@@ -196,13 +196,13 @@ extension AMBCoreContext {
 }
 
 class AMBCoreAd: NSObject {
-    static var ads = [String: AMBCoreAd]()
+    static var ads = [Int: AMBCoreAd]()
 
-    let id: String
+    let id: Int
     let adUnitId: String
     let adRequest: GADRequest
 
-    init(id: String, adUnitId: String, adRequest: GADRequest) {
+    init(id: Int, adUnitId: String, adRequest: GADRequest) {
         self.id = id
         self.adUnitId = adUnitId
         self.adRequest = adRequest

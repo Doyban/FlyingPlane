@@ -18,17 +18,6 @@
       "APP_NAME": "MoveUp"
     }
   },
-  "admob-plus-cordova": {
-    "source": {
-      "type": "registry",
-      "id": "admob-plus-cordova@2.0.0-alpha.8"
-    },
-    "is_top_level": true,
-    "variables": {
-      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
-      "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334"
-    }
-  },
   "cordova-plugin-customurlscheme": {
     "source": {
       "type": "registry",
@@ -92,7 +81,7 @@
   "cordova-plugin-androidx": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-androidx"
+      "id": "cordova-plugin-androidx@^3.0.0"
     },
     "is_top_level": true,
     "variables": {}
@@ -104,5 +93,16 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "admob-plus-cordova": {
+    "source": {
+      "type": "registry",
+      "id": "admob-plus-cordova@1.28.0"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+      "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334"
+    }
   }
 }

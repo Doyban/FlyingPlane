@@ -1,11 +1,9 @@
 import * as cordova from 'cordova';
 import channel from 'cordova/channel';
 import exec from 'cordova/exec';
-import { AdMob } from './index';
-import { MobileAd } from './ads/base';
-import { CordovaService } from './common';
+import { AdMob } from '.';
+import { MobileAd, NativeActions } from './shared';
 var admob = new AdMob();
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function onMessageFromNative(event) {
     var data = event.data;
     if (data && data.adId) {
@@ -17,8 +15,7 @@ var feature = 'onAdMobPlusReady';
 channel.createSticky(feature);
 channel.waitForInitialization(feature);
 channel.onCordovaReady.subscribe(function () {
-    var action = 'ready';
-    exec(onMessageFromNative, console.error, CordovaService, action, []);
+    exec(onMessageFromNative, console.error, 'AdMob', NativeActions.ready, []);
     channel.initializationComplete(feature);
 });
 export default admob;

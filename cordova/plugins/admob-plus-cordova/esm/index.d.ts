@@ -1,22 +1,29 @@
-import * as ads from './ads';
-import { AdMobConfig, Events } from './common';
-export * from './ads';
-export * from './common';
+import AppOpenAd from './app-open';
+import BannerAd, { BannerAdOptions } from './banner';
+import InterstitialAd from './interstitial';
+import NativeAd, { NativeAdOptions } from './native';
+import RewardedAd, { RewardedAdOptions, ServerSideVerificationOptions } from './rewarded';
+import RewardedInterstitialAd, { RewardedInterstitialAdOptions } from './rewarded-interstitial';
+import { AdMobConfig, Events, RequestConfig, TrackingAuthorizationStatus } from './shared';
+export * from './api';
+export { AppOpenAd, BannerAd, BannerAdOptions, InterstitialAd, NativeAd, NativeAdOptions, RewardedAd, RewardedAdOptions, RewardedInterstitialAd, RewardedInterstitialAdOptions, ServerSideVerificationOptions, };
 export declare class AdMob {
-    readonly AppOpenAd: typeof ads.AppOpenAd;
-    readonly BannerAd: typeof ads.BannerAd;
-    readonly InterstitialAd: typeof ads.InterstitialAd;
-    readonly NativeAd: typeof ads.NativeAd;
-    readonly RewardedAd: typeof ads.RewardedAd;
-    readonly RewardedInterstitialAd: typeof ads.RewardedInterstitialAd;
-    readonly WebViewAd: typeof ads.WebViewAd;
+    readonly AppOpenAd: typeof AppOpenAd;
+    readonly BannerAd: typeof BannerAd;
+    readonly InterstitialAd: typeof InterstitialAd;
+    readonly NativeAd: typeof NativeAd;
+    readonly RewardedAd: typeof RewardedAd;
+    readonly RewardedInterstitialAd: typeof RewardedInterstitialAd;
     readonly Events: typeof Events;
-    private _startPromise;
+    readonly TrackingAuthorizationStatus: typeof TrackingAuthorizationStatus;
     configure(config: AdMobConfig): Promise<unknown>;
+    configRequest(requestConfig: RequestConfig): Promise<unknown>;
+    setAppMuted(value: boolean): Promise<unknown>;
+    setAppVolume(value: number): Promise<unknown>;
     start(): Promise<{
         version: string;
     }>;
-    private _start;
+    requestTrackingAuthorization(): Promise<TrackingAuthorizationStatus | false>;
 }
 declare global {
     const admob: AdMob;
