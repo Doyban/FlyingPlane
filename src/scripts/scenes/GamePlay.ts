@@ -298,6 +298,7 @@ export class GamePlay extends Phaser.Scene {
             this.data.set(SCORE, this.data.get(SCORE) + (3 * localStorage.scoreRate));
           }
           gameObject2.gameObject.destroy(); // Destroy Star.
+          localStorage.score = this.data.get(SCORE); // Set score to possibly share it in game over popup.
 
           // Check collision between Rock and Plane.
         } else {
@@ -548,7 +549,6 @@ export class GamePlay extends Phaser.Scene {
     this.events.off("play_sound");
     this.events.off("stop_sound");
 
-    localStorage.score = this.data.get(SCORE); // Set score to possibly share it in game over popup.
     localStorage.scoreRate = 1; // Set to default scoreRate on game over.
   }
 }
