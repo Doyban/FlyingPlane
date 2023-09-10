@@ -134,10 +134,12 @@ export class ShopItem extends Phaser.GameObjects.Container {
     const { Platform } = CdvPurchase;
 
     store.when()
-      .approved(() => {
+      .approved((transaction: any) => {
         // Add extra score and begin the game.
         localStorage.scoreRate = this.multiplier;
         this.scene.scene.start("Shop"); // Start Shop scene.
+
+        transaction.finish(); // Consume the transaction, so user can order the same item again (https://github.com/j3k0/cordova-plugin-purchase/issues/1459).
       });
 
     store.initialize([
@@ -145,6 +147,6 @@ export class ShopItem extends Phaser.GameObjects.Container {
     ]);
 
     const offer: any = store.get(`scorex${this.multiplier}`).getOffer();
-    store.order(offer);
+    store.order(offer); // Sometimes it's crashing, on x2 and x6 purchase while (thankfully) still keeping the purchase in the localStorage.
   }
 }
