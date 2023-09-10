@@ -13,27 +13,15 @@
               "count": 1
             },
             {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-4865595196880143~4169283752\" />",
+              "count": 20
+            },
+            {
               "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:excludeFromRecents=\"true\" android:name=\"com.google.android.gms.ads.AdActivity\" android:noHistory=\"true\" />",
               "count": 1
             },
             {
-              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-4865595196880143~4169283752\" />",
-              "count": 17
-            },
-            {
               "xml": "<meta-data android:name=\"com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT\" android:value=\"true\" />",
-              "count": 1
-            },
-            {
-              "xml": "<meta-data android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\" android:value=\"true\" />",
-              "count": 1
-            },
-            {
-              "xml": "<meta-data android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\" android:value=\"true\" />",
-              "count": 1
-            },
-            {
-              "xml": "<meta-data android:name=\"com.google.android.gms.ads.flag.INTEGRATION_MANAGER\" android:value=\"webview\" />",
               "count": 1
             }
           ],
@@ -135,10 +123,6 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"admob.plus.cordova.AdMob\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"BuildInfo\"><param name=\"android-package\" value=\"org.apache.cordova.buildinfo.BuildInfo\" /></feature>",
               "count": 1
             },
@@ -157,6 +141,10 @@
             {
               "xml": "<feature name=\"UniversalLinks\"><param name=\"android-package\" value=\"com.nordnetab.cordova.ul.UniversalLinksPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"admob.plus.cordova.AdMob\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -169,7 +157,7 @@
               "count": 1
             },
             {
-              "xml": "<string name=\"fb_app_name\">FlappyPlane</string>",
+              "xml": "<string name=\"fb_app_name\">HappyPlane</string>",
               "count": 1
             },
             {
@@ -192,7 +180,7 @@
   "installed_plugins": {
     "cordova-plugin-facebook-connect": {
       "APP_ID": "757927572827959",
-      "APP_NAME": "FlappyPlane",
+      "APP_NAME": "HappyPlane",
       "FACEBOOK_URL_SCHEME_SUFFIX": " ",
       "OTHER_APP_SCHEMES": " ",
       "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
@@ -212,11 +200,6 @@
     "cordova-plugin-x-socialsharing": {
       "PACKAGE_NAME": "com.doyban.tappyplane"
     },
-    "admob-plus-cordova": {
-      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
-      "PLAY_SERVICES_VERSION": "22.1.0",
-      "PACKAGE_NAME": "com.doyban.tappyplane"
-    },
     "cordova-plugin-buildinfo": {
       "PACKAGE_NAME": "com.doyban.tappyplane"
     },
@@ -234,6 +217,11 @@
       "PACKAGE_NAME": "com.doyban.tappyplane"
     },
     "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.doyban.tappyplane"
+    },
+    "admob-plus-cordova": {
+      "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+      "PLAY_SERVICES_VERSION": "20.6.0",
       "PACKAGE_NAME": "com.doyban.tappyplane"
     }
   },
@@ -268,14 +256,6 @@
       "pluginId": "cordova-plugin-x-socialsharing",
       "clobbers": [
         "window.plugins.socialsharing"
-      ]
-    },
-    {
-      "id": "admob-plus-cordova.AdMob",
-      "file": "plugins/admob-plus-cordova/www/admob.js",
-      "pluginId": "admob-plus-cordova",
-      "clobbers": [
-        "admob"
       ]
     },
     {
@@ -317,6 +297,14 @@
       "clobbers": [
         "universalLinks"
       ]
+    },
+    {
+      "id": "admob-plus-cordova.AdMob",
+      "file": "plugins/admob-plus-cordova/www/admob.js",
+      "pluginId": "admob-plus-cordova",
+      "clobbers": [
+        "admob"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -324,11 +312,11 @@
     "cordova-plugin-purchase": "13.6.0",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "6.0.4",
-    "admob-plus-cordova": "2.0.0-alpha.8",
     "cordova-plugin-buildinfo": "4.0.0",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-customurlscheme": "5.0.2",
     "cordova-plugin-browsertab": "0.2.0",
-    "cordova-universal-links-plugin": "1.2.1"
+    "cordova-universal-links-plugin": "1.2.1",
+    "admob-plus-cordova": "1.28.0"
   }
 }

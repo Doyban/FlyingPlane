@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		057E3011AEFB4805869F802C /* AMBRewarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394763D6BBF494B9DE70DB4 /* AMBRewarded.swift */; };
 		0EFFB91715A943C1AB43CB70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00A6DFE219941D8BF4A15E9 /* StoreKit.framework */; };
-		151236890F7848B3A4CC5005 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE8325A5C95441BBEB41C10 /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		17DF3F94F5DC41D48332E84C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317E1A6591D04797A3E975E4 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -19,25 +17,15 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		3EDC7C50F60E44B9A37665FA /* NSString+SSURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7E4E0541C1473187599BE3 /* NSString+SSURLEncoding.m */; };
-		488755CEEA3B4FBDBBD54BFB /* AMBAdBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB255630B92643DE9A22E2DF /* AMBAdBase.swift */; };
 		48F0137076044705BFC5BAA1 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A09D856E86495490763516 /* FacebookConnectPlugin.m */; };
-		49D70D5C87554637B4ED5930 /* AMBGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573B701054A4BE09513C68D /* AMBGenerated.swift */; };
-		4BA459140BBD4DB8AF431819 /* AMBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824322E6C43487C85956BEA /* AMBPlugin.swift */; };
 		574F9C0D8A7442E691754073 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3FA98C865423191FB2364 /* SKProduct+LocalizedPrice.m */; };
 		69747DC6CA994422AFE76D32 /* TappyPlane.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = E282426CE8DA4C29B348870C /* TappyPlane.entitlements */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		6B4088C1620A428686A993DD /* AMBInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A9EF43D4647C8A760F101 /* AMBInterstitial.swift */; };
-		6D717C22BD484D8E94B0C7B9 /* AMBContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070A148AB4C542299E575510 /* AMBContext.swift */; };
-		6DAB65BDEB8C45068C1823F4 /* AMBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB8779631B44E0B71649C8 /* AMBBanner.swift */; };
 		71D408A81D25483E87C0B23F /* FileUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BA0544CE0B42FA811A1063 /* FileUtility.m */; };
-		804D94C9E83048DE88F74DC7 /* AMBRewardedInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52A82F3B6F4408399BDE92C /* AMBRewardedInterstitial.swift */; };
-		8CF37A8205B04C79B73592AF /* AMBAppOpenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F220DB6D7047079B149799 /* AMBAppOpenAd.swift */; };
 		AC42DDB2A29E47E48DC8D43C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAA8ADF542E4F3693AB1876 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C8D130E99C1945F5AAD5FED0 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27F77FE3E6412AB2903842 /* SocialSharing.m */; };
-		CE5F2301DCD74386983C8D5D /* AMBNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF66205BC842C5AF896314 /* AMBNativeAd.swift */; };
 		D28CA3B78E1A4F559E258AD2 /* SKProductDiscount+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB95A8A26B4EF2A25F88C4 /* SKProductDiscount+LocalizedPrice.m */; };
 		D9930F671CB9B0972273432D /* Pods_TappyPlane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6AE954FB0DAFCCDB7F4941 /* Pods_TappyPlane.framework */; };
-		F5E25FA21338487CAB84A6FB /* AMBCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B184CC66C4E88A390344E /* AMBCore.swift */; };
 		750E4C2E395547F18419E7BE /* CDVBuildInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A846536B44481F9C449A12 /* CDVBuildInfo.m */; };
 		1AC006D0E0274EBFB0C234D9 /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 691F1B92A95B47238EF296B3 /* CDVInAppBrowserOptions.m */; };
 		BF0F7EB5446240768A81A09B /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B7C17A59C470F9A032E1F /* CDVInAppBrowserNavigationController.m */; };
@@ -55,6 +43,18 @@
 		4B7E509D144349B7B74FE122 /* CULConfigXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB80ED63C144C6AB83067A /* CULConfigXmlParser.m */; };
 		8B871577F8BF42549BECA0CB /* CULConfigJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C3B2F7306E47E98E1BE803 /* CULConfigJsonParser.m */; };
 		348F6217F61B43959E9B3FB2 /* NSBundle+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B12AD0FB0B51493BB3E48364 /* NSBundle+CULPlugin.m */; };
+		6361D6D78B5446A3A27030FD /* AMBAdBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF8DB83CD9476AAB14B457 /* AMBAdBase.swift */; };
+		4561E38F2F04482DAB55A6C9 /* AMBAppOpenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9DFE16C62468C8F73C685 /* AMBAppOpenAd.swift */; };
+		3B414E05259349518AC00FB2 /* AMBBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CEB4EB69044AE88EA42B24 /* AMBBanner.swift */; };
+		6A11BA3F561D46E6A1497274 /* AMBContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAB820671B46A3A6630EF7 /* AMBContext.swift */; };
+		722BA2196BFD4351B1A38D02 /* AMBCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C28967E534FC09068C67A /* AMBCore.swift */; };
+		8F5EB8CD246F45C8AA8C94E7 /* AMBGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36CAE10D804D4C8AB0B329 /* AMBGenerated.swift */; };
+		DA56D6F4C23D47E5859B26D0 /* AMBInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298023E1BD94E928536EC78 /* AMBInterstitial.swift */; };
+		E600A8D790594FF9AB6430F9 /* AMBNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2A310C3DD4531B29EBD87 /* AMBNativeAd.swift */; };
+		FEBBB36A46C245C4BAEC6852 /* AMBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD365ECF3A4A848666A176 /* AMBPlugin.swift */; };
+		BF615308D47C4D79A8DC3FDD /* AMBRewarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9424F6CE43F0855C397C /* AMBRewarded.swift */; };
+		D9E598C22D15464B98D583B2 /* AMBRewardedInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1C9F4224D4DB1B988C49E /* AMBRewardedInterstitial.swift */; };
+		288CC5D903464D968531DD99 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFF2045CDDF4216BBEA2E3A /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TappyPlane/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		070A148AB4C542299E575510 /* AMBContext.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBContext.swift; path = "admob-plus-cordova/AMBContext.swift"; sourceTree = "<group>"; };
 		0DA49F146CB34F65A9344606 /* SKProductDiscount+LocalizedPrice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "SKProductDiscount+LocalizedPrice.h"; path = "cordova-plugin-purchase/SKProductDiscount+LocalizedPrice.h"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,29 +100,19 @@
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		317E1A6591D04797A3E975E4 /* MessageUI.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* TappyPlane-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TappyPlane-Prefix.pch"; sourceTree = "<group>"; };
-		4573B701054A4BE09513C68D /* AMBGenerated.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBGenerated.swift; path = "admob-plus-cordova/AMBGenerated.swift"; sourceTree = "<group>"; };
-		54AF66205BC842C5AF896314 /* AMBNativeAd.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBNativeAd.swift; path = "admob-plus-cordova/AMBNativeAd.swift"; sourceTree = "<group>"; };
 		5FAA8ADF542E4F3693AB1876 /* Social.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = TappyPlane/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		70A09D856E86495490763516 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = "cordova-plugin-facebook-connect/FacebookConnectPlugin.m"; sourceTree = "<group>"; };
-		752B184CC66C4E88A390344E /* AMBCore.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBCore.swift; path = "admob-plus-cordova/AMBCore.swift"; sourceTree = "<group>"; };
 		7CD3FA98C865423191FB2364 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "SKProduct+LocalizedPrice.m"; path = "cordova-plugin-purchase/SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
 		7E8D57EDD5BB4EC1914773E3 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "cordova-plugin-facebook-connect/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
-		8394763D6BBF494B9DE70DB4 /* AMBRewarded.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBRewarded.swift; path = "admob-plus-cordova/AMBRewarded.swift"; sourceTree = "<group>"; };
 		8CFF252BB9C24E64865C2E95 /* NSString+SSURLEncoding.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSString+SSURLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+SSURLEncoding.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TappyPlane-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TappyPlane-Info.plist"; path = "TappyPlane/TappyPlane-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		A0F220DB6D7047079B149799 /* AMBAppOpenAd.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBAppOpenAd.swift; path = "admob-plus-cordova/AMBAppOpenAd.swift"; sourceTree = "<group>"; };
 		A688DD6D04D64A51A2825A81 /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "SKProduct+LocalizedPrice.h"; path = "cordova-plugin-purchase/SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
-		A71A9EF43D4647C8A760F101 /* AMBInterstitial.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBInterstitial.swift; path = "admob-plus-cordova/AMBInterstitial.swift"; sourceTree = "<group>"; };
 		AC7E4E0541C1473187599BE3 /* NSString+SSURLEncoding.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "NSString+SSURLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+SSURLEncoding.m"; sourceTree = "<group>"; };
-		B52A82F3B6F4408399BDE92C /* AMBRewardedInterstitial.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBRewardedInterstitial.swift; path = "admob-plus-cordova/AMBRewardedInterstitial.swift"; sourceTree = "<group>"; };
-		BB255630B92643DE9A22E2DF /* AMBAdBase.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBAdBase.swift; path = "admob-plus-cordova/AMBAdBase.swift"; sourceTree = "<group>"; };
 		BF4700F681A347E3A23179AD /* SocialSharing.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SocialSharing.h; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; };
 		C00A6DFE219941D8BF4A15E9 /* StoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		C0CB8779631B44E0B71649C8 /* AMBBanner.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBBanner.swift; path = "admob-plus-cordova/AMBBanner.swift"; sourceTree = "<group>"; };
 		CE8EC99E59222C18187BC474 /* Pods-TappyPlane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappyPlane.release.xcconfig"; path = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane.release.xcconfig"; sourceTree = "<group>"; };
 		D437EE2EC93F40AB8D19036B /* FileUtility.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FileUtility.h; path = "cordova-plugin-purchase/FileUtility.h"; sourceTree = "<group>"; };
-		D824322E6C43487C85956BEA /* AMBPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBPlugin.swift; path = "admob-plus-cordova/AMBPlugin.swift"; sourceTree = "<group>"; };
 		E282426CE8DA4C29B348870C /* TappyPlane.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = TappyPlane.entitlements; sourceTree = "<group>"; };
 		E5BA0544CE0B42FA811A1063 /* FileUtility.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FileUtility.m; path = "cordova-plugin-purchase/FileUtility.m"; sourceTree = "<group>"; };
 		EA6AE954FB0DAFCCDB7F4941 /* Pods_TappyPlane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TappyPlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +123,6 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = TappyPlane/config.xml; sourceTree = "<group>"; };
 		F9E29B5D06014D8F8CAE6715 /* InAppPurchase.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = InAppPurchase.h; path = "cordova-plugin-purchase/InAppPurchase.h"; sourceTree = "<group>"; };
 		FA27F77FE3E6412AB2903842 /* SocialSharing.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SocialSharing.m; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; };
-		FAE8325A5C95441BBEB41C10 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		86A846536B44481F9C449A12 /* CDVBuildInfo.m */ = {isa = PBXFileReference; name = "CDVBuildInfo.m"; path = "cordova-plugin-buildinfo/CDVBuildInfo.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		F703A9056F454185A1A07FC7 /* CDVBuildInfo.h */ = {isa = PBXFileReference; name = "CDVBuildInfo.h"; path = "cordova-plugin-buildinfo/CDVBuildInfo.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		691F1B92A95B47238EF296B3 /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
@@ -168,6 +156,18 @@
 		DFD01AA6EC474D70BEBE27F0 /* CULConfigXmlParser.h */ = {isa = PBXFileReference; name = "CULConfigXmlParser.h"; path = "cordova-universal-links-plugin/Parser/XML/CULConfigXmlParser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		9A330CF318B8458A9DC54C75 /* CULConfigJsonParser.h */ = {isa = PBXFileReference; name = "CULConfigJsonParser.h"; path = "cordova-universal-links-plugin/Parser/JSON/CULConfigJsonParser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		497B2122F99843AC9CEC3E2E /* NSBundle+CULPlugin.h */ = {isa = PBXFileReference; name = "NSBundle+CULPlugin.h"; path = "cordova-universal-links-plugin/Utils/NSBundle+CULPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A2EF8DB83CD9476AAB14B457 /* AMBAdBase.swift */ = {isa = PBXFileReference; name = "AMBAdBase.swift"; path = "admob-plus-cordova/AMBAdBase.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		23E9DFE16C62468C8F73C685 /* AMBAppOpenAd.swift */ = {isa = PBXFileReference; name = "AMBAppOpenAd.swift"; path = "admob-plus-cordova/AMBAppOpenAd.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		32CEB4EB69044AE88EA42B24 /* AMBBanner.swift */ = {isa = PBXFileReference; name = "AMBBanner.swift"; path = "admob-plus-cordova/AMBBanner.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		07DAB820671B46A3A6630EF7 /* AMBContext.swift */ = {isa = PBXFileReference; name = "AMBContext.swift"; path = "admob-plus-cordova/AMBContext.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		FF6C28967E534FC09068C67A /* AMBCore.swift */ = {isa = PBXFileReference; name = "AMBCore.swift"; path = "admob-plus-cordova/AMBCore.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		8A36CAE10D804D4C8AB0B329 /* AMBGenerated.swift */ = {isa = PBXFileReference; name = "AMBGenerated.swift"; path = "admob-plus-cordova/AMBGenerated.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		4298023E1BD94E928536EC78 /* AMBInterstitial.swift */ = {isa = PBXFileReference; name = "AMBInterstitial.swift"; path = "admob-plus-cordova/AMBInterstitial.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		7FD2A310C3DD4531B29EBD87 /* AMBNativeAd.swift */ = {isa = PBXFileReference; name = "AMBNativeAd.swift"; path = "admob-plus-cordova/AMBNativeAd.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		0AFD365ECF3A4A848666A176 /* AMBPlugin.swift */ = {isa = PBXFileReference; name = "AMBPlugin.swift"; path = "admob-plus-cordova/AMBPlugin.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		B0AA9424F6CE43F0855C397C /* AMBRewarded.swift */ = {isa = PBXFileReference; name = "AMBRewarded.swift"; path = "admob-plus-cordova/AMBRewarded.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		C6F1C9F4224D4DB1B988C49E /* AMBRewardedInterstitial.swift */ = {isa = PBXFileReference; name = "AMBRewardedInterstitial.swift"; path = "admob-plus-cordova/AMBRewardedInterstitial.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		9AFF2045CDDF4216BBEA2E3A /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; name = "AppTrackingTransparency.framework"; path = "System/Library/Frameworks/AppTrackingTransparency.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,11 +177,11 @@
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				D9930F671CB9B0972273432D /* Pods_TappyPlane.framework in Frameworks */,
-				151236890F7848B3A4CC5005 /* AppTrackingTransparency.framework in Frameworks */,
 				0EFFB91715A943C1AB43CB70 /* StoreKit.framework in Frameworks */,
 				AC42DDB2A29E47E48DC8D43C /* Social.framework in Frameworks */,
 				17DF3F94F5DC41D48332E84C /* MessageUI.framework in Frameworks */,
 				D2CC09EE06074C7294BE8DA0 /* SafariServices.framework in Frameworks */,
+				288CC5D903464D968531DD99 /* AppTrackingTransparency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +264,11 @@
 			isa = PBXGroup;
 			children = (
 				EA6AE954FB0DAFCCDB7F4941 /* Pods_TappyPlane.framework */,
-				FAE8325A5C95441BBEB41C10 /* AppTrackingTransparency.framework */,
 				C00A6DFE219941D8BF4A15E9 /* StoreKit.framework */,
 				5FAA8ADF542E4F3693AB1876 /* Social.framework */,
 				317E1A6591D04797A3E975E4 /* MessageUI.framework */,
 				2C83F1C7FFB74708839DCEED /* SafariServices.framework */,
+				9AFF2045CDDF4216BBEA2E3A /* AppTrackingTransparency.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,17 +297,6 @@
 			children = (
 				70A09D856E86495490763516 /* FacebookConnectPlugin.m */,
 				7E8D57EDD5BB4EC1914773E3 /* FacebookConnectPlugin.h */,
-				BB255630B92643DE9A22E2DF /* AMBAdBase.swift */,
-				A0F220DB6D7047079B149799 /* AMBAppOpenAd.swift */,
-				C0CB8779631B44E0B71649C8 /* AMBBanner.swift */,
-				070A148AB4C542299E575510 /* AMBContext.swift */,
-				752B184CC66C4E88A390344E /* AMBCore.swift */,
-				4573B701054A4BE09513C68D /* AMBGenerated.swift */,
-				A71A9EF43D4647C8A760F101 /* AMBInterstitial.swift */,
-				54AF66205BC842C5AF896314 /* AMBNativeAd.swift */,
-				D824322E6C43487C85956BEA /* AMBPlugin.swift */,
-				8394763D6BBF494B9DE70DB4 /* AMBRewarded.swift */,
-				B52A82F3B6F4408399BDE92C /* AMBRewardedInterstitial.swift */,
 				F3B6B57117E94174AA2A7A89 /* InAppPurchase.m */,
 				7CD3FA98C865423191FB2364 /* SKProduct+LocalizedPrice.m */,
 				1DBB95A8A26B4EF2A25F88C4 /* SKProductDiscount+LocalizedPrice.m */,
@@ -352,6 +341,17 @@
 				DFD01AA6EC474D70BEBE27F0 /* CULConfigXmlParser.h */,
 				9A330CF318B8458A9DC54C75 /* CULConfigJsonParser.h */,
 				497B2122F99843AC9CEC3E2E /* NSBundle+CULPlugin.h */,
+				A2EF8DB83CD9476AAB14B457 /* AMBAdBase.swift */,
+				23E9DFE16C62468C8F73C685 /* AMBAppOpenAd.swift */,
+				32CEB4EB69044AE88EA42B24 /* AMBBanner.swift */,
+				07DAB820671B46A3A6630EF7 /* AMBContext.swift */,
+				FF6C28967E534FC09068C67A /* AMBCore.swift */,
+				8A36CAE10D804D4C8AB0B329 /* AMBGenerated.swift */,
+				4298023E1BD94E928536EC78 /* AMBInterstitial.swift */,
+				7FD2A310C3DD4531B29EBD87 /* AMBNativeAd.swift */,
+				0AFD365ECF3A4A848666A176 /* AMBPlugin.swift */,
+				B0AA9424F6CE43F0855C397C /* AMBRewarded.swift */,
+				C6F1C9F4224D4DB1B988C49E /* AMBRewardedInterstitial.swift */,
 			);
 			name = Plugins;
 			path = TappyPlane/Plugins;
@@ -524,17 +524,6 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				48F0137076044705BFC5BAA1 /* FacebookConnectPlugin.m in Sources */,
-				488755CEEA3B4FBDBBD54BFB /* AMBAdBase.swift in Sources */,
-				8CF37A8205B04C79B73592AF /* AMBAppOpenAd.swift in Sources */,
-				6DAB65BDEB8C45068C1823F4 /* AMBBanner.swift in Sources */,
-				6D717C22BD484D8E94B0C7B9 /* AMBContext.swift in Sources */,
-				F5E25FA21338487CAB84A6FB /* AMBCore.swift in Sources */,
-				49D70D5C87554637B4ED5930 /* AMBGenerated.swift in Sources */,
-				6B4088C1620A428686A993DD /* AMBInterstitial.swift in Sources */,
-				CE5F2301DCD74386983C8D5D /* AMBNativeAd.swift in Sources */,
-				4BA459140BBD4DB8AF431819 /* AMBPlugin.swift in Sources */,
-				057E3011AEFB4805869F802C /* AMBRewarded.swift in Sources */,
-				804D94C9E83048DE88F74DC7 /* AMBRewardedInterstitial.swift in Sources */,
 				1E44CF219B1D482CB4880E31 /* InAppPurchase.m in Sources */,
 				574F9C0D8A7442E691754073 /* SKProduct+LocalizedPrice.m in Sources */,
 				D28CA3B78E1A4F559E258AD2 /* SKProductDiscount+LocalizedPrice.m in Sources */,
@@ -557,6 +546,17 @@
 				4B7E509D144349B7B74FE122 /* CULConfigXmlParser.m in Sources */,
 				8B871577F8BF42549BECA0CB /* CULConfigJsonParser.m in Sources */,
 				348F6217F61B43959E9B3FB2 /* NSBundle+CULPlugin.m in Sources */,
+				6361D6D78B5446A3A27030FD /* AMBAdBase.swift in Sources */,
+				4561E38F2F04482DAB55A6C9 /* AMBAppOpenAd.swift in Sources */,
+				3B414E05259349518AC00FB2 /* AMBBanner.swift in Sources */,
+				6A11BA3F561D46E6A1497274 /* AMBContext.swift in Sources */,
+				722BA2196BFD4351B1A38D02 /* AMBCore.swift in Sources */,
+				8F5EB8CD246F45C8AA8C94E7 /* AMBGenerated.swift in Sources */,
+				DA56D6F4C23D47E5859B26D0 /* AMBInterstitial.swift in Sources */,
+				E600A8D790594FF9AB6430F9 /* AMBNativeAd.swift in Sources */,
+				FEBBB36A46C245C4BAEC6852 /* AMBPlugin.swift in Sources */,
+				BF615308D47C4D79A8DC3FDD /* AMBRewarded.swift in Sources */,
+				D9E598C22D15464B98D583B2 /* AMBRewardedInterstitial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

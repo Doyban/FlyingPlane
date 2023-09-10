@@ -7,7 +7,7 @@ class AMBAppOpenAd: AMBAdBase, GADFullScreenContentDelegate {
 
     var mAd: GADAppOpenAd?
 
-    init(id: String, adUnitId: String, adRequest: GADRequest, orientation: UIInterfaceOrientation) {
+    init(id: Int, adUnitId: String, adRequest: GADRequest, orientation: UIInterfaceOrientation) {
         self.orientation = orientation
 
         super.init(id: id, adUnitId: adUnitId, adRequest: adRequest)
@@ -71,7 +71,7 @@ class AMBAppOpenAd: AMBAdBase, GADFullScreenContentDelegate {
         self.emit(AMBEvents.adShowFail, error)
     }
 
-    func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         self.emit(AMBEvents.adShow)
     }
 

@@ -411,9 +411,9 @@ export class GameOver extends Phaser.GameObjects.Container {
    * @access private
    * @description Show AdMob ads.
    * @function showAdMobAds
-   * @returns {void}
+   * @returns {Promise<void>}
    */
-  private showAdMobAds(): void {
+  private async showAdMobAds(): Promise<void> {
     let interstitial: any;
 
     document.addEventListener('deviceready', async () => {
@@ -516,11 +516,11 @@ export class GameOver extends Phaser.GameObjects.Container {
         };
 
         // Event handlers.
-        const onSuccess = () => {
-          alert("Sharing result successful.");
+        const onSuccess: () => void = () => {
+          console.log("Sharing result successful.");
         };
-        const onError = () => {
-          alert("Sharing result unsuccessful.");
+        const onError: () => void = () => {
+          console.log("Sharing result unsuccessful.");
         };
 
         window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.

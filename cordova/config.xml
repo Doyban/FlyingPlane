@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.doyban.tappyplane" version="1.0.4" xmlns="http://www.w3.org/ns/widgets"
+<widget id="com.doyban.tappyplane" version="1.0.5" xmlns="http://www.w3.org/ns/widgets"
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HappyPlane</name>
-    <description>Tap Plane Game, similar to well known FlappyBird</description>
+    <description>Tap Plane Game</description>
     <author email="contact@doyban.com" href="https://doyban.com">Doyban</author>
     <content src="index.html" />
     <access origin="*" />

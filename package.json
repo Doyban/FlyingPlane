@@ -1,8 +1,8 @@
 {
   "name": "com.doyban.tappyplane",
   "displayName": "HappyPlane",
-  "version": "1.0.4",
-  "description": "Tap Plane Game, similar to well known FlappyBird",
+  "version": "1.0.5",
+  "description": "Tap Plane Game",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

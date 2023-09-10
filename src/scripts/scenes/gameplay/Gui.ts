@@ -228,7 +228,6 @@ export class Gui extends Phaser.GameObjects.Group {
 
       if (child.name == "musicbg") child.setVisible(true);
       if (child.name == "" && child.data && child.data.get("clicked")) {
-        console.log('child :>> ', child);
         child.setVisible(true)
       };
     });
@@ -336,11 +335,11 @@ export class Gui extends Phaser.GameObjects.Group {
         };
 
         // Event handlers.
-        const onSuccess = () => {
-          alert("Inviting friends successful.");
+        const onSuccess: () => void = () => {
+          console.log("Inviting friends successful.");
         };
-        const onError = () => {
-          alert("Inviting friends unsuccessful.");
+        const onError: () => void = () => {
+          console.log("Inviting friends unsuccessful.");
         };
 
         facebookConnectPlugin.showDialog(options, onSuccess, onError); // Cordova plugin execution.
@@ -398,9 +397,9 @@ export class Gui extends Phaser.GameObjects.Group {
         return getRedirectResult(auth);
       })
       .then(() => {
-        alert('Authentication successful.')
+        console.log('Authentication successful.')
       }).catch(() => {
-        alert('Authentication unsuccessful.')
+        console.log('Authentication unsuccessful.')
       });
   }
 
@@ -436,11 +435,11 @@ export class Gui extends Phaser.GameObjects.Group {
         };
 
         // Event handlers.
-        const onSuccess = () => {
-          alert("Sharing successful.");
+        const onSuccess: () => void = () => {
+          console.log("Sharing successful.");
         };
-        const onError = () => {
-          alert("Sharing unsuccessful.");
+        const onError: () => void = () => {
+          console.log("Sharing unsuccessful.");
         };
 
         window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.

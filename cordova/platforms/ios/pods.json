@@ -29,7 +29,7 @@
         },
         "Google-Mobile-Ads-SDK": {
             "name": "Google-Mobile-Ads-SDK",
-            "spec": "~> 10.5.0",
+            "spec": "~> 8.13.0",
             "count": 1
         }
     }

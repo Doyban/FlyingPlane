@@ -1,8 +1,8 @@
 {
   "name": "com.doyban.tappyplane",
   "displayName": "HappyPlane",
-  "version": "1.0.4",
-  "description": "Tap Plane Game, similar to well known FlappyBird",
+  "version": "1.0.5",
+  "description": "Tap Plane Game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,7 @@
   ],
   "author": "Doyban",
   "devDependencies": {
+    "admob-plus-cordova": "^1.28.0",
     "cordova-android": "^12.0.0",
     "cordova-ios": "^6.3.0",
     "cordova-plugin-androidx": "^3.0.0",
@@ -38,11 +39,6 @@
         "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
         "FACEBOOK_BROWSER_SDK_VERSION": "v11.0"
       },
-      "admob-plus-cordova": {
-        "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
-        "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334",
-        "PLAY_SERVICES_VERSION": "22.1.0"
-      },
       "cordova-plugin-purchase": {
         "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6olW2chhUqj4RG0Ye0w4KVUAVjEFv84hEGxvsfOAvuYH1Ey9Wi/DhshF3dA78Z9rJkyo0Y+Ie6RifagJCjryet4Gdby3AcQ/hPXCAR7saAvuUYmHKnhI0hreC1/Rh79GvI56DG+W1QXtszn7m02zF09kdr+krIqqr1C0kesc6VS4akusnxB6v/0r2GQpmvUDqwADal4eHayYGnp7orXfUGA7G710hx9aaDezFmPTuVu3emCJ4ZJMtSJM6923z52TzgE+kwUNoKzVWoNCGQu89p1+pbkc7A6eLs/jI88JHj9FxG3MLaHziyIGkTaWG0jvBwnez72XY+wuf1xm8fpnZQIDAQAB"
       },
@@ -60,11 +56,17 @@
       },
       "cordova-plugin-browsertab": {},
       "cordova-plugin-androidx": {},
-      "cordova-universal-links-plugin": {}
+      "cordova-universal-links-plugin": {},
+      "admob-plus-cordova": {
+        "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
+        "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334",
+        "PLAY_SERVICES_VERSION": "20.6.0",
+        "USAGE": "This identifier will be used to deliver personalized ads to you.",
+        "DISABLESDKCRASHREPORTING": "false"
+      }
     }
   },
   "dependencies": {
-    "admob-plus-cordova": "2.0.0-alpha.8",
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-plugin-buildinfo": "4.0.0",
     "cordova-plugin-compat": "1.2.0",

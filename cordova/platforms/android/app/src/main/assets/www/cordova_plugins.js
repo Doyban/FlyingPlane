@@ -32,14 +32,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "admob-plus-cordova.AdMob",
-      "file": "plugins/admob-plus-cordova/www/admob.js",
-      "pluginId": "admob-plus-cordova",
-      "clobbers": [
-        "admob"
-      ]
-    },
-    {
       "id": "cordova-plugin-buildinfo.BuildInfo",
       "file": "plugins/cordova-plugin-buildinfo/www/buildinfo.js",
       "pluginId": "cordova-plugin-buildinfo",
@@ -78,6 +70,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "universalLinks"
       ]
+    },
+    {
+      "id": "admob-plus-cordova.AdMob",
+      "file": "plugins/admob-plus-cordova/www/admob.js",
+      "pluginId": "admob-plus-cordova",
+      "clobbers": [
+        "admob"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -85,11 +85,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-purchase": "13.6.0",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "6.0.4",
-    "admob-plus-cordova": "2.0.0-alpha.8",
     "cordova-plugin-buildinfo": "4.0.0",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-customurlscheme": "5.0.2",
     "cordova-plugin-browsertab": "0.2.0",
-    "cordova-universal-links-plugin": "1.2.1"
+    "cordova-universal-links-plugin": "1.2.1",
+    "admob-plus-cordova": "1.28.0"
   };
 });
