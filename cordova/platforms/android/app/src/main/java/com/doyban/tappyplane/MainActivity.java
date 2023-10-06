@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.doyban.tappyplane;
+package com.doyban.flyingplane;
 
 import android.os.Bundle;
 

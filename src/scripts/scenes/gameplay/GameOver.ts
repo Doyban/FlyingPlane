@@ -509,10 +509,10 @@ export class GameOver extends Phaser.GameObjects.Container {
 
         // Setting up configuration for the event.
         const options = {
-          message: "Play TappyPlane!", // not supported on some apps (Facebook, Instagram)
-          subject: "My star level in TappyPlane is " + localStorage.score + "!", // fi. for email
+          message: "Play FlyingPlane!", // not supported on some apps (Facebook, Instagram)
+          subject: "My star level in FlyingPlane is " + localStorage.score + "!", // fi. for email
           files: ["www/assets/images/logo.png"], // an array of filenames either locally or remotely
-          url: "https://doyban.com/games/tappyplane",
+          url: "https://doyban.com/games/flyingplane",
         };
 
         // Event handlers.

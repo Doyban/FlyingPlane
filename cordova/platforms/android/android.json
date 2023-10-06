@@ -73,7 +73,7 @@
           ],
           "/manifest/application/activity": [
             {
-              "xml": "<intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"com.doyban.tappyplane\" /></intent-filter>",
+              "xml": "<intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"com.doyban.flyingplane\" /></intent-filter>",
               "count": 1
             },
             {
@@ -157,7 +157,7 @@
               "count": 1
             },
             {
-              "xml": "<string name=\"fb_app_name\">HappyPlane</string>",
+              "xml": "<string name=\"fb_app_name\">TappyPlane</string>",
               "count": 1
             },
             {
@@ -180,7 +180,7 @@
   "installed_plugins": {
     "cordova-plugin-facebook-connect": {
       "APP_ID": "757927572827959",
-      "APP_NAME": "HappyPlane",
+      "APP_NAME": "TappyPlane",
       "FACEBOOK_URL_SCHEME_SUFFIX": " ",
       "OTHER_APP_SCHEMES": " ",
       "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
@@ -189,40 +189,40 @@
       "FACEBOOK_ANDROID_SDK_VERSION": "11.3.0",
       "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
       "FACEBOOK_BROWSER_SDK_VERSION": "v11.0",
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-purchase": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-buildinfo": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-customurlscheme": {
-      "URL_SCHEME": "com.doyban.tappyplane",
+      "URL_SCHEME": "com.doyban.flyingplane",
       "ANDROID_SCHEME": " ",
       "ANDROID_HOST": " ",
       "ANDROID_PATHPREFIX": "/",
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-browsertab": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-universal-links-plugin": {
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "admob-plus-cordova": {
       "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
       "PLAY_SERVICES_VERSION": "20.6.0",
-      "PACKAGE_NAME": "com.doyban.tappyplane"
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
   "dependent_plugins": {},

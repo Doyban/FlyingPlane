@@ -1,7 +1,7 @@
 {
-  "name": "com.doyban.tappyplane",
-  "displayName": "HappyPlane",
-  "version": "1.0.5",
+  "name": "com.doyban.flyingplane",
+  "displayName": "FlyingPlane",
+  "version": "1.1.1",
   "description": "Tap Plane Game",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "plugins": {
       "cordova-plugin-facebook-connect": {
         "APP_ID": "757927572827959",
-        "APP_NAME": "HappyPlane",
+        "APP_NAME": "TappyPlane",
         "FACEBOOK_URL_SCHEME_SUFFIX": " ",
         "OTHER_APP_SCHEMES": " ",
         "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
@@ -49,7 +49,7 @@
       "cordova-plugin-buildinfo": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-customurlscheme": {
-        "URL_SCHEME": "com.doyban.tappyplane",
+        "URL_SCHEME": "com.doyban.flyingplane",
         "ANDROID_SCHEME": " ",
         "ANDROID_HOST": " ",
         "ANDROID_PATHPREFIX": "/"

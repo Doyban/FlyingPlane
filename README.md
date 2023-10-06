@@ -40,4 +40,4 @@ Running `export NODE_OPTIONS=--openssl-legacy-provider` might be needed before `
 
 ### Important
 
-Even though the package name in stores is `HappyPlane`, keep package details as `com.doyban.tappyplane` to avoid extra work related to migrations of integrations. `TappyPlane` wasn't possible to submit to `Google PlayStore`.
+Even though the package name in stores is `FlyingPlane`, keep package details as `com.doyban.flyingplane` to avoid extra work related to migrations of integrations. `TappyPlane` wasn't possible to submit to `Google PlayStore`.

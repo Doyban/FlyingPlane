@@ -25,7 +25,7 @@
     },
     "is_top_level": true,
     "variables": {
-      "URL_SCHEME": "com.doyban.tappyplane"
+      "URL_SCHEME": "com.doyban.flyingplane"
     }
   },
   "cordova-plugin-purchase": {

@@ -331,7 +331,7 @@ export class Gui extends Phaser.GameObjects.Group {
         // Setting up configuration for the event.
         const options = {
           method: "apprequests",
-          message: "Play TappyPlane with me!"
+          message: "Play FlyingPlane with me!"
         };
 
         // Event handlers.
@@ -428,10 +428,10 @@ export class Gui extends Phaser.GameObjects.Group {
 
         // Setting up configuration for the event.
         const options = {
-          message: "Play TappyPlane!", // not supported on some apps (Facebook, Instagram)
+          message: "Play FlyingPlane!", // not supported on some apps (Facebook, Instagram)
           subject: "Cool game to be played :-)", // fi. for email
           files: ["www/assets/images/logo.png"], // an array of filenames either locally or remotely
-          url: "https://doyban.com/games/tappyplane",
+          url: "https://doyban.com/games/flyingplane",
         };
 
         // Event handlers.

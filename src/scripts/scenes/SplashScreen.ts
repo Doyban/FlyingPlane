@@ -54,7 +54,7 @@ export default class SplashScreen extends Phaser.Scene {
     // Set game properties.
     this.gameName.setScale(0);
     this.gameName.setAlpha(0);
-    this.createGameName("HappyPlane");
+    this.createGameName("FlyingPlane");
 
     this.startGameNameAnimation(); // Start tween animation of a game name.
   }
