@@ -1,5 +1,5 @@
-framework module Pods_TappyPlane {
-  umbrella header "Pods-TappyPlane-umbrella.h"
+framework module Pods_FlyingPlane {
+  umbrella header "Pods-FlyingPlane-umbrella.h"
 
   export *
   module * { export * }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TappyPlaneVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TappyPlaneVersionString[];
+FOUNDATION_EXPORT double Pods_FlyingPlaneVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_FlyingPlaneVersionString[];
 

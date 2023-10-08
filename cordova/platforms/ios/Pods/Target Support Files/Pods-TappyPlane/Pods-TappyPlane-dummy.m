@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_TappyPlane : NSObject
+@interface PodsDummy_Pods_FlyingPlane : NSObject
 @end
-@implementation PodsDummy_Pods_TappyPlane
+@implementation PodsDummy_Pods_FlyingPlane
 @end

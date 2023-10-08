@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A979E576F702A8FA11644FD27669220"
-               BuildableName = "Pods_TappyPlane.framework"
-               BlueprintName = "Pods-TappyPlane"
+               BuildableName = "Pods_FlyingPlane.framework"
+               BlueprintName = "Pods-FlyingPlane"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

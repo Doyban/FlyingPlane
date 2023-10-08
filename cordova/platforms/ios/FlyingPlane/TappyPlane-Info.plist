@@ -111,7 +111,7 @@
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookDisplayName</key>
-	<string>TappyPlane</string>
+	<string>FlyingPlane</string>
 	<key>FacebookHybridAppEvents</key>
 	<string>false</string>
 	<key>LSApplicationQueriesSchemes</key>
