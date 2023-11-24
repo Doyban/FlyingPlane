@@ -478,7 +478,7 @@
 		8E487CE2B6CB70B9626F27EC5DA3A32A /* FBSDKInternalUtility+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4568FD6940D6FC7E0E205B6E147339 /* FBSDKInternalUtility+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9156F5BE783BBBFBD8D0558C5639632C /* FBSDKLikeBoxBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A4A20F8BB160E621A95DDADAD4C668 /* FBSDKLikeBoxBorderView.m */; };
 		918D08E3DAC440BC77BBDAA665B07B3A /* FBSDKDeviceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EACE3B95C85186AD3CA47F9C2805242 /* FBSDKDeviceButton.m */; };
-		91CAA14521CC2D859B8889790AD4B340 /* Pods-TappyPlane-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3804EE5A63C917040F7E7FFBD020128A /* Pods-TappyPlane-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91CAA14521CC2D859B8889790AD4B340 /* Pods-FlyingPlane-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3804EE5A63C917040F7E7FFBD020128A /* Pods-FlyingPlane-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91F783E857DBC9F9338292B22D4F928A /* FBLPromise+Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 8762C0B6B430898AD5D59248D31546DC /* FBLPromise+Delay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92691664F9359169D71D5240BE32B3C9 /* FBSDKSKAdNetworkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD1C8002C670D737D1A452FE66F8C7 /* FBSDKSKAdNetworkEvent.m */; };
 		9281F1DA27B3CA4F88676975EF1B6ECE /* FBSDKLoginKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B61488553DD2EE375E4B8DFE19C6324 /* FBSDKLoginKit-dummy.m */; };
@@ -496,7 +496,7 @@
 		95515D1C818949F8F6907FDE5B695E12 /* FBSDKDeviceLoginManagerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 625F6E0D8CCD541C8D32EC47D14BAF8E /* FBSDKDeviceLoginManagerResult.m */; };
 		955D4A80738147F481F5BE3A0B357C33 /* GULSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E71753D9D0BFE30956D8396CAD807C9 /* GULSwizzler.m */; };
 		96F02730298AEA9D03043E0F4BA7DB62 /* FBSDKServerConfiguration+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D12A3A5D26C50D079C4D873BE4EE7231 /* FBSDKServerConfiguration+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		974B05401384538216D39DA21E75A735 /* Pods-TappyPlane-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1717BB8C3B40EA23A63D618CD34D104 /* Pods-TappyPlane-dummy.m */; };
+		974B05401384538216D39DA21E75A735 /* Pods-FlyingPlane-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1717BB8C3B40EA23A63D618CD34D104 /* Pods-FlyingPlane-dummy.m */; };
 		97762F1A03036091F8774E7355E72461 /* FBSDKAppEventsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D518CF205FFD2F271835308B066DC1E4 /* FBSDKAppEventsConfiguration.m */; };
 		986BF78D8F76CA7D024B89FF650DAD4D /* FBSDKSmartDeviceDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA96DC4ED9BC883F36EE1DF08502FDA /* FBSDKSmartDeviceDialogView.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		98F22A4666F21D458CE6EBC6E0D8BA4E /* FBSDKDevicePoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DA7FC78C22DCA3AE49C146EE3F731 /* FBSDKDevicePoller.m */; };
@@ -1032,7 +1032,7 @@
 		0D1F8EC60AAD376CBA8663DC01616C14 /* FBSDKCameraEffectTextures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCameraEffectTextures.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectTextures.m; sourceTree = "<group>"; };
 		0D2DD2D2505D74F8CABD8C19A3DE16E9 /* FBSDKPaymentProductRequestorCreating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKPaymentProductRequestorCreating.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKPaymentProductRequestorCreating.h; sourceTree = "<group>"; };
 		0D5A0E0728333D824389CCCD93685E77 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleMobileAds.xcframework; path = "Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
-		0D71EAC41914D9F8EB5AC257427E1620 /* Pods-TappyPlane.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TappyPlane.modulemap"; sourceTree = "<group>"; };
+		0D71EAC41914D9F8EB5AC257427E1620 /* Pods-FlyingPlane.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlyingPlane.modulemap"; sourceTree = "<group>"; };
 		0D9BEC54FC300541EA4086B11C18B367 /* FBAEMAdvertiserMultiEntryRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAEMAdvertiserMultiEntryRule.h; path = Sources/FBAEMKit/FBAEMAdvertiserMultiEntryRule.h; sourceTree = "<group>"; };
 		0DBA19518B918639D2775ABA77FC5F76 /* FBSDKShareKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKShareKit-dummy.m"; sourceTree = "<group>"; };
 		0DBABF2E4DF2E5E0A0EEA7F3C83951A1 /* FBSDKHumanSilhouetteIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKHumanSilhouetteIcon.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKHumanSilhouetteIcon.m; sourceTree = "<group>"; };
@@ -1086,7 +1086,7 @@
 		1C857B825807141A79B496BDFE39F31C /* FBSDKSKAdNetworkRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSKAdNetworkRule.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SKAdNetwork/FBSDKSKAdNetworkRule.m; sourceTree = "<group>"; };
 		1CFBE8D0A07BB8D961FD2A4818285A6D /* FBSDKShareKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSDKShareKit-umbrella.h"; sourceTree = "<group>"; };
 		1D620E6A974C76AB419A7CEB6A795693 /* FBSDKLoginKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKLoginKit.debug.xcconfig; sourceTree = "<group>"; };
-		1E137AB2A21505B2583B4075BB9E0581 /* Pods-TappyPlane-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TappyPlane-frameworks.sh"; sourceTree = "<group>"; };
+		1E137AB2A21505B2583B4075BB9E0581 /* Pods-FlyingPlane-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlyingPlane-frameworks.sh"; sourceTree = "<group>"; };
 		1E4876B4A0197FA2884D701D27AA756B /* FBSDKModalFormPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKModalFormPresentationController.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Device/FBSDKModalFormPresentationController.m; sourceTree = "<group>"; };
 		1E7A3322FC0B90C129332E5D34E2B7AA /* FBSDKDeviceViewControllerBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceViewControllerBase.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKDeviceViewControllerBase.m; sourceTree = "<group>"; };
 		1E9BA01B5ACA03C88EE54AB13115185B /* FBSDKAccessToken+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKAccessToken+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAccessToken+Internal.h"; sourceTree = "<group>"; };
@@ -1184,7 +1184,7 @@
 		3794B1C508B6CAEA6463B057B4B85976 /* FBAEMRequestBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBAEMRequestBody.m; path = Sources/FBAEMKit/FBAEMRequestBody.m; sourceTree = "<group>"; };
 		37CE9DB674071C9370C0D75A16A43E8B /* FBSDKLoginCompletion+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKLoginCompletion+Internal.h"; path = "FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion+Internal.h"; sourceTree = "<group>"; };
 		37D986C13DEECB924C1843DBF7770E7F /* FBAEMConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBAEMConfiguration.m; path = Sources/FBAEMKit/FBAEMConfiguration.m; sourceTree = "<group>"; };
-		3804EE5A63C917040F7E7FFBD020128A /* Pods-TappyPlane-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TappyPlane-umbrella.h"; sourceTree = "<group>"; };
+		3804EE5A63C917040F7E7FFBD020128A /* Pods-FlyingPlane-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlyingPlane-umbrella.h"; sourceTree = "<group>"; };
 		3852E7C9BC553B62A134FFE9BC63B5EF /* FBSDKAppEventsUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsUtility.m; sourceTree = "<group>"; };
 		3878C8302AAC17FA133E2A1CA5997DE6 /* FBSDKShareButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareButton.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.m; sourceTree = "<group>"; };
 		38F798367AAB625DBE60CA8E9DE0CF02 /* FBSDKError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKError.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKError.h; sourceTree = "<group>"; };
@@ -1198,7 +1198,7 @@
 		3AAD1A948BDC51E5398819C1D788FCA0 /* FBSDKDeviceLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginManager.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h; sourceTree = "<group>"; };
 		3B64ADBF248CBF502986B4ABB52229FE /* GULLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULLogger.m; path = GoogleUtilities/Logger/GULLogger.m; sourceTree = "<group>"; };
 		3B784CFFFBC0A56D1B1D542DF3D53257 /* FBSDKSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSwizzling.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSwizzling.h; sourceTree = "<group>"; };
-		3C510EA1A5EF66672EA3AAB9182AD8F1 /* Pods-TappyPlane-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyPlane-Info.plist"; sourceTree = "<group>"; };
+		3C510EA1A5EF66672EA3AAB9182AD8F1 /* Pods-FlyingPlane-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlyingPlane-Info.plist"; sourceTree = "<group>"; };
 		3C5E9659FADDFCD48412395C7F9F35F7 /* FBSDKTimeSpentData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTimeSpentData.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKTimeSpentData.h; sourceTree = "<group>"; };
 		3CF7407A013F87F6A438887A9B6BCC46 /* FBSDKDeviceUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceUtilities.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Device/FBSDKDeviceUtilities.m; sourceTree = "<group>"; };
 		3D4FBC1199964E3EF0AC97D58003FEA2 /* GULNetworkURLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkURLSession.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkURLSession.h; sourceTree = "<group>"; };
@@ -1207,7 +1207,7 @@
 		3E4A6BFC37947CD5713E6E32FCECEDAC /* GULOriginalIMPConvenienceMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULOriginalIMPConvenienceMacros.h; path = GoogleUtilities/MethodSwizzler/Public/GoogleUtilities/GULOriginalIMPConvenienceMacros.h; sourceTree = "<group>"; };
 		3E501204B4A5BE3343CA29C6DA3DA889 /* NSNotificationCenter+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+Extensions.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/NSNotificationCenter+Extensions.h"; sourceTree = "<group>"; };
 		3E64632896B946EB96DFC2F61EAA7BD2 /* FacebookSDK.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = FacebookSDK.strings; path = es.lproj/FacebookSDK.strings; sourceTree = "<group>"; };
-		3ED1892AFED2483DCEE17130D1616D99 /* Pods-TappyPlane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyPlane.debug.xcconfig"; sourceTree = "<group>"; };
+		3ED1892AFED2483DCEE17130D1616D99 /* Pods-FlyingPlane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlyingPlane.debug.xcconfig"; sourceTree = "<group>"; };
 		3F188992DEAF92EDF0AA138AD98AC416 /* FBSDKAppEvents+ApplicationActivating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKAppEvents+ApplicationActivating.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppEvents+ApplicationActivating.h"; sourceTree = "<group>"; };
 		3F273D0B20EDB4F790D6D27FD35DD9A6 /* FBLPromise+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Delay.m"; path = "Sources/FBLPromises/FBLPromise+Delay.m"; sourceTree = "<group>"; };
 		3F5970A056002B833883BC56083A13D3 /* FBSDKEventBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKEventBinding.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKEventBinding.m; sourceTree = "<group>"; };
@@ -1542,7 +1542,7 @@
 		9F3A61B97E0E232ACDC8DC5E246ED5EE /* FacebookSDK.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = FacebookSDK.strings; path = hr.lproj/FacebookSDK.strings; sourceTree = "<group>"; };
 		9F4A69859F799DE2EB7EB6E08BC4425B /* FBSDKFeatureManager+FeatureChecking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKFeatureManager+FeatureChecking.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FeatureManager/FBSDKFeatureManager+FeatureChecking.h"; sourceTree = "<group>"; };
 		A0CDB43D144C126713B43564A57266DF /* FBSDKModelManager+IntegrityParametersProcessorProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKModelManager+IntegrityParametersProcessorProvider.h"; path = "FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/ML/FBSDKModelManager+IntegrityParametersProcessorProvider.h"; sourceTree = "<group>"; };
-		A1717BB8C3B40EA23A63D618CD34D104 /* Pods-TappyPlane-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TappyPlane-dummy.m"; sourceTree = "<group>"; };
+		A1717BB8C3B40EA23A63D618CD34D104 /* Pods-FlyingPlane-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlyingPlane-dummy.m"; sourceTree = "<group>"; };
 		A1C8A7C662AAD60EBB85E5A6809E6958 /* FBSDKCoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKCoreKit-dummy.m"; sourceTree = "<group>"; };
 		A1E35411D14025516729FD3EAB0BE8A7 /* GULNetworkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkInfo.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULNetworkInfo.h; sourceTree = "<group>"; };
 		A251A3D6FA4415C6EEF509CB9B9B400B /* FBSDKTimeSpentRecordingCreating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTimeSpentRecordingCreating.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKTimeSpentRecordingCreating.h; sourceTree = "<group>"; };
@@ -1697,7 +1697,7 @@
 		CD625AD6466B5F40A2461D19739B3E13 /* FBSDKAppEventsStateManager+AppEventsStatePersisting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKAppEventsStateManager+AppEventsStatePersisting.h"; path = "FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsStateManager+AppEventsStatePersisting.h"; sourceTree = "<group>"; };
 		CDE8879710E36FBD6057524C28C76D64 /* FBSDKAppEventsStateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsStateManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsStateManager.m; sourceTree = "<group>"; };
 		CE540082436C26C2C49EB34693CE2D8A /* FBSDKBasicUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBasicUtility.m; path = Sources/FBSDKCoreKit_Basics/FBSDKBasicUtility.m; sourceTree = "<group>"; };
-		CEA592B19AACC87B0653E60F077BCA13 /* Pods-TappyPlane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TappyPlane.release.xcconfig"; sourceTree = "<group>"; };
+		CEA592B19AACC87B0653E60F077BCA13 /* Pods-FlyingPlane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlyingPlane.release.xcconfig"; sourceTree = "<group>"; };
 		CEC2C71AA956A400633C32AD31034ED0 /* FBSDKDeviceDialogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceDialogView.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Device/FBSDKDeviceDialogView.h; sourceTree = "<group>"; };
 		CEFD92EDC8230ACF293B6565B8006C2F /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
 		CF1AAAA73C6C8EE3BCCD51DE6B40F415 /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
@@ -1708,7 +1708,7 @@
 		D01731DE6BAD9C8C20E0EAA97B49C11E /* FBSDKClientTokenProviding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKClientTokenProviding.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKClientTokenProviding.h; sourceTree = "<group>"; };
 		D0352389AF87CDF90F7389DC8CE9B20D /* FBSDKGameRequestFrictionlessRecipientCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGameRequestFrictionlessRecipientCache.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKGameRequestFrictionlessRecipientCache.h; sourceTree = "<group>"; };
 		D039458BF70095A581BE3DEDD9C414DF /* FBSDKWebDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialog.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKWebDialog.h; sourceTree = "<group>"; };
-		D0A9C89CEB1D0457FC790A4DD85ADD6A /* Pods-TappyPlane-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TappyPlane-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0A9C89CEB1D0457FC790A4DD85ADD6A /* Pods-FlyingPlane-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlyingPlane-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0DD54A44CDE3A6DDC68705E3E8C9030 /* FBSDKProfileCreating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfileCreating.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKProfileCreating.h; sourceTree = "<group>"; };
 		D113EBAA625EAF294E5386B25DE45202 /* FBSDKAppLinkResolverRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkResolverRequestBuilder.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/Resolver/FBSDKAppLinkResolverRequestBuilder.h; sourceTree = "<group>"; };
 		D12A3A5D26C50D079C4D873BE4EE7231 /* FBSDKServerConfiguration+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKServerConfiguration+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration+Internal.h"; sourceTree = "<group>"; };
@@ -1752,7 +1752,7 @@
 		DD11EDECEEE54705FF5CA99D65D8E7EE /* LoginConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginConfiguration.swift; path = FBSDKLoginKit/FBSDKLoginKit/Swift/LoginConfiguration.swift; sourceTree = "<group>"; };
 		DD5BB356F189759277464D11F2E87FA3 /* FBSDKErrorConfigurationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorConfigurationProvider.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfigurationProvider.h; sourceTree = "<group>"; };
 		DD7CE2941002510D4383FD8B2A9F3A41 /* FBSDKShareMediaContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareMediaContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.m; sourceTree = "<group>"; };
-		DDEE50ECCEBB5C35C55665BDC26188BC /* Pods-TappyPlane-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TappyPlane-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDEE50ECCEBB5C35C55665BDC26188BC /* Pods-FlyingPlane-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlyingPlane-acknowledgements.plist"; sourceTree = "<group>"; };
 		DE2D7CADB1FF16E2DAA54919BBD75400 /* FBSDKGraphRequestPiggybackManaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestPiggybackManaging.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestPiggybackManaging.h; sourceTree = "<group>"; };
 		DE31F420E3F7D3DADA373DCFC6745F91 /* FBSDKFeature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKFeature.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKFeature.h; sourceTree = "<group>"; };
 		DE5198074CFA4C41C62D7A876D5652D7 /* FacebookSDK.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = FacebookSDK.strings; path = pt_PT.lproj/FacebookSDK.strings; sourceTree = "<group>"; };
@@ -1833,7 +1833,7 @@
 		F453CF008A1BBA0F8F1162BD24F69DDC /* FBSDKWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebViewAppLinkResolver.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.h; sourceTree = "<group>"; };
 		F4BE4546C45B283B5CB55378A0B0D840 /* FBSDKAppLinkTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkTarget.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h; sourceTree = "<group>"; };
 		F52BF861F7D080F552191BD60DEF57E4 /* FBSDKAppLinkUtility+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKAppLinkUtility+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLinkUtility+Internal.h"; sourceTree = "<group>"; };
-		F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-TappyPlane */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TappyPlane"; path = Pods_TappyPlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-FlyingPlane */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlyingPlane"; path = Pods_TappyPlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5440DC8BDC3459A145FF5DC7056B823 /* Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permission.swift; path = Sources/FacebookCore/Swift/Permission.swift; sourceTree = "<group>"; };
 		F55CEDA38A150059D586AE654F08BAB6 /* FBSDKAppEventsConfigurationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsConfigurationManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsConfigurationManager.m; sourceTree = "<group>"; };
 		F56AA768462B9BDB29E80548863E1992 /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
@@ -1980,7 +1980,7 @@
 		06301413B8668200348805F853A195D6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0EFCBA96B4580CA9EC70D536A075CEAA /* Pods-TappyPlane */,
+				0EFCBA96B4580CA9EC70D536A075CEAA /* Pods-FlyingPlane */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -2013,21 +2013,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0EFCBA96B4580CA9EC70D536A075CEAA /* Pods-TappyPlane */ = {
+		0EFCBA96B4580CA9EC70D536A075CEAA /* Pods-FlyingPlane */ = {
 			isa = PBXGroup;
 			children = (
-				0D71EAC41914D9F8EB5AC257427E1620 /* Pods-TappyPlane.modulemap */,
-				D0A9C89CEB1D0457FC790A4DD85ADD6A /* Pods-TappyPlane-acknowledgements.markdown */,
-				DDEE50ECCEBB5C35C55665BDC26188BC /* Pods-TappyPlane-acknowledgements.plist */,
-				A1717BB8C3B40EA23A63D618CD34D104 /* Pods-TappyPlane-dummy.m */,
-				1E137AB2A21505B2583B4075BB9E0581 /* Pods-TappyPlane-frameworks.sh */,
-				3C510EA1A5EF66672EA3AAB9182AD8F1 /* Pods-TappyPlane-Info.plist */,
-				3804EE5A63C917040F7E7FFBD020128A /* Pods-TappyPlane-umbrella.h */,
-				3ED1892AFED2483DCEE17130D1616D99 /* Pods-TappyPlane.debug.xcconfig */,
-				CEA592B19AACC87B0653E60F077BCA13 /* Pods-TappyPlane.release.xcconfig */,
+				0D71EAC41914D9F8EB5AC257427E1620 /* Pods-FlyingPlane.modulemap */,
+				D0A9C89CEB1D0457FC790A4DD85ADD6A /* Pods-FlyingPlane-acknowledgements.markdown */,
+				DDEE50ECCEBB5C35C55665BDC26188BC /* Pods-FlyingPlane-acknowledgements.plist */,
+				A1717BB8C3B40EA23A63D618CD34D104 /* Pods-FlyingPlane-dummy.m */,
+				1E137AB2A21505B2583B4075BB9E0581 /* Pods-FlyingPlane-frameworks.sh */,
+				3C510EA1A5EF66672EA3AAB9182AD8F1 /* Pods-FlyingPlane-Info.plist */,
+				3804EE5A63C917040F7E7FFBD020128A /* Pods-FlyingPlane-umbrella.h */,
+				3ED1892AFED2483DCEE17130D1616D99 /* Pods-FlyingPlane.debug.xcconfig */,
+				CEA592B19AACC87B0653E60F077BCA13 /* Pods-FlyingPlane.release.xcconfig */,
 			);
-			name = "Pods-TappyPlane";
-			path = "Target Support Files/Pods-TappyPlane";
+			name = "Pods-FlyingPlane";
+			path = "Target Support Files/Pods-FlyingPlane";
 			sourceTree = "<group>";
 		};
 		1A3C192B00836FBBABB4C48D09B9E7CC /* Frameworks */ = {
@@ -2851,7 +2851,7 @@
 				85128AF76199890A6DD56FE81089D883 /* FBSDKShareKit */,
 				B43874C6CBB50E7134FBEC24BABFE14F /* GoogleUtilities */,
 				06FC5C9CF96D60C50FCD47D339C91951 /* nanopb */,
-				F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-TappyPlane */,
+				F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-FlyingPlane */,
 				3347A1AB6546F0A3977529B8F199DC41 /* PromisesObjC */,
 			);
 			name = Products;
@@ -3712,7 +3712,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91CAA14521CC2D859B8889790AD4B340 /* Pods-TappyPlane-umbrella.h in Headers */,
+				91CAA14521CC2D859B8889790AD4B340 /* Pods-FlyingPlane-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3768,9 +3768,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A979E576F702A8FA11644FD27669220 /* Pods-TappyPlane */ = {
+		0A979E576F702A8FA11644FD27669220 /* Pods-FlyingPlane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F81A3862FE624BD0C46EA28381C3D3D8 /* Build configuration list for PBXNativeTarget "Pods-TappyPlane" */;
+			buildConfigurationList = F81A3862FE624BD0C46EA28381C3D3D8 /* Build configuration list for PBXNativeTarget "Pods-FlyingPlane" */;
 			buildPhases = (
 				E69245DC9927B0B8BCA3CB94268EFAF6 /* Headers */,
 				7DBE91E1C681CE944EB5E426FA0948BC /* Sources */,
@@ -3792,9 +3792,9 @@
 				8630F541F032447F7319BE69488E22E6 /* PBXTargetDependency */,
 				CBE9EB3182C40A9F207B92EAF27DADB1 /* PBXTargetDependency */,
 			);
-			name = "Pods-TappyPlane";
+			name = "Pods-FlyingPlane";
 			productName = Pods_TappyPlane;
-			productReference = F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-TappyPlane */;
+			productReference = F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-FlyingPlane */;
 			productType = "com.apple.product-type.framework";
 		};
 		10C5885FCB0908EF785774EE52473DAB /* FBSDKLoginKit */ = {
@@ -4043,7 +4043,7 @@
 				458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */,
 				8D7F5D5DD528D21A72DC87ADA5B12E2D /* GoogleUtilities */,
 				D2B5E7DCCBBFB32341D857D01211A1A3 /* nanopb */,
-				0A979E576F702A8FA11644FD27669220 /* Pods-TappyPlane */,
+				0A979E576F702A8FA11644FD27669220 /* Pods-FlyingPlane */,
 				2BBF7206D7FAC92C82A042A99C4A98F8 /* PromisesObjC */,
 			);
 		};
@@ -4403,7 +4403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974B05401384538216D39DA21E75A735 /* Pods-TappyPlane-dummy.m in Sources */,
+				974B05401384538216D39DA21E75A735 /* Pods-FlyingPlane-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5520,7 +5520,7 @@
 		};
 		FB0FDDC63661552E471CB58095CE4F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ED1892AFED2483DCEE17130D1616D99 /* Pods-TappyPlane.debug.xcconfig */;
+			baseConfigurationReference = 3ED1892AFED2483DCEE17130D1616D99 /* Pods-FlyingPlane.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -5532,7 +5532,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlyingPlane/Pods-FlyingPlane-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5541,7 +5541,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FlyingPlane/Pods-FlyingPlane.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -5557,7 +5557,7 @@
 		};
 		FED3FA2ECE81AC34FD6CD7ADBDD890E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEA592B19AACC87B0653E60F077BCA13 /* Pods-TappyPlane.release.xcconfig */;
+			baseConfigurationReference = CEA592B19AACC87B0653E60F077BCA13 /* Pods-FlyingPlane.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -5569,7 +5569,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlyingPlane/Pods-FlyingPlane-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5578,7 +5578,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TappyPlane/Pods-TappyPlane.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FlyingPlane/Pods-FlyingPlane.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -5713,7 +5713,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F81A3862FE624BD0C46EA28381C3D3D8 /* Build configuration list for PBXNativeTarget "Pods-TappyPlane" */ = {
+		F81A3862FE624BD0C46EA28381C3D3D8 /* Build configuration list for PBXNativeTarget "Pods-FlyingPlane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB0FDDC63661552E471CB58095CE4F9B /* Debug */,

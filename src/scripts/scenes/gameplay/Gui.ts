@@ -1,5 +1,5 @@
 import { SCORE, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
-import { getAuth, signInWithRedirect, getRedirectResult, GoogleAuthProvider } from "firebase/auth/cordova";
+import { getAuth, signInWithRedirect, getRedirectResult, OAuthProvider } from "firebase/auth/cordova";
 
 /**
  * @class Gui
@@ -384,7 +384,7 @@ export class Gui extends Phaser.GameObjects.Group {
 
   /**
    * @access private
-   * @description Login the user using Firebase Google authentication.
+   * @description Login the user using Firebase Apple authentication.
    * @function loginUsingFirebase
    * @returns {void}
    */
@@ -392,13 +392,14 @@ export class Gui extends Phaser.GameObjects.Group {
     const auth = getAuth(); // Create an instance of the authentication object.
 
     // Sign in by redirecting to the sign-in page.
-    signInWithRedirect(auth, new GoogleAuthProvider())
+    signInWithRedirect(auth, new OAuthProvider('apple.com'))
       .then(() => {
         return getRedirectResult(auth);
       })
       .then(() => {
         console.log('Authentication successful.')
-      }).catch(() => {
+      }).catch((error) => {
+        console.log(error)
         console.log('Authentication unsuccessful.')
       });
   }

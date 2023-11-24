@@ -133,6 +133,7 @@ export class ShopItem extends Phaser.GameObjects.Container {
     const store = CdvPurchase.store;
     const { Platform } = CdvPurchase;
 
+    console.log(JSON.stringify(store.products));
     store.when()
       .approved((transaction: any) => {
         // Add extra score and begin the game.
@@ -143,10 +144,10 @@ export class ShopItem extends Phaser.GameObjects.Container {
       });
 
     store.initialize([
-      Platform.GOOGLE_PLAY,
+      Platform.APPLE_APPSTORE,
     ]);
 
-    const offer: any = store.get(`scorex${this.multiplier}`).getOffer();
+    const offer: any = store.get(`com.doyban.flyingplane.scorex${this.multiplier}`).getOffer();
     store.order(offer); // Sometimes it's crashing, on x2 and x6 purchase while (thankfully) still keeping the purchase in the localStorage.
   }
 }

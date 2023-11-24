@@ -418,7 +418,7 @@ export class GameOver extends Phaser.GameObjects.Container {
 
     document.addEventListener('deviceready', async () => {
       interstitial = new admob.InterstitialAd({
-        adUnitId: 'ca-app-pub-4865595196880143/3742688595',
+        adUnitId: 'ca-app-pub-4865595196880143/1957466653',
       })
 
       await interstitial.load()
