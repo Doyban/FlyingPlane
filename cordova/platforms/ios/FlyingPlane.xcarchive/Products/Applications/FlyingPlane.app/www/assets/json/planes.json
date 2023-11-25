@@ -1,0 +1,272 @@
+{
+	"textures": [
+		{
+			"image": "planes.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 415,
+				"h": 267
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "planeBlue1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 9,
+						"y": 9,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeBlue2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 112,
+						"y": 9,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeBlue3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 215,
+						"y": 9,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeGreen1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 318,
+						"y": 9,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeGreen2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 9,
+						"y": 97,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeGreen3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 112,
+						"y": 97,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeRed1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 215,
+						"y": 97,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeRed2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 318,
+						"y": 97,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeRed3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 9,
+						"y": 185,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeYellow1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 112,
+						"y": 185,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeYellow2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 215,
+						"y": 185,
+						"w": 88,
+						"h": 73
+					}
+				},
+				{
+					"filename": "planeYellow3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 73
+					},
+					"frame": {
+						"x": 318,
+						"y": 185,
+						"w": 88,
+						"h": 73
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:dcb2fb64e67eb5be6e12e0a0ba4ca597:f554458c79da0bc2b857acfc1d98daa9:df2dfba190092c027256f49a772a7a59$"
+	}
+}

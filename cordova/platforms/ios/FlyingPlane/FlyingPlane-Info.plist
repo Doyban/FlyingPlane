@@ -98,7 +98,19 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>fb757927572827959</string>
-
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb757927572827959</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb757927572827959</string>
+          
         </array>
       </dict>
     </array>
@@ -297,12 +309,6 @@
       <string>UIInterfaceOrientationLandscapeLeft</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
-
-
-
-
-
-
     <key>GADApplicationIdentifier</key>
     <string>ca-app-pub-4865595196880143~7209793334</string>
     <key>GADDelayAppMeasurementInit</key>
@@ -335,7 +341,13 @@
       <key>NSAllowsArbitraryLoadsInWebContent</key>
       <true/>
     </dict>
-    <!-- <key>NSUserTrackingUsageDescription</key> -->
-    <!-- <string>This identifier will be used to deliver personalized ads to you.</string> -->
+    <key>NSUserTrackingUsageDescription</key>
+    <string>This identifier will be used to deliver personalized ads to you.</string>
+    
+    
+    
+    
+    
+    
   </dict>
 </plist>

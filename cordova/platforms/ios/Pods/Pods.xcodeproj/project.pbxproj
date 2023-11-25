@@ -1833,7 +1833,7 @@
 		F453CF008A1BBA0F8F1162BD24F69DDC /* FBSDKWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebViewAppLinkResolver.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.h; sourceTree = "<group>"; };
 		F4BE4546C45B283B5CB55378A0B0D840 /* FBSDKAppLinkTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkTarget.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h; sourceTree = "<group>"; };
 		F52BF861F7D080F552191BD60DEF57E4 /* FBSDKAppLinkUtility+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKAppLinkUtility+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLinkUtility+Internal.h"; sourceTree = "<group>"; };
-		F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-FlyingPlane */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlyingPlane"; path = Pods_TappyPlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-FlyingPlane */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlyingPlane"; path = FlyingPlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5440DC8BDC3459A145FF5DC7056B823 /* Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permission.swift; path = Sources/FacebookCore/Swift/Permission.swift; sourceTree = "<group>"; };
 		F55CEDA38A150059D586AE654F08BAB6 /* FBSDKAppEventsConfigurationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsConfigurationManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsConfigurationManager.m; sourceTree = "<group>"; };
 		F56AA768462B9BDB29E80548863E1992 /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
@@ -3793,7 +3793,7 @@
 				CBE9EB3182C40A9F207B92EAF27DADB1 /* PBXTargetDependency */,
 			);
 			name = "Pods-FlyingPlane";
-			productName = Pods_TappyPlane;
+			productName = FlyingPlane;
 			productReference = F538C185B0F3F9DC0F470CCF847E8DCA /* Pods-FlyingPlane */;
 			productType = "com.apple.product-type.framework";
 		};
