@@ -99,4 +99,8 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="Fullscreen" value="true" />
+    <feature name="WKWebViewXHRFix">
+        <param name="ios-package" value="WKWebViewXHRFix" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

@@ -104,5 +104,13 @@
       "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
       "APP_ID_IOS": "ca-app-pub-4865595196880143~7209793334"
     }
+  },
+  "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/AraHovakimyan/cordova-plugin-wkwebviewxhrfix"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -49,6 +49,9 @@
       "APP_ID_ANDROID": "ca-app-pub-4865595196880143~4169283752",
       "PLAY_SERVICES_VERSION": "20.6.0",
       "PACKAGE_NAME": "com.doyban.flyingplane"
+    },
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
   "dependent_plugins": {

@@ -52,6 +52,9 @@
       "USAGE": "This identifier will be used to deliver personalized ads to you.",
       "DISABLESDKCRASHREPORTING": "false",
       "PACKAGE_NAME": "com.doyban.flyingplane"
+    },
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
   "dependent_plugins": {
