@@ -14,8 +14,8 @@ export class SoundHandler {
         this.scene = scene;
 
         // Event listeners.
-        // this.scene.events.on("play_sound", this.onPlaySound, this);
-        // this.scene.events.on("stop_sound", this.onStopSound, this);
+        this.scene.events.on("play_sound", this.onPlaySound, this);
+        this.scene.events.on("stop_sound", this.onStopSound, this);
     }
 
     /**

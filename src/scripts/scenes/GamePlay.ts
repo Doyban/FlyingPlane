@@ -113,12 +113,12 @@ export class GamePlay extends Phaser.Scene {
     );
     this.load.atlasXML("ui_buttons", "assets/images/yellowSheet.png", "assets/xml/yellowSheet.xml");
     this.load.atlasXML("ui_icons", "assets/images/sheet_black1x.png", "assets/xml/sheet_black1x.xml");
-    this.load.audio("crash", "assets/audio/crash.wav");
-    this.load.audio("click", "assets/audio/click.wav");
-    this.load.audio("explosion", "assets/audio/explosion.wav");
-    this.load.audio("gameover", "assets/audio/gameover.wav");
-    this.load.audio("plane", "assets/audio/plane.wav");
-    this.load.audio("wind", "assets/audio/wind.wav");
+    this.load.audio("crash", ["assets/audio/crash.mp3", "assets/audio/crash.ogg"]);
+    this.load.audio("click", ["assets/audio/click.mp3", "assets/audio/click.ogg"]);
+    this.load.audio("explosion", ["assets/audio/explosion.mp3", "assets/audio/explosion.ogg"]);
+    this.load.audio("gameover", ["assets/audio/gameover.mp3", "assets/audio/gameover.ogg"]);
+    this.load.audio("plane", ["assets/audio/plane.mp3", "assets/audio/plane.ogg"]);
+    this.load.audio("wind", ["assets/audio/wind.mp3", "assets/audio/wind.ogg"]);
     this.load.image("musicOff", "assets/images/musicOff.png");
     this.load.image("musicOn", "assets/images/musicOn.png");
     this.load.json("shapes", "assets/json/shapes.json");
