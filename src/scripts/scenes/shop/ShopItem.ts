@@ -133,12 +133,10 @@ export class ShopItem extends Phaser.GameObjects.Container {
     const store = CdvPurchase.store;
     const { Platform } = CdvPurchase;
 
-    console.log(JSON.stringify(store.products));
     store.when()
       .approved((transaction: any) => {
         // Add extra score and begin the game.
         localStorage.scoreRate = this.multiplier;
-        this.scene.scene.start("Shop"); // Start Shop scene.
 
         transaction.finish(); // Consume the transaction, so user can order the same item again (https://github.com/j3k0/cordova-plugin-purchase/issues/1459).
       });

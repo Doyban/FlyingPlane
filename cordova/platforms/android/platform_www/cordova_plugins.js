@@ -91,6 +91,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-universal-links-plugin": "1.2.1",
     "admob-plus-cordova": "1.28.0",
-    "@globules-io/cordova-plugin-ios-xhr": "1.2.4"
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2"
   };
 });

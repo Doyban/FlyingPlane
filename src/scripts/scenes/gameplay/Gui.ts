@@ -336,10 +336,10 @@ export class Gui extends Phaser.GameObjects.Group {
 
         // Event handlers.
         const onSuccess: () => void = () => {
-          console.log("Inviting friends successful.");
+          alert("Inviting friends successful.");
         };
         const onError: () => void = () => {
-          console.log("Inviting friends unsuccessful.");
+          alert("Inviting friends unsuccessful.");
         };
 
         facebookConnectPlugin.showDialog(options, onSuccess, onError); // Cordova plugin execution.
@@ -397,10 +397,10 @@ export class Gui extends Phaser.GameObjects.Group {
         return getRedirectResult(auth);
       })
       .then(() => {
-        console.log('Authentication successful.')
+        alert('Authentication successful.')
       }).catch((error) => {
         console.log(error)
-        console.log('Authentication unsuccessful.')
+        alert('Authentication unsuccessful.')
       });
   }
 
@@ -437,10 +437,10 @@ export class Gui extends Phaser.GameObjects.Group {
 
         // Event handlers.
         const onSuccess: () => void = () => {
-          console.log("Sharing successful.");
+          alert("Sharing successful.");
         };
         const onError: () => void = () => {
-          console.log("Sharing unsuccessful.");
+          alert("Sharing unsuccessful.");
         };
 
         window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.

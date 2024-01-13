@@ -55,6 +55,8 @@
 		E92EA786211C43DB927C94E9 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE59263C949F98A7C8AC2 /* CDVWKInAppBrowser.m */; };
 		EDDCF1A90B064B1181CD0EFD /* CDVInvokedUrlCommand+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A321A03103A94E7F805E33D7 /* CDVInvokedUrlCommand+CULPlugin.m */; };
 		FEBBB36A46C245C4BAEC6852 /* AMBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD365ECF3A4A848666A176 /* AMBPlugin.swift */; };
+		77F80470194041F590321A08 /* CDVWebViewEngine+FileXhrFix.m in Sources */ = {isa = PBXBuildFile; fileRef = A619B9806086462D8BEAB5EF /* CDVWebViewEngine+FileXhrFix.m */; };
+		639F48F160E04B56BFD25486 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752B488BBB01444C8067A99D /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,9 @@
 		F9E29B5D06014D8F8CAE6715 /* InAppPurchase.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = InAppPurchase.h; path = "cordova-plugin-purchase/InAppPurchase.h"; sourceTree = "<group>"; };
 		FA27F77FE3E6412AB2903842 /* SocialSharing.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SocialSharing.m; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; };
 		FF6C28967E534FC09068C67A /* AMBCore.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AMBCore.swift; path = "admob-plus-cordova/AMBCore.swift"; sourceTree = "<group>"; };
+		A619B9806086462D8BEAB5EF /* CDVWebViewEngine+FileXhrFix.m */ = {isa = PBXFileReference; name = "CDVWebViewEngine+FileXhrFix.m"; path = "@ahovakimyan/cordova-plugin-wkwebviewxhrfix/CDVWebViewEngine+FileXhrFix.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B92A91A759164FC0AD015916 /* CDVWebViewEngine+FileXhrFix.h */ = {isa = PBXFileReference; name = "CDVWebViewEngine+FileXhrFix.h"; path = "@ahovakimyan/cordova-plugin-wkwebviewxhrfix/CDVWebViewEngine+FileXhrFix.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		752B488BBB01444C8067A99D /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,7 @@
 				17DF3F94F5DC41D48332E84C /* MessageUI.framework in Frameworks */,
 				D2CC09EE06074C7294BE8DA0 /* SafariServices.framework in Frameworks */,
 				288CC5D903464D968531DD99 /* AppTrackingTransparency.framework in Frameworks */,
+				639F48F160E04B56BFD25486 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,7 @@
 				317E1A6591D04797A3E975E4 /* MessageUI.framework */,
 				2C83F1C7FFB74708839DCEED /* SafariServices.framework */,
 				9AFF2045CDDF4216BBEA2E3A /* AppTrackingTransparency.framework */,
+				752B488BBB01444C8067A99D /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -352,6 +359,8 @@
 				0AFD365ECF3A4A848666A176 /* AMBPlugin.swift */,
 				B0AA9424F6CE43F0855C397C /* AMBRewarded.swift */,
 				C6F1C9F4224D4DB1B988C49E /* AMBRewardedInterstitial.swift */,
+				A619B9806086462D8BEAB5EF /* CDVWebViewEngine+FileXhrFix.m */,
+				B92A91A759164FC0AD015916 /* CDVWebViewEngine+FileXhrFix.h */,
 			);
 			name = Plugins;
 			path = FlyingPlane/Plugins;
@@ -552,6 +561,7 @@
 				FEBBB36A46C245C4BAEC6852 /* AMBPlugin.swift in Sources */,
 				BF615308D47C4D79A8DC3FDD /* AMBRewarded.swift in Sources */,
 				D9E598C22D15464B98D583B2 /* AMBRewardedInterstitial.swift in Sources */,
+				77F80470194041F590321A08 /* CDVWebViewEngine+FileXhrFix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

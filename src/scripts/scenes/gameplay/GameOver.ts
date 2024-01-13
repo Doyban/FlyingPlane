@@ -517,10 +517,10 @@ export class GameOver extends Phaser.GameObjects.Container {
 
         // Event handlers.
         const onSuccess: () => void = () => {
-          console.log("Sharing result successful.");
+          alert("Sharing result successful.");
         };
         const onError: () => void = () => {
-          console.log("Sharing result unsuccessful.");
+          alert("Sharing result unsuccessful.");
         };
 
         window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.

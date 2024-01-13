@@ -13,9 +13,9 @@
 		<key>CFBundleIdentifier</key>
 		<string>com.doyban.flyingplane</string>
 		<key>CFBundleShortVersionString</key>
-		<string>1.1.3</string>
+		<string>1.2.2</string>
 		<key>CFBundleVersion</key>
-		<string>1.1.3</string>
+		<string>1.2.2</string>
 		<key>SigningIdentity</key>
 		<string>Apple Development: Daniel Danielecki (9H98636TF9)</string>
 		<key>Team</key>

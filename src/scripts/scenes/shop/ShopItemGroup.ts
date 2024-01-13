@@ -43,9 +43,9 @@ export class ShopItemGroup {
 
     for (const i in this.multiplierArray) {
       store.register({
-        id: `scorex${this.multiplierArray[i]}`, // Android requires just ID, but iOS full .com.doyban.myApp.scorexA path.
+        id: `com.doyban.flyingplane.scorex${this.multiplierArray[i]}`, // Android requires just ID, but iOS full .com.doyban.myApp.scorexA path.
         type: ProductType.CONSUMABLE,
-        platform: Platform.GOOGLE_PLAY,
+        platform: Platform.APPLE_APPSTORE,
       });
     }
 
