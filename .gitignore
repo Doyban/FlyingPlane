@@ -2,3 +2,10 @@ node_modules
 dist
 .DS_Store
 cordova/platforms/android/app/release/
+cordova/www
+cordova/platforms/www
+cordova/platforms/android/app/src/main/assets
+cordova/platforms/ios/FlyingPlane.xcarchive/Products/Applications/FlyingPlane.app/www
+cordova/platforms/ios/FlyingPlane/Plugins
+cordova/platforms/ios/www
+cordova/plugins

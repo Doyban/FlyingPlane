@@ -7,6 +7,9 @@
 <!--<![endif]-->
 
 <head>
+    <!-- Required to fire purchase events on iOS. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: http://localhost:3000 https://*.iaptic.com 'unsafe-eval' 'unsafe-inline' gap://* app:
+        *; style-src 'self' 'unsafe-inline'; media-src *; img-src * 'self' data: blob:">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FlyingPlane</title>

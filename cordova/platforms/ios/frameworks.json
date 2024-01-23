@@ -3,5 +3,6 @@
     "Social.framework": 1,
     "MessageUI.framework": 1,
     "SafariServices.framework": 1,
-    "AppTrackingTransparency.framework": 1
+    "AppTrackingTransparency.framework": 1,
+    "WebKit.framework": 1
 }

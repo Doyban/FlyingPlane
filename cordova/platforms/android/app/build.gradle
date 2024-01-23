@@ -109,8 +109,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-buildinfo/tappyplane-BuildInfo.gradle"
-apply from: "../cordova-plugin-browsertab/tappyplane-BrowserTab.gradle"
+apply from: "../cordova-plugin-buildinfo/flyingplane-BuildInfo.gradle"
+apply from: "../cordova-plugin-browsertab/flyingplane-BrowserTab.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

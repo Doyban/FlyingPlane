@@ -63,6 +63,10 @@
             {
               "xml": "<feature name=\"AdMob\"><param name=\"ios-package\" value=\"AMBPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"WKWebViewXHRFix\"><param name=\"ios-package\" value=\"WKWebViewXHRFix\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -234,6 +238,9 @@
       "USAGE": "This identifier will be used to deliver personalized ads to you.",
       "DISABLESDKCRASHREPORTING": "false",
       "PACKAGE_NAME": "com.doyban.flyingplane"
+    },
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
   "dependent_plugins": {},
@@ -330,6 +337,7 @@
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-plugin-androidx": "3.0.0",
     "cordova-universal-links-plugin": "1.2.1",
-    "admob-plus-cordova": "1.28.0"
+    "admob-plus-cordova": "1.28.0",
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2"
   }
 }

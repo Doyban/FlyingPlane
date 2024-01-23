@@ -84,9 +84,9 @@
             </dict>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="NSUserTrackingUsageDescription">
-            <string>$USAGE</string>
-        </config-file>
+        <!-- <config-file target="*-Info.plist" parent="NSUserTrackingUsageDescription"> -->
+            <!-- <string>$USAGE</string> -->
+        <!-- </config-file> -->
 
         <config-file target="*-Info.plist" parent="SKAdNetworkItems">
             <array>

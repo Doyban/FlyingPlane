@@ -1,5 +1,5 @@
 import { SCORE, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
-import { getAuth, signInWithRedirect, getRedirectResult, GoogleAuthProvider } from "firebase/auth/cordova";
+import { getAuth, signInWithRedirect, getRedirectResult, OAuthProvider } from "firebase/auth/cordova";
 
 /**
  * @class Gui
@@ -336,10 +336,10 @@ export class Gui extends Phaser.GameObjects.Group {
 
         // Event handlers.
         const onSuccess: () => void = () => {
-          console.log("Inviting friends successful.");
+          alert("Inviting friends successful.");
         };
         const onError: () => void = () => {
-          console.log("Inviting friends unsuccessful.");
+          alert("Inviting friends unsuccessful.");
         };
 
         facebookConnectPlugin.showDialog(options, onSuccess, onError); // Cordova plugin execution.
@@ -384,7 +384,7 @@ export class Gui extends Phaser.GameObjects.Group {
 
   /**
    * @access private
-   * @description Login the user using Firebase Google authentication.
+   * @description Login the user using Firebase Apple authentication.
    * @function loginUsingFirebase
    * @returns {void}
    */
@@ -392,14 +392,15 @@ export class Gui extends Phaser.GameObjects.Group {
     const auth = getAuth(); // Create an instance of the authentication object.
 
     // Sign in by redirecting to the sign-in page.
-    signInWithRedirect(auth, new GoogleAuthProvider())
+    signInWithRedirect(auth, new OAuthProvider('apple.com'))
       .then(() => {
         return getRedirectResult(auth);
       })
       .then(() => {
-        console.log('Authentication successful.')
-      }).catch(() => {
-        console.log('Authentication unsuccessful.')
+        alert('Authentication successful.')
+      }).catch((error) => {
+        console.log(error)
+        alert('Authentication unsuccessful.')
       });
   }
 
@@ -436,10 +437,10 @@ export class Gui extends Phaser.GameObjects.Group {
 
         // Event handlers.
         const onSuccess: () => void = () => {
-          console.log("Sharing successful.");
+          alert("Sharing successful.");
         };
         const onError: () => void = () => {
-          console.log("Sharing unsuccessful.");
+          alert("Sharing unsuccessful.");
         };
 
         window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.
