@@ -1,5 +1,8 @@
 # FlyingPlane
 
+- Android: https://play.google.com/store/apps/details?id=com.doyban.flyingplane
+- iOS: https://apps.apple.com/us/app/flyyingplane/id6470124867
+
 ## 1. Install dependencies :
 
 Navigate to the project repo directory.
