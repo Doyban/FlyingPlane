@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.doyban.flyingplane" version="1.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.doyban.flyingplane" version="1.2.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="CDVWebViewEngine">
         <param name="ios-package" value="CDVWebViewEngine" />
     </feature>
@@ -102,5 +102,8 @@
     <feature name="WKWebViewXHRFix">
         <param name="ios-package" value="WKWebViewXHRFix" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="SafariViewController">
+        <param name="ios-package" value="SafariViewController" />
     </feature>
 </widget>

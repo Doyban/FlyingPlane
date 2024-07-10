@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.doyban.flyingplane" version="1.2.2" xmlns="http://www.w3.org/ns/widgets"
+<widget id="com.doyban.flyingplane" version="1.2.3" xmlns="http://www.w3.org/ns/widgets"
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>FlyingPlane</name>
@@ -53,4 +53,5 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
             <path url="/__/auth/callback" />
         </host>
     </universal-links>
+    <plugin name="cordova-plugin-safariviewcontroller" spec="^2.0.0"/>
 </widget>

@@ -112,5 +112,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-safariviewcontroller": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-safariviewcontroller"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

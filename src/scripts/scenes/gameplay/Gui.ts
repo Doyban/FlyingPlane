@@ -43,11 +43,15 @@ export class Gui extends Phaser.GameObjects.Group {
     // Add and create necessary assets.
     this.menuGroup = this.scene.add.group();
     this.addMultiple(this.menuGroup.children.entries)
-    this.createCloseButton();
     this.createFriendsButton();
     this.createLoginButton();
     this.createShareButton();
     this.createShopButton();
+
+    // Hide the close button on iOS in main menu.
+    if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+      this.createCloseButton();
+    }
 
     // Create sound control assets.
     this.musicOn = this.createMusicOn();
@@ -392,6 +396,7 @@ export class Gui extends Phaser.GameObjects.Group {
     const auth = getAuth(); // Create an instance of the authentication object.
 
     // Sign in by redirecting to the sign-in page.
+    // Big bug in Firebase Auth, but for us that's just for Apple: https://github.com/firebase/firebase-js-sdk/issues/4256
     signInWithRedirect(auth, new OAuthProvider('apple.com'))
       .then(() => {
         return getRedirectResult(auth);

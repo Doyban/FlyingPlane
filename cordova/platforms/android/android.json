@@ -174,6 +174,16 @@
             }
           ]
         }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"SafariViewController\"><param name=\"android-package\" value=\"com.customtabplugin.ChromeCustomTabPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
@@ -225,6 +235,9 @@
       "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "com.doyban.flyingplane"
+    },
+    "cordova-plugin-safariviewcontroller": {
       "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
@@ -308,6 +321,14 @@
       "clobbers": [
         "admob"
       ]
+    },
+    {
+      "id": "cordova-plugin-safariviewcontroller.SafariViewController",
+      "file": "plugins/cordova-plugin-safariviewcontroller/www/SafariViewController.js",
+      "pluginId": "cordova-plugin-safariviewcontroller",
+      "clobbers": [
+        "SafariViewController"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -321,6 +342,7 @@
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-universal-links-plugin": "1.2.1",
     "admob-plus-cordova": "1.28.0",
-    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2"
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2",
+    "cordova-plugin-safariviewcontroller": "2.0.0"
   }
 }
