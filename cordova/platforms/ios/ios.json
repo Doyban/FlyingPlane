@@ -67,6 +67,10 @@
             {
               "xml": "<feature name=\"WKWebViewXHRFix\"><param name=\"ios-package\" value=\"WKWebViewXHRFix\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"SafariViewController\"><param name=\"ios-package\" value=\"SafariViewController\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -115,7 +119,7 @@
               "count": 1
             },
             {
-              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>mycoolapp</string></array></dict></array>",
+              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>6470124867</string></array></dict></array>",
               "count": 1
             }
           ],
@@ -201,7 +205,7 @@
       "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-customurlscheme": {
-      "URL_SCHEME": "mycoolapp",
+      "URL_SCHEME": "6470124867",
       "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "cordova-plugin-purchase": {
@@ -240,6 +244,9 @@
       "PACKAGE_NAME": "com.doyban.flyingplane"
     },
     "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "com.doyban.flyingplane"
+    },
+    "cordova-plugin-safariviewcontroller": {
       "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
@@ -323,6 +330,14 @@
       "clobbers": [
         "admob"
       ]
+    },
+    {
+      "id": "cordova-plugin-safariviewcontroller.SafariViewController",
+      "file": "plugins/cordova-plugin-safariviewcontroller/www/SafariViewController.js",
+      "pluginId": "cordova-plugin-safariviewcontroller",
+      "clobbers": [
+        "SafariViewController"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -338,6 +353,7 @@
     "cordova-plugin-androidx": "3.0.0",
     "cordova-universal-links-plugin": "1.2.1",
     "admob-plus-cordova": "1.28.0",
-    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2"
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2",
+    "cordova-plugin-safariviewcontroller": "2.0.0"
   }
 }

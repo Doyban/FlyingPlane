@@ -9,3 +9,4 @@ cordova/platforms/ios/FlyingPlane.xcarchive/Products/Applications/FlyingPlane.ap
 cordova/platforms/ios/FlyingPlane/Plugins
 cordova/platforms/ios/www
 cordova/plugins
+.DS_Store

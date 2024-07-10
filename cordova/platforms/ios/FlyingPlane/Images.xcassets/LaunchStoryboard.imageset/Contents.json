@@ -1,872 +1,968 @@
 {
-  "images": [
+  "images" : [
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo.png",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 11.png",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 36.png",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "width-class": "compact"
+      "filename" : "logo 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 10.png",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 37.png",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "height-class": "compact"
+      "filename" : "logo 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 9.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 38.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x"
+      "filename" : "logo 42.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 54.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "scale": "1x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 66.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 43.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 55.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 67.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "width-class": "compact"
+      "filename" : "logo 44.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "3x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 56.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "3x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 68.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "3x"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "height-class": "compact"
+      "filename" : "logo 60.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 84.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 72.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "2x"
+      "filename" : "logo 61.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 85.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "2x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 73.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 62.png",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 86.png",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 74.png",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "width-class": "compact"
+      "filename" : "logo 78.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 90.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 51.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "height-class": "compact"
+      "filename" : "logo 79.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 91.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 52.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x"
+      "filename" : "logo 80.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 92.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "universal",
-      "scale": "3x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 53.png",
+      "height-class" : "compact",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 3.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 5.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 39.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "width-class": "compact"
+      "filename" : "logo 4.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 6.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 40.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "height-class": "compact"
+      "filename" : "logo 7.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 8.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 41.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x"
+      "filename" : "logo 45.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "1x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 57.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "1x"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 69.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "1x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 46.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "2x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 58.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "2x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 70.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "2x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "width-class": "compact"
+      "filename" : "logo 47.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "3x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 59.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "3x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 71.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "3x"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "height-class": "compact"
+      "filename" : "logo 63.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 87.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 75.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x"
+      "filename" : "logo 64.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 88.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 76.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 65.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 89.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 77.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "width-class": "compact"
+      "filename" : "logo 81.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 93.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 48.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "height-class": "compact"
+      "filename" : "logo 82.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 94.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 49.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x"
+      "filename" : "logo 83.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 95.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "1x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 50.png",
+      "height-class" : "compact",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 32.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 33.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 34.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "width-class": "compact"
+      "filename" : "logo 31.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 30.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 29.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "height-class": "compact"
+      "filename" : "logo 35.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "1x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 26.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "1x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 24.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "1x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x"
+      "filename" : "logo 28.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "2x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 27.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "2x"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 25.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "2x"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "width-class": "compact",
-      "height-class": "compact"
+      "filename" : "logo 23.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 21.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "width-class": "compact",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 19.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "width-class": "compact"
+      "filename" : "logo 22.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 20.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "width-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 18.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "height-class": "compact"
+      "filename" : "logo 16.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 14.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "height-class": "compact",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 15.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x"
+      "filename" : "logo 17.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "light"
         }
-      ]
+      ],
+      "filename" : "logo 13.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "width-class" : "compact"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "light"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
-      ]
+      ],
+      "filename" : "logo 12.png",
+      "height-class" : "compact",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "width-class" : "compact"
     }
   ],
-  "info": {
-    "author": "Xcode",
-    "version": 1
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
   }
 }

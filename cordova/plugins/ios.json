@@ -55,6 +55,9 @@
     },
     "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": {
       "PACKAGE_NAME": "com.doyban.flyingplane"
+    },
+    "cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "com.doyban.flyingplane"
     }
   },
   "dependent_plugins": {

@@ -78,6 +78,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "admob"
       ]
+    },
+    {
+      "id": "cordova-plugin-safariviewcontroller.SafariViewController",
+      "file": "plugins/cordova-plugin-safariviewcontroller/www/SafariViewController.js",
+      "pluginId": "cordova-plugin-safariviewcontroller",
+      "clobbers": [
+        "SafariViewController"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -91,6 +99,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-universal-links-plugin": "1.2.1",
     "admob-plus-cordova": "1.28.0",
-    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2"
+    "@ahovakimyan/cordova-plugin-wkwebviewxhrfix": "1.0.2",
+    "cordova-plugin-safariviewcontroller": "2.0.0"
   };
 });
