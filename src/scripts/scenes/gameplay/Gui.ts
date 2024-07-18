@@ -49,7 +49,7 @@ export class Gui extends Phaser.GameObjects.Group {
     this.createShopButton();
 
     // Hide the close button on iOS in main menu.
-    if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+    if (!/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
       this.createCloseButton();
     }
 
