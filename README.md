@@ -3,20 +3,20 @@
 - Android: https://play.google.com/store/apps/details?id=com.doyban.flyingplane
 - iOS: https://apps.apple.com/us/app/flyyingplane/id6470124867
 
-Join the FlyyingPlane community and embark on the ultimate flying challenge!
+Join the FlyingPlane community and embark on the ultimate flying challenge!
 How far can you go?
 Download now and find out!
 
-FlyyingPlane is an exciting, never-ending mobile game that will keep you on the edge of your seat!
+FlyingPlane is an exciting, never-ending mobile game that will keep you on the edge of your seat!
 Navigate your plane through a series of challenging obstacles, jumping and dodging to achieve the highest score possible.
-With simple yet engaging gameplay, FlyyingPlane is perfect for casual gamers and thrill-seekers alike.
+With simple yet engaging gameplay, FlyingPlane is perfect for casual gamers and thrill-seekers alike.
 
 Features:
-• Intuitive controls for a seamless gaming experience
-• Stunning graphics and dynamic environments
-• Endless gameplay with increasing difficulty
-• Compete with friends and players worldwide on the leaderboard
-• Free to download and play, with optional in-game purchases
+- Intuitive controls for a seamless gaming experience
+- Stunning graphics and dynamic environments
+- Endless gameplay with increasing difficulty
+- Compete with friends and players worldwide on the leaderboard
+- Free to download and play, with optional in-game purchases
 
 ## 1. Install dependencies :
 
