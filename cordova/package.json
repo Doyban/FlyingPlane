@@ -1,7 +1,7 @@
 {
   "name": "com.doyban.flyingplane",
   "displayName": "FlyingPlane",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Tap Plane Game",
   "main": "index.js",
   "scripts": {

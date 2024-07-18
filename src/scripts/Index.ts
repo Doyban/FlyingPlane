@@ -19,11 +19,11 @@ class Game extends Phaser.Game {
       type: Phaser.WEBGL, // Use Renderer WebGL.
       width: 800,
       height: 480,
-      parent: "content", // Use custom div element as parent.
+      parent: "content-game", // Use custom div element as parent.
       scene: [SplashScreen, GamePlay, Shop], // Scenes.
       // Add ScaleManager for responsiveness.
       scale: {
-        mode: Phaser.Scale.ScaleModes.FIT,
+        mode: Phaser.Scale.ScaleModes.WIDTH_CONTROLS_HEIGHT,
       },
       // Add matter physics.
       physics: {
