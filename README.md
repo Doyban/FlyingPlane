@@ -1,6 +1,7 @@
 # FlyingPlane
 
 - Android: https://play.google.com/store/apps/details?id=com.doyban.flyingplane
+- Browser (itch.io): https://doyban.itch.io/flyingplane
 - iOS: https://apps.apple.com/us/app/flyyingplane/id6470124867
 
 Join the FlyingPlane community and embark on the ultimate flying challenge!
