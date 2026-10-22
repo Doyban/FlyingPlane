@@ -4,6 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 import { GamePlay } from "./scenes/GamePlay";
 import { Shop } from "./scenes/Shop";
 import SplashScreen from "./scenes/SplashScreen";
+import { prepareNativeShell } from "./native/shell";
 
 /**
  * @class Game
@@ -51,4 +52,5 @@ class Game extends Phaser.Game {
 // Create the game object once window loaded.
 window.onload = () => {
   new Game();
+  prepareNativeShell();
 };

@@ -1,5 +1,8 @@
 import { SCORE, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
-import { getAuth, signInWithRedirect, getRedirectResult, OAuthProvider } from "firebase/auth/cordova";
+import { signInWithApple } from "../../native/auth";
+import { showFacebookAppRequest } from "../../native/facebook";
+import { shareWithOptions } from "../../native/share";
+import { exitApp } from "../../native/shell";
 
 /**
  * @class Gui
@@ -300,7 +303,7 @@ export class Gui extends Phaser.GameObjects.Group {
       "pointerdown",
       () => {
         this.playClickSound(); // Play click sound.
-        navigator.app.exitApp(); // Close the game.
+        exitApp();
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -346,7 +349,7 @@ export class Gui extends Phaser.GameObjects.Group {
           alert("Inviting friends unsuccessful.");
         };
 
-        facebookConnectPlugin.showDialog(options, onSuccess, onError); // Cordova plugin execution.
+        showFacebookAppRequest(options.message, onSuccess, onError);
       },
       this // Context which is a reference to Gui object in this case.
     );
@@ -393,14 +396,8 @@ export class Gui extends Phaser.GameObjects.Group {
    * @returns {void}
    */
   private loginUsingFirebase(): void {
-    const auth = getAuth(); // Create an instance of the authentication object.
-
-    // Sign in by redirecting to the sign-in page.
-    // Big bug in Firebase Auth, but for us that's just for Apple: https://github.com/firebase/firebase-js-sdk/issues/4256
-    signInWithRedirect(auth, new OAuthProvider('apple.com'))
-      .then(() => {
-        return getRedirectResult(auth);
-      })
+    // iOS uses native Sign in with Apple. Other platforms use Firebase redirect.
+    signInWithApple()
       .then(() => {
         alert('Authentication successful.')
       }).catch((error) => {
@@ -448,7 +445,15 @@ export class Gui extends Phaser.GameObjects.Group {
           alert("Sharing unsuccessful.");
         };
 
-        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.
+        shareWithOptions(
+          {
+            message: options.message,
+            subject: options.subject,
+            url: options.url,
+          },
+          onSuccess,
+          onError
+        );
       },
       this // Context which is a reference to Gui object in this case.
     );

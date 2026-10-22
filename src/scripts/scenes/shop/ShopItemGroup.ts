@@ -1,4 +1,5 @@
 import { ShopItem } from "./ShopItem";
+import { registerScoreMultiplierProducts } from "../../native/purchases";
 
 /**
  * @class ShopItemGroup
@@ -37,17 +38,8 @@ export class ShopItemGroup {
     this.startYpos = startY - (offsetY * (rowCount - 1) * 0.5); // Set center position using the total rows and offset.
     this.multiplierArray = [2, 4, 6, 8]; // Array to change multiplier count for shop items.
 
-    // Prepare products for In App Purchases (IAP's).
-    const store = CdvPurchase.store;
-    const { ProductType, Platform } = CdvPurchase;
-
-    for (const i in this.multiplierArray) {
-      store.register({
-        id: `com.doyban.flyingplane.scorex${this.multiplierArray[i]}`, // Android requires just ID, but iOS full .com.doyban.myApp.scorexA path.
-        type: ProductType.CONSUMABLE,
-        platform: Platform.APPLE_APPSTORE,
-      });
-    }
+    // Prepare the same consumable product ids (score x2, x4, x6, x8).
+    registerScoreMultiplierProducts();
 
     this.createLayout();
   }

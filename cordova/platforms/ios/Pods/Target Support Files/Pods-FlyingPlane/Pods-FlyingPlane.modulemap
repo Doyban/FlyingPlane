@@ -1,6 +1,0 @@
-framework module Pods_FlyingPlane {
-  umbrella header "Pods-FlyingPlane-umbrella.h"
-
-  export *
-  module * { export * }
-}

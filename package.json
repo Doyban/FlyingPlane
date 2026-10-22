@@ -6,15 +6,45 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack",
+    "build": "FLYINGPLANE_BUILD=1 webpack",
+    "postinstall": "node scripts/patch-facebook-cordova-plugin.js",
+    "sync": "node scripts/patch-facebook-cordova-plugin.js && npm run build && npx cap sync && node scripts/patch-facebook-cordova-plugin.js"
   },
   "author": "Doyban",
   "dependencies": {
+    "@capacitor-community/admob": "^8.2.1",
+    "@capacitor-community/apple-sign-in": "^7.1.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/browser": "^8.0.5",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/share": "^8.0.3",
+    "@capacitor/status-bar": "^8.0.4",
+    "@capgo/native-purchases": "^8.9.6",
+    "cordova-plugin-facebook-connect": "^3.2.0",
     "firebase": "^10.1.0",
     "phaser": "^3.19.0"
   },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-facebook-connect": {
+        "APP_ID": "757927572827959",
+        "APP_NAME": "FlyingPlane",
+        "FACEBOOK_URL_SCHEME_SUFFIX": "",
+        "OTHER_APP_SCHEMES": "",
+        "FACEBOOK_AUTO_LOG_APP_EVENTS": "true",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ADVERTISER_ID_COLLECTION": "true",
+        "FACEBOOK_ANDROID_SDK_VERSION": "11.3.0",
+        "FACEBOOK_IOS_SDK_VERSION": "11.1.0",
+        "FACEBOOK_BROWSER_SDK_VERSION": "v11.0"
+      }
+    }
+  },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/ios": "^8.5.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
@@ -26,6 +56,8 @@
     "html-webpack-plugin": "^3.2.0",
     "mkdirp": "^0.5.1",
     "terser-webpack-plugin": "^2.1.2",
+    "ts-loader": "^8.4.0",
+    "typescript": "^4.9.5",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
   }

@@ -1,4 +1,6 @@
 import { GAME_OVER, UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
+import { showInterstitialAd } from "../../native/ads";
+import { shareWithOptions } from "../../native/share";
 
 /**
  * @description Contains the properties that are needed by @class GameOver.
@@ -356,7 +358,7 @@ export class GameOver extends Phaser.GameObjects.Container {
     const badge_3 = this.getByName("badge_3"); // Get the desired object by name.
     this.playBadgeTween(badge_3);
 
-    this.showAdMobAds(); // Show ads.
+    this.showAdMobAds(); // Show ads when the native AdMob plugin is present.
   }
 
   /**
@@ -413,23 +415,8 @@ export class GameOver extends Phaser.GameObjects.Container {
    * @function showAdMobAds
    * @returns {Promise<void>}
    */
-  private async showAdMobAds(): Promise<void> {
-    let interstitial: any;
-
-    document.addEventListener('deviceready', async () => {
-      interstitial = new admob.InterstitialAd({
-        adUnitId: 'ca-app-pub-4865595196880143/1957466653',
-      })
-
-      await interstitial.load()
-      await interstitial.show()
-    }, false);
-
-    document.addEventListener('admob.ad.dismiss', async () => {
-      // Once a interstitial ad is shown, it cannot be shown again.
-      // Starts loading the next interstitial ad as soon as it is dismissed.
-      await interstitial.load()
-    });
+  private showAdMobAds(): void {
+    showInterstitialAd();
   }
 
   /**
@@ -523,7 +510,15 @@ export class GameOver extends Phaser.GameObjects.Container {
           alert("Sharing result unsuccessful.");
         };
 
-        window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError); // Cordova plugin execution.
+        shareWithOptions(
+          {
+            message: options.message,
+            subject: options.subject,
+            url: options.url,
+          },
+          onSuccess,
+          onError
+        );
       },
       this // Context which is a reference to GameOver object in this case.
     );

@@ -1,5 +1,6 @@
 const buildConfig = require('./build.config');
 const path = require('path');
+const isOneShotBuild = process.env.FLYINGPLANE_BUILD === '1';
 const fs = require('fs');
 const fs_extra = require('fs-extra');
 const remove_dir = require('delete');
@@ -77,7 +78,7 @@ module.exports = {
         filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist'),
     },
-    watch: true, // Helps to run browser-sync plugin.
+    watch: !isOneShotBuild, // Browser dev keeps watch. One-shot builds are for Capacitor sync.
     // Add webpack plugins.
     plugins: [
         new HtmlWebpackPlugin({
@@ -86,6 +87,7 @@ module.exports = {
             chunks: ['vendor', 'app'],
             hash: true
         }),
+    ].concat(isOneShotBuild ? [] : [
         new BrowserAsyncPlugin({
             host: process.env.IP || 'localhost',
             port: process.env.PORT || 3000,
@@ -93,7 +95,7 @@ module.exports = {
                 baseDir: ['./dist']
             },
         })
-    ],
+    ]),
     // Modules support.
     module: {
         rules: [{
@@ -103,8 +105,18 @@ module.exports = {
             },
             {
                 test: /\.ts$/,
-                use: ['babel-loader', 'awesome-typescript-loader'],
-                include: path.join(__dirname)
+                use: [
+                    'babel-loader',
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            // Capacitor's published types need a newer TypeScript than this repo pins.
+                            // Transpile the game sources and let webpack bundle the already-built plugin JS.
+                            transpileOnly: true,
+                        },
+                    },
+                ],
+                include: path.join(__dirname, 'src')
             },
         ]
     },
