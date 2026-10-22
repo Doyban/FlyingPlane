@@ -57,6 +57,16 @@ This will run a server so game automatically opens in your defualt browser with 
 
 Running `export NODE_OPTIONS=--openssl-legacy-provider` might be needed before `npm run start` due to `webpack` problem.
 
+### Native shell (Capacitor)
+
+The store shell is Capacitor. Browser dev is still `npm run start`.
+
+```
+npm run sync
+```
+
+`npm run build` writes the webpack output Capacitor copies (`dist`). `npm run sync` builds, then runs `npx cap sync`. iOS and Android projects live in `ios/` and `android/`. Open them with `npx cap open ios` or `npx cap open android` when Xcode or Android Studio is available. `npm install` stamps the existing Facebook app id into `cordova-plugin-facebook-connect` before sync, because that plugin ships without a default id and Capacitor would otherwise write an empty one.
+
 ### Important
 
 Even though the package name in stores is `FlyingPlane`, some of the metadata info might refer to `tappyplane`, so don't get confused. `TappyPlane` wasn't possible to submit to `Google PlayStore`.

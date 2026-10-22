@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FlyingPlane</string>
+    <string name="title_activity_main">FlyingPlane</string>
+    <string name="package_name">com.doyban.flyingplane</string>
+    <string name="custom_url_scheme">com.doyban.flyingplane</string>
+    <string name="admob_app_id">ca-app-pub-4865595196880143~4169283752</string>
+    <string name="fb_client_token">3d96137028b193e43debe1bced4b5bd3</string>
+</resources>

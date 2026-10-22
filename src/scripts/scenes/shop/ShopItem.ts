@@ -1,4 +1,5 @@
 import { UI_ICONS_SCALE_FACTOR } from "../../utils/GameConstants";
+import { purchaseScoreMultiplier } from "../../native/purchases";
 
 /**
  * @class ShopItem
@@ -129,23 +130,7 @@ export class ShopItem extends Phaser.GameObjects.Container {
       volume: 1
     });
 
-    // Purchase In-App Purchase (IAP) item.
-    const store = CdvPurchase.store;
-    const { Platform } = CdvPurchase;
-
-    store.when()
-      .approved((transaction: any) => {
-        // Add extra score and begin the game.
-        localStorage.scoreRate = this.multiplier;
-
-        transaction.finish(); // Consume the transaction, so user can order the same item again (https://github.com/j3k0/cordova-plugin-purchase/issues/1459).
-      });
-
-    store.initialize([
-      Platform.APPLE_APPSTORE,
-    ]);
-
-    const offer: any = store.get(`com.doyban.flyingplane.scorex${this.multiplier}`).getOffer();
-    store.order(offer); // Sometimes it's crashing, on x2 and x6 purchase while (thankfully) still keeping the purchase in the localStorage.
+    // Purchase the same consumable. scoreRate is stored only after the store approves it.
+    purchaseScoreMultiplier(this.multiplier);
   }
 }
